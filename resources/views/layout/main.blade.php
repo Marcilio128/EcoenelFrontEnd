@@ -19,12 +19,12 @@
             <div class="container">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
-                    <button id="Btn-Mobile" class="MobileBtn">
-                        <span id="Hamburger"></span>
-                    </button>
                     <img src="/assets/Logo3e.png" class="Logo3e" alt="" srcset="">
                 </div>
-            <nav id="nav">
+                <nav id="nav">
+                <button id="Btn-Mobile" class="MobileBtn">
+                    <span id="Hamburger"></span>
+                </button>
                 <div class="buttons">
                     <a class="btn">Dia Atual</a>
                     <a class="btn">Mês Atual</a>

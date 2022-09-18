@@ -4,11 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
 }
 .Logo3e{
-    width: 5rem;
+    width: 7vw;
     margin: 0 10rem;
-
+    
 }
 .EcoenelLogo{
     width: 20vw;
@@ -29,10 +30,10 @@
 @media only screen and (max-width: 900px){
     /*Estilização Das Logos*/
     .Logo3e{
-        margin: 0 auto;
+        margin: 0 -1vw;
     }
     .EcoenelLogo{
-        margin: 0 auto;
+        margin: 0 35vw;
     }
     .MobileBtn{
         background: none;
@@ -41,6 +42,8 @@
         font-size: 1rem;
         border: none;
         cursor: pointer;
+        top: 2vw;
+        position: absolute;
     }
     .buttons{
         visibility: none;
@@ -72,8 +75,7 @@
     #Hamburger{
         width: 20px;
         border-top: 2px solid;
-        color: rgb(255, 0, 0);
-        z-index: 2000;
+        color: rgb(255, 255, 255);
         
     }
     #Hamburger::after, #Hamburger::before{
@@ -96,6 +98,12 @@
     }
     .ShowMenu #Hamburger::before{
         transform: rotate(135deg);
+
+    }
+}
+@media only screen and (max-width: 800px){
+    #nav.ShowMenu .buttons{
+        top: 10.5vh;
 
     }
 }
