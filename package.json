@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build" 
   },
   "devDependencies": {
     "axios": "^0.27",
@@ -14,6 +14,7 @@
     "sass": "^1.54.9",
     "vite": "^3.0.0"
   },
+  
   "name": "ecoenelfrontend",
   "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
   "version": "1.0.0",
@@ -48,6 +49,7 @@
     "type": "git",
     "url": "git+https://github.com/Marcilio128/EcoenelFrontEnd.git"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -55,4 +57,5 @@
     "url": "https://github.com/Marcilio128/EcoenelFrontEnd/issues"
   },
   "homepage": "https://github.com/Marcilio128/EcoenelFrontEnd#readme"
+  
 }

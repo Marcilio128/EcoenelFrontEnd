@@ -27,6 +27,51 @@
     display: none;
 }
 
+/*Residometro && Atualização*/
+.section1 .container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+
+}
+.BlobOrange{
+    left: 0;
+    width: 15vw;
+    position: absolute;
+    z-index: -1000;
+    margin: -2rem 6rem;
+
+}
+
+.BlobYellow{
+    right: 0;
+    width: 17vw;
+    margin: -2rem 7rem;
+    position: absolute;
+    z-index: -1000;
+}
+
+.Residometro,
+.Atualização{
+    margin: 10vh 0;
+    font-size: 2rem;
+
+}
+
+.Residometro h1,
+.Atualização h1{
+    font-size: 3rem;
+    font-weight: 400;
+} 
+
+.Residometro span,
+.Atualização span{
+    font-weight: 300;
+    color: var(--color-primary);
+}
 @media only screen and (max-width: 900px){
     /*Estilização Das Logos*/
     .Logo3e{
