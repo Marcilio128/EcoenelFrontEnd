@@ -30,7 +30,7 @@
 /*Residometro && Atualização*/
 .section1 .container{
     display: flex;
-
+    padding: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -61,7 +61,7 @@
 }
 
 .NumberCount{
-    gap: 1.5rem;
+    gap: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -76,6 +76,7 @@
     font-weight: 200;
     color: var(--color-primary);
 }
+
 .Residometro span,
 .Atualização span{
     font-weight: 300;

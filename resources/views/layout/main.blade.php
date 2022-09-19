@@ -55,20 +55,15 @@
             <svg class="BlobYellow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#FECC16" d="M17.1,-28.9C22.4,-26.5,27.1,-22.4,40.5,-17.3C53.9,-12.2,75.9,-6.1,73.7,-1.3C71.5,3.5,44.9,7,36.8,21.4C28.8,35.7,39.2,60.8,36.1,65.6C33.1,70.4,16.5,54.8,0.3,54.2C-15.9,53.7,-31.8,68.1,-34.7,63.3C-37.7,58.5,-27.8,34.4,-24.4,20.6C-21,6.9,-24.1,3.4,-32.6,-4.9C-41.1,-13.2,-54.9,-26.5,-58,-39.7C-61.2,-53,-53.5,-66.2,-42,-65C-30.6,-63.8,-15.3,-48.1,-4.7,-40C5.9,-31.8,11.8,-31.2,17.1,-28.9Z" transform="translate(100 100)" />
             </svg>
-
+            
             <div class="Atualização">
                 <h1>Última Atualização</h1>
-<<<<<<< HEAD
-                <span id="update_date" class="Date"></span><span id="update_hour" class="Date"></span>
-=======
                 <div class="NumberCount">
-                    <span class="Date">19/09/2022</span>
-                    <p class="Break">||</p>
-                    <span class="Time">19:09:22</span>
-                </div>
->>>>>>> 540f04b (Alteração na Ultima Atualização)
+                <span id="update_date" class="Date"></span>
+                <span class="Break">||</span>
+                <span id="update_hour" class="Time"></span>
             </div>
-
+        </div>
         </div>
     </section>
     
