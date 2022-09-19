@@ -49,7 +49,7 @@
 .BlobYellow{
     right: 0;
     width: 17vw;
-    margin: -2rem 7rem;
+    margin: -2rem 4.5rem;
     position: absolute;
     z-index: -1000;
 }
@@ -58,7 +58,12 @@
 .Atualização{
     margin: 10vh 0;
     font-size: 2rem;
+}
 
+.NumberCount{
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .Residometro h1,
@@ -67,6 +72,10 @@
     font-weight: 400;
 } 
 
+.Break{
+    font-weight: 200;
+    color: var(--color-primary);
+}
 .Residometro span,
 .Atualização span{
     font-weight: 300;
