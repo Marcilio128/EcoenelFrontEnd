@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
             <div class="container">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
-                    <img src="/assets/Logo3e.png" class="Logo3e" alt="" srcset="">
+                    <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
                 </div>
                 <nav id="nav">
                 <button id="Btn-Mobile" class="MobileBtn">
