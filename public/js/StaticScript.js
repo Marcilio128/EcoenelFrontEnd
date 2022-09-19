@@ -8,4 +8,12 @@ function toogleMenu(){
         Mbtn.classList.toggle('ShowMobile');
 }
 
+const date = new Date().toLocaleDateString();
+const hour = new Date().toLocaleTimeString();
+
+var data = document.getElementById("update_date");
+data.innerHTML = (date);
+var hora = document.getElementById("update_hour");
+hora.innerHTML = (hour);
+
 btnMobile.addEventListener('click', toogleMenu);

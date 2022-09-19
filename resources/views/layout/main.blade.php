@@ -54,7 +54,7 @@
             </svg>
             <div class="Atualização">
                 <h1>Última Atualização</h1>
-                <span class="Date">19/09/2022</span>
+                <span id="update_date" class="Date"></span><span id="update_hour" class="Date"></span>
             </div>
 
         </div>
