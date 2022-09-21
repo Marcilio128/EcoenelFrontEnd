@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,8 @@
          'resources/scss/reset.scss', 
          'resources/scss/static.scss',
          'resources/scss/DiaAtual.scss',
-         'resources/js/app.js'])
+         'resources/js/app.js',
+         'resources/js/Grafico.js'])
          
     </head>
     <body>
@@ -70,5 +72,6 @@
 
         <main>@yield('content')</main>
     </body>
+    <script src="/js/Grafico.js"></script>
     <script src="/js/StaticScript.js"></script>
 </html>

@@ -1,3 +1,7 @@
+.Resumo .container {
+    display: flex;
+}
+
 .Resumo .container .content{
     background-color: var(--color-primary);
     width: 35vw;
@@ -5,27 +9,36 @@
     text-align: center;
     color: white;
     padding: 1rem;
-
-
 }
+
 .Resumo .container .content h1{
     font-size: 3rem;
 }
+
 .card{
     border-radius: 3rem;
-    margin: 2rem 0.5rem;
+    margin: 1rem 0.5rem;
     background-color: rgba(0, 0, 0, 0.247);
-    padding: 2rem;
+    padding: 1rem;
 }
+
 h2{
     font-size: 2rem;
 
 }
+
 p{
     font-size: 1.5rem;
 }
+
 .linhaHorizontal {
     margin: 1rem auto;
     width: 27vw;
     border: 1px solid rgb(255, 255, 255);
+}
+
+#container {
+    width: 600vw;
+    height: 600px;
+    margin: 0 auto;
 }

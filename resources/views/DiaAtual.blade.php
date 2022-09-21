@@ -26,6 +26,13 @@
                     <p>70.865,33KWH</p>
             </div>
         </div>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        
+        <div id="container"></div>
     </div>
+
+
 </section>
 @endsection()
