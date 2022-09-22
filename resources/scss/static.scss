@@ -92,6 +92,68 @@ body{
     top: 0;
     width: 32.9vw;
 }
+
+
+
+.sec-tabela{
+    display: flex;
+    margin-top: 5vh;
+}
+.sec-tabela .container{
+    align-items: center;
+    margin: 0 auto;
+}
+.start{
+    display: flex;
+    margin-top: 10vh;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 2rem ;
+    
+}
+table{
+    margin: 0 0 4rem;  
+    text-align: center;
+    border-spacing: 0px;
+    border: 0;
+    font-size: 0.9rem;
+    width: 60%;
+    table-layout:fixed;
+}
+td{
+    padding: 0.6rem;
+    word-wrap:break-word;
+
+}
+  th{
+    padding: 0.6rem;
+
+    border: 0;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 300;
+    margin: 0 -3rem;
+    
+  }
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    gap: 8rem;
+    width:20rem;
+
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.vertical {
+    border-left: 2px solid var(--color-primary);
+    height: 60vh;
+    overflow-y: hidden;
+
+}
 @media only screen and (max-width: 900px){
     /*Estilização Das Logos*/
     .Logo3e{
