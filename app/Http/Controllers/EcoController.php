@@ -7,10 +7,24 @@ use Illuminate\Http\Request;
 
 class EcoController extends Controller
 {
-    public function all(){
-        $eco = new Eco;
+    public function anocorrente(){
+        $ecos = new Eco;
+        return view('anocorrente');
+    }
 
-        
-            return view('/layout/main');
+    public function index()
+    {
+        $ecos = new Eco;
+        return view('DiaAtual');
+    }
+
+    public function mesanterior(){
+        $ecos = new Eco;
+        return view('mesanterior');
+    }
+
+        public function mesatual(){
+        $ecos = new Eco;
+        return view('mesatual');
     }
 }
