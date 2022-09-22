@@ -18,13 +18,22 @@ return new class extends Migration
             $table->string('nomeposto', 240);
             $table->integer('beneficiado', 10)->default(0);
             $table->float('bonus', 30)->default(0);
-            $table->float('coletado', 30)->default(0);
             $table->float('economizado', 30)->default(0);
             $table->float('massa', 45)->default(0);
             $table->integer('unidade', 10)->default(0);
             $table->float('litro', 30)->default(0);
             $table->float('residometro', 10,2)->default(0.00);
             $table->dateTime('att_dia', );
+            
+            //coletados
+            $table->integer('Longa_Vida')->default(0);
+            $table->integer('Óleo')->default(0);
+            $table->integer('Eletrônicos')->default(0);
+            $table->integer('Vidros')->default(0);
+            $table->integer('Plástico')->default(0);
+            $table->integer('Metal')->default(0);
+            $table->integer('Papel')->default(0);
+            
             $table->timestamps();
         });
     }
