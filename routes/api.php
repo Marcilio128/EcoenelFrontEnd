@@ -19,4 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', [EcoController::class, 'all']);
+Route::get('/', [EcoController::class, 'index']);
+Route::get('/anocorrente', [EcoController::class, 'anocorrente']);
+Route::get('/mesanterior', [EcoController::class, 'mesanterior']);
+Route::get('/mesatual', [EcoController::class, 'mesatual']);

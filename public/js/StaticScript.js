@@ -7,7 +7,7 @@ function toogleMenu(){
         const Mbtn = document.getElementById('Hamburger');
         Mbtn.classList.toggle('ShowMobile');
 }
-
+//sistema de atualização de data/hora para mostrar a última atualização
 const date = new Date().toLocaleDateString();
 const hour = new Date().toLocaleTimeString();
 
