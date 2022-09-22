@@ -7,24 +7,32 @@ use Illuminate\Http\Request;
 
 class EcoController extends Controller
 {
-    public function anocorrente(){
-        $ecos = new Eco;
-        return view('anocorrente');
+    public function anocorrente()
+    {
+        $Eco = Eco::select(Eco::raw('SUM(beneficiado) as ben'))->where('unidade',1)->get();
+
+        return view('anocorrente', ['Eco' => $Eco]);
     }
 
     public function index()
     {
-        $ecos = new Eco;
-        return view('DiaAtual');
+        $Eco = Eco::select(Eco::raw('SUM(beneficiado) as ben'))->where('unidade',1)->get();
+
+        return view('DiaAtual', ['Eco' => $Eco]);
     }
 
-    public function mesanterior(){
-        $ecos = new Eco;
-        return view('mesanterior');
+    public function mesanterior()
+    {
+
+        $Eco = Eco::select(Eco::raw('SUM(beneficiado) as ben'))->where('unidade',1)->get();
+
+        return view('mesanterior', ['Eco' => $Eco]);
     }
 
-        public function mesatual(){
-        $ecos = new Eco;
-        return view('mesatual');
+    public function mesatual()
+    {
+        $Eco = Eco::select(Eco::raw('SUM(beneficiado) as ben'))->where('unidade',1)->get();
+
+        return view('mesatual', ['Eco' => $Eco]);
     }
 }
