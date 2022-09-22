@@ -34,10 +34,10 @@
                     <span id="Hamburger"></span>
                 </button>
                 <div class="buttons">
-                    <a href="/DiaAtual" class="btn">Dia Atual</a>
-                    <a class="btn">Mês Atual</a>
-                    <a class="btn">Mês Anterior</a>
-                    <a class="btn">Ano Corrente</a>
+                    <a href="/api/" class="btn">Dia Atual</a>
+                    <a href="/api/mesatual" class="btn">Mês Atual</a>
+                    <a href="/api/mesanterior" class="btn">Mês Anterior</a>
+                    <a href="/api/anocorrente" class="btn">Ano Corrente</a>
                 </div> 
             </nav>    
             </div>
@@ -68,7 +68,24 @@
         </div>
         </div>
     </section>
+    {{----}}
+    <section class="Resumo">
+        <img class="wave" src="/assets/wave-haikei.svg" alt="" srcset="">
+        <div class="container">
+            <div class="content">
+                @yield('Dados')
+               
+                </div>
+            </div>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            
+            <div id="container"></div>
+        </div>
     
+    
+    </section>
 
         <main>@yield('content')</main>
     </body>

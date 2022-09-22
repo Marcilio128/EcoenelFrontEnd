@@ -7,9 +7,8 @@ Highcharts.chart("container", {
         text: "Composição Dos Resíduos Coletados"
     },
 
-    colors:['#cb5616', '#FFCC00'],
     subtitle: {
-        text: 'Source: <a href="http://www.worldstopexports.com/wheat-exports-country/">worldstopexports</a>'
+        text: 'Site de autoria da empresa: <a href="https://site.3esolucoes.com.br/">3e Soluções</a>'
     },
     xAxis: {
         categories: [
@@ -30,7 +29,7 @@ Highcharts.chart("container", {
     },
     yAxis: {
         min: 0,
-        tickInterval: 2,
+        tickInterval: 0.1,
         title: {
             text: "Exponente De Resíduos"
         },
@@ -55,17 +54,21 @@ Highcharts.chart("container", {
     legend: {
         enabled: false
     },
+    colors:['#cb5616', '#FFCC00'],
     series: [
         {
-            name: "Wheat exportation in 2019",
-            data: [6.4, 6.3, 5.4, 4.4, 2.51, 2.45, 1.6],
+            name: "O que foi coletado",
+            data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
             borderColor: "#cb5616",
             cursor: 'pointer',
             states: {
                 select: {
-                    color: '#fc004d',
+                    color: '#FFCC00',
+                    borderColor: "#FFCC00",
+
+                }
             },
-        }
+            allowPointSelect: true
         }
     ]
 });
