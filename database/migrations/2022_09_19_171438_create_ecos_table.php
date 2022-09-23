@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('ecos', function (Blueprint $table) {
             $table->id();
+
             $table->string('nomeposto', 240);
-            $table->integer('beneficiado', 10)->default(0);
+            $table->integer('beneficiado')->default(0);
             $table->float('bonus', 30)->default(0);
             $table->float('economizado', 30)->default(0);
             $table->float('massa', 45)->default(0);
-            $table->integer('unidade', 10)->default(0);
+            $table->integer('unidade')->default(0);
             $table->float('litro', 30)->default(0);
             $table->float('residometro', 10,2)->default(0.00);
-            $table->dateTime('att_dia', );
-            
+            $table->timestamp('att_dia')->useCurrent();
             //coletados
             $table->integer('Longa_Vida')->default(0);
             $table->integer('Óleo')->default(0);
@@ -33,7 +33,8 @@ return new class extends Migration
             $table->integer('Plástico')->default(0);
             $table->integer('Metal')->default(0);
             $table->integer('Papel')->default(0);
-            
+            $table->integer('Coletado')->nullable();
+
             $table->timestamps();
         });
     }
