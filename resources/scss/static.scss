@@ -8,6 +8,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+
 }
 .Logo3e{
     width: 7vw;
@@ -37,7 +38,6 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10rem;
 
 }
 .BlobOrange{
@@ -45,14 +45,14 @@ body{
     width: 15vw;
     position: absolute;
     z-index: -1000;
-    margin: -2rem 6rem;
+    margin: -2rem 25rem;
 
 }
 
 .BlobYellow{
     right: 0;
     width: 17vw;
-    margin: -2rem 4.5rem;
+    margin: -2rem 23rem;
     position: absolute;
     z-index: -1000;
 }
@@ -93,7 +93,23 @@ body{
     width: 32.9vw;
 }
 
+.BlobPurple{
+    width: 15rem;
+    left: 0%;
+    cursor: pointer;
+    z-index: 2000;
+    position: absolute;
+	animation: loading 5s infinite ;
+}
 
+@keyframes loading {
+	to {
+		transform: rotate(-360deg);
+	}
+	from {
+		transform: rotate(360deg);
+	}
+}
 
 .sec-tabela{
     display: flex;
@@ -131,7 +147,7 @@ td{
 
     border: 0;
     background-color: var(--color-primary);
-    color: white;
+    color: black;
     font-weight: 300;
     margin: 0 -3rem;
     
