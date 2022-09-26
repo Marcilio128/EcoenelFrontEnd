@@ -34,7 +34,7 @@ body{
 /*Residometro && Atualização*/
 .section1 .container{
     display: flex;
-    padding: 10rem 0 0 0;
+    padding: 15rem 0 0 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -57,33 +57,10 @@ body{
     z-index: -1000;
 }
 
-.Residometro,
-.Atualização{
-    margin: -20vh 0;
+.Residometro{
+    margin: -10vh 0;
     font-size: 2rem;
-}
-
-.NumberCount{
-    gap: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-.Residometro h1,
-.Atualização h1{
-    font-size: 3rem;
-    font-weight: 400;
-} 
-
-.Break{
-    font-weight: 200;
-    color: var(--color-primary);
-}
-
-.Residometro span,
-.Atualização span{
-    font-weight: 300;
-    color: var(--color-primary);
+    
 }
 
 .wave{
@@ -93,22 +70,89 @@ body{
     width: 32.9vw;
 }
 
-.BlobPurple{
-    width: 15rem;
-    left: 0%;
+
+#Size{
+    width: 10rem;
     cursor: pointer;
     z-index: 2000;
     position: absolute;
-	animation: loading 5s infinite ;
+    animation: rotate 15s linear infinite;
+}
+.Blob1{
+    margin: -20vh 0vw;
+    left: 0%;
+}
+.Blob2{
+    margin: 5vh 15vw;
+    left: 0%;
+   
 }
 
-@keyframes loading {
-	to {
-		transform: rotate(-360deg);
-	}
-	from {
-		transform: rotate(360deg);
-	}
+.Blob3{
+    margin: 35vh 0vw;
+
+    left: 0%;
+   
+}
+
+.Blob4{
+    margin: 35vh 30vw;
+
+    width: 13rem;
+    left: 0%;
+   
+}
+.Blob5{
+    margin: 35vh 30vw;
+
+    width: 13rem;
+    right: 0%;
+
+}
+.Blob6{
+    margin: 35vh 0vw;
+
+    width: 13rem;
+    right: 0%;
+
+}
+
+.Blob7{
+    margin: 5vh 15vw;
+
+    width: 13rem;
+    right: 0%;
+
+}
+
+.Blob8{
+    margin: -20vh 0vw;
+
+    width: 10rem;
+    right: 0%;
+
+}
+
+.Blob9{
+    margin: -23vh -15vw;
+
+    width: 10rem;
+
+}
+.Blob10{
+    margin: -23vh 15vw;
+
+    width: 10rem;
+}
+/* Aqui definimos a nossa animação com o nome "rotate" */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 .sec-tabela{
