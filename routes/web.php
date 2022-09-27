@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('DiaAtual');
+    return view('Residometro');
 });
-Route::get('/DiaAtual', function () {
-    return view('DiaAtual');
+Route::get('/Grafico', function () {
+    return view('GrandesColetores');
 });
