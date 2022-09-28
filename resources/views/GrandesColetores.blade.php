@@ -6,6 +6,5 @@
 
 
 
-<h1>AAAAAAAAAAAAAAA</h1>
 
 @endsection()

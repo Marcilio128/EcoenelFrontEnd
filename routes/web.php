@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('Residometro');
 });
 Route::get('/Grafico', function () {
-    return view('GrandesColetores');
+    return view('Grafico');
 });

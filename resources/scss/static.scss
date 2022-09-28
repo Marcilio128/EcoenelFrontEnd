@@ -302,6 +302,15 @@ $transition-delay: 0.05s;
 }
 }
 
+.wave{
+  display: block;
+  left: 0;
+  top: 0;
+  width: 35vw;
+}
+
+
+
 
 
 /*Residometro && Atualização*/
@@ -313,121 +322,13 @@ $transition-delay: 0.05s;
     text-align: center;
 
 }
-.BlobOrange{
-    left: 0;
-    width: 15vw;
-    position: absolute;
-    z-index: -1000;
-    margin: -2rem 25rem;
-
-}
-
-.BlobYellow{
-    right: 0;
-    width: 17vw;
-    margin: -2rem 23rem;
-    position: absolute;
-    z-index: -1000;
-}
 
 .Residometro{
     margin: -10vh 0;
     font-size: 2rem;
     
 }
-
-.wave{
-    display: block;
-    left: 0;
-    top: 0;
-    width: 32.9vw;
-}
-
-
-#Size{
-    width: 10rem;
-    cursor: pointer;
-    z-index: 2000;
-    position: absolute;
-    animation: rotate 15s linear infinite;
-}
-.Blob1{
-    margin: -20vh 0vw;
-    left: 0%;
-}
-.Blob2{
-    margin: 5vh 15vw;
-    left: 0%;
-   
-}
-
-.Blob3{
-    margin: 35vh 0vw;
-
-    left: 0%;
-   
-}
-
-.Blob4{
-    margin: 35vh 30vw;
-
-    width: 13rem;
-    left: 0%;
-   
-}
-.Blob5{
-    margin: 35vh 30vw;
-
-    width: 13rem;
-    right: 0%;
-
-}
-.Blob6{
-    margin: 35vh 0vw;
-
-    width: 13rem;
-    right: 0%;
-
-}
-
-.Blob7{
-    margin: 5vh 15vw;
-
-    width: 13rem;
-    right: 0%;
-
-}
-
-.Blob8{
-    margin: -20vh 0vw;
-
-    width: 10rem;
-    right: 0%;
-
-}
-
-.Blob9{
-    margin: -23vh -15vw;
-
-    width: 10rem;
-
-}
-.Blob10{
-    margin: -23vh 15vw;
-
-    width: 10rem;
-}
-/* Aqui definimos a nossa animação com o nome "rotate" */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-}
-
+ 
 .sec-tabela{
     display: flex;
     margin-top: 5vh;
