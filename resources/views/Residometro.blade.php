@@ -6,9 +6,7 @@
 @section('content')
 <script src="https://code.highcharts.com/highcharts.js"></script>
 
-<div data-aos="fade-up"
-data-aos-duration="3000">
-</div>
+
 <div data-aos="fade-down"
 data-aos-easing="linear"
 data-aos-duration="1500">

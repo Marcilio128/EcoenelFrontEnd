@@ -4,13 +4,12 @@
 }
 
 .Resumo .container .content{
-    background-color: var(--color-primary);
     width: 35vw;
     align-items: center;
     text-align: center;
-    color: white;
-    padding: 1rem;
-    
+    color: rgb(49, 47, 47);
+    margin: 3rem 0rem;
+
 }
 
 .Resumo .container .content h1{
@@ -18,9 +17,8 @@
 }
 
 .card{
-    border-radius: 3rem;
-    margin: 1rem 0.5rem;
-    background-color: rgba(0, 0, 0, 0.247);
+    height: 100%;
+    margin: 0rem 0rem;
     padding: 1rem;
 }
 
@@ -36,7 +34,7 @@ p{
 .linhaHorizontal {
     margin: 1rem auto;
     width: 27vw;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--color-primary);
 }
 
 #container {

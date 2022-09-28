@@ -2,8 +2,11 @@
 Highcharts.chart("container", {
     chart: {
         type: "column",
-        zoomType: "y"
+        zoomType: "y",
+        
+
     },
+
     title: {
         text: "Composição Dos Resíduos Coletados"
     },
@@ -50,24 +53,20 @@ Highcharts.chart("container", {
     tooltip: {
         valueSuffix: "%",
         stickOnContact: true,
-        backgroundColor: "rgba(255, 255, 255, 0.93)"
+        backgroundColor: "rgba(255, 255, 255, 0.93)", 
     },
     legend: {
         enabled: false
     },
-    colors:['#cb5616', '#FFCC00'],
     series: [
         {
+            color: "#06ff00",
             name: "O que foi coletado",
             data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
-            borderColor: "#cb5616",
+            borderColor: "#06ff00",
             cursor: 'pointer',
             states: {
-                select: {
-                    color: '#FFCC00',
-                    borderColor: "#FFCC00",
-
-                }
+         
             },
             allowPointSelect: true
         }

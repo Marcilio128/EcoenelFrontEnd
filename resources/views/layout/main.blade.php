@@ -37,6 +37,7 @@
             <div class="container">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
+
                     <div class="container">
 
                         <input id="toggle" type="checkbox">
@@ -52,9 +53,8 @@
                           <a class="nav-item" href="/Grafico">Dados Dos Resumos</a>
                           <a class="nav-item" href="/Coletores">Grandes Coletores</a>
                         </nav>
-                    
-                       
-                    <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
+                        <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
+
                 </div>   
             </div>
         </section>
