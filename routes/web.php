@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/Grafico', function () {
     return view('Grafico');
 });
+Route::get('/Coletores', function () {
+    return view('GrandesColetores');
+});

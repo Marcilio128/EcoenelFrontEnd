@@ -9,10 +9,13 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
+
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
         <link href="/flip/flip.min.css" rel="stylesheet">
@@ -47,7 +50,7 @@
                         <nav class="nav">
                           <a class="nav-item" href="/">Residômetro</a>
                           <a class="nav-item" href="/Grafico">Dados Dos Resumos</a>
-                          <a class="nav-item" href="">Grandes Coletores</a>
+                          <a class="nav-item" href="/Coletores">Grandes Coletores</a>
                         </nav>
                     
                        
@@ -55,41 +58,8 @@
                 </div>   
             </div>
         </section>
-    {{--Menu--}}
+    {{--Fim Menu--}}
         
-
-
-
-    {{--
-
-    
-
-    <section class="sec-tabela">        
-        <div class="container">
-                <div class="start">
-                    <h1>Ranking Dos Postos Que Mais Coletam</h1>
-                </div>
-                <div class="container">
-                    <table border='1' cellspacing="0" role="grid">
-                        <thead>
-                            <tr>
-                                <th>Postos De Coleta</th>
-                                <th>Quilos</th>
-                                <th>Unidades</th>
-                                <th>Litros</th>
-                                <th>Bônus</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @yield('Table')
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="vertical"></div>
-        </section>
-        --}}
         @yield('content')
 
 
@@ -98,51 +68,13 @@
     <script src="/js/StaticScript.js"></script>
     <script src="/js/animate.js"></script>
     <script src="/flip/flip.min.js"></script>
+    
     <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
 
-
-        function handleTickInit(tick) {
-        
-        // update the value every 5 seconds
-        var interval = Tick.helper.duration(5, 'seconds');
-
-        // value to add each interval
-        var valuePerInterval = 5;
-
-        // offset is a fixed date in the past
-        var dateOffset = Tick.helper.date('2019-01-01');
-
-        // value to start with, the value of the counter at the offset date
-        var valueOffset = 0;
-
-        // uncomment lines below (and comment line above) if you want offset be set to the first time the user visited the page
-        // var offset = parseInt(localStorage.getItem('tick-value-counter-offset') || Date.now(), 10);
-        // localStorage.setItem('tick-value-counter-offset', offset);
-
-        // start updating the counter each second
-        Tick.helper.interval(function () {
-
-            // current time in milliseconds
-            var now = Date.now();
-
-            // difference with offset time in milliseconds
-            var diff = now - dateOffset;
-
-            // total time since offset divide by interval gives us the amount of loops since offset
-            var loops = diff / interval;
-
-            // this will make sure we only count completed loops.
-            loops = Math.floor(loops);
-
-            // multiply that by the value per interval and you have your final value
-            tick.value = valueOffset + (loops * valuePerInterval);
-
-        }, 1000);
-    }
     </script>
 
 

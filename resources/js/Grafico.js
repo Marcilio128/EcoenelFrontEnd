@@ -1,3 +1,4 @@
+
 Highcharts.chart("container", {
     chart: {
         type: "column",
@@ -72,4 +73,3 @@ Highcharts.chart("container", {
         }
     ]
 });
-

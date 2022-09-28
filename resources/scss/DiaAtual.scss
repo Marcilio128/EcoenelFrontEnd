@@ -1,5 +1,6 @@
 .Resumo .container {
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .Resumo .container .content{
@@ -39,7 +40,7 @@ p{
 }
 
 #container {
-    width: 600vw;
+    width: 100%;
     height: 600px;
     margin: 0 auto;
 }

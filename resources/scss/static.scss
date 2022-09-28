@@ -107,9 +107,9 @@ $transition-delay: 0.05s;
 .button-toggle {
   position: absolute;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 25px;
+  width: 40px;
+  height: 40px;
+  margin: 25px 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -309,7 +309,10 @@ $transition-delay: 0.05s;
   width: 35vw;
 }
 
-
+.Residometro h1{
+  font-weight: 300;
+  font-size: 5rem;
+}
 
 
 

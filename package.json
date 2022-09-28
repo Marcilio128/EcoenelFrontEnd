@@ -32,6 +32,7 @@
     "form-data": "^4.0.0",
     "function-bind": "^1.1.1",
     "has": "^1.0.3",
+    "highcharts": "^10.2.1",
     "is-core-module": "^2.10.0",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
