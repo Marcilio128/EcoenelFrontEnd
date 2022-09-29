@@ -28,7 +28,8 @@
          'resources/js/app.js',
          'resources/js/Grafico.js',
         'resources/js/animate.js',
-        'resources/scss/flipnumber.scss'])
+        'resources/scss/flipnumber.scss',
+        'resources/scss/menu.scss'])
          
     </head>
     <body>
@@ -38,22 +39,17 @@
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
 
-                    <div class="container">
-
-                        <input id="toggle" type="checkbox">
-                
-                        <label class="toggle-container" for="toggle">
-                         
-                          <span class="button button-toggle"></span>
-                        </label>
-                    
-                        <!-- The Nav Menu -->
-                        <nav class="nav">
-                          <a class="nav-item" href="/">Residômetro</a>
-                          <a class="nav-item" href="/Grafico">Dados Dos Resumos</a>
-                          <a class="nav-item" href="/Coletores">Grandes Coletores</a>
-                        </nav>
                         <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
+
+                        <label>
+                            <input type="checkbox">
+                            <span class="menu"> <span class="hamburger"></span> </span>
+                            <ul>
+                              <li><a class="btn" href="/">Residômetro</a></li>
+                              <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
+                              <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                            </ul>
+                            </label>
 
                 </div>   
             </div>
