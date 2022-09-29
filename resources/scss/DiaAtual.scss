@@ -42,3 +42,25 @@ p{
     height: 600px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 800px){
+    .Resumo .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .Resumo .container .content h1{
+        font-size: 2.5rem;
+    }    
+    .card h2{
+        font-size: 1rem;
+    }
+    .Resumo .container .content{
+    width: 100vw;
+
+    
+}
+
+}

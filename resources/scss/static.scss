@@ -117,61 +117,10 @@ td{
     overflow-y: hidden;
 
 }
-@media only screen and (max-width: 900px){
-    /*Estilização Das Logos*/
-  
-    .buttons{
-        display: block;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-    #nav.ShowMenu .buttons{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
+
+@media only screen and (max-width: 700px){
+    table{
+
         width: 100%;
-        top: 60px;
-        background: url('/public/assets/BackgroundImg.png');
-        height: calc(100vh - 60px);
-        z-index: 1000;
-        transition: .6s;
-        overflow: auto;
-        visibility: visible;
-
-    }
-    #Hamburger{
-        width: 20px;
-        border-top: 2px solid;
-        color: rgb(255, 255, 255);
-        
-    }
-    #Hamburger::after, #Hamburger::before{
-        content: '';
-        display: block;
-        margin-top: 5px;
-        width: 20px;
-        height: 2px;
-        position: relative;
-        transition: .3s;
-        background-color: currentColor;
-        
-    }
-    .ShowMenu #Hamburger{
-        border-top-color: transparent;
-    }
-    .ShowMenu #Hamburger::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-    .ShowMenu #Hamburger::before{
-        transform: rotate(135deg);
-
-    }
-}
-@media only screen and (max-width: 800px){
-    #nav.ShowMenu .buttons{
-        top: 10.5vh;
-
     }
 }

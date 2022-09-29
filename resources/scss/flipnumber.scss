@@ -8,7 +8,7 @@
 }
 
 .tick-flip,.tick-text-inline {
-  font-size:2.5em;
+  font-size: 2.5em; 
 }
 
 .tick-label {
@@ -59,4 +59,50 @@
 
 .tick-flip {
    border-radius:0.52em !important; 
+}
+
+@media only screen and (max-width: 1500px){
+  .tick {
+    width: 100vh;
+  
+  }
+}
+
+
+@media only screen and (max-width: 1200px){
+  .tick {
+    width: 80vh;
+  
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .tick {
+    width: 70vh;
+  
+  }
+}
+
+@media only screen and (max-width: 950px){
+  .tick {
+    width: 80vh;
+  
+  }
+}
+
+
+
+@media only screen and (max-width: 500px){
+  .tick {
+    width: 70vh;
+  
+  }
+}
+
+
+@media only screen and (max-width: 400px){
+  .tick {
+    width: 50vh;
+  
+  }
 }
