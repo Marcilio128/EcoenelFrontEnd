@@ -13,8 +13,6 @@ class EcoController extends Controller
         $dados = Eco::all();
         return response()->json(
             [
-                "soma" => $dados[0]["economizado"] + $dados[0]["Óleo"],
-                "dado específico" => $dados[0]["economizado"],
                 "todos os dados" => $dados
             ],200);
     }
