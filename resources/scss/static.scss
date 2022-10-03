@@ -12,9 +12,17 @@ body{
 }
 .Logo3e{
     width: 8vw;
-    margin: 0 0 0 30vw;
+    margin: 0 20vw;
     
 }
+button.carousel-control-prev{
+width: 4rem;
+}
+
+button.carousel-control-next{
+    width: 4rem;
+    }
+
 .EcoenelLogo{
     width: 20vw;
     margin: 0 0 0 10vw;
@@ -37,7 +45,7 @@ body{
 /*Residometro && Atualização*/
 .section1 .MenuContainer{
     display: flex;
-    padding: 15rem 0 0 0;
+    padding: 10rem 0 0 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -46,7 +54,7 @@ body{
 
 .Residometro{
     text-align: center;
-    margin: 20vh 0;
+    margin: 10vh 0;
     font-size: 2rem;
     
 }
@@ -130,9 +138,17 @@ div.MenuContainerTopic{
 
 }
 
+@media only screen and (max-width: 750px){
+    a.BotãoLinksMenu{
+        width: 50vw;
+    }
+    
+}
+
 @media only screen and (max-width: 700px){
     table{
 
         width: 100%;
     }
+
 }

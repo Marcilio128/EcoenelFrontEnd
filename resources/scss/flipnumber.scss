@@ -61,6 +61,7 @@
    border-radius:0.52em !important; 
 }
 
+
 @media only screen and (max-width: 1500px){
   .tick {
     width: 100vh;
@@ -85,20 +86,24 @@
 
 @media only screen and (max-width: 950px){
   .tick {
-    width: 80vh;
-  
+    width: 60vh;
   }
 }
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 850px){
   .tick {
-    width: 70vh;
-  
+    width: 50vh;
   }
 }
 
+@media only screen and (max-width: 750px){
+  .tick {
+    width: 40vh;
+  
+  }
+}
 
 @media only screen and (max-width: 400px){
   .tick {

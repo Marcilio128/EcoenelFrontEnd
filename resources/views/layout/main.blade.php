@@ -44,24 +44,27 @@
             <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
-
+                    <label>
+                        <input type="checkbox">
+                        <span id="Btn-Mobile" class="menu"> <span class="hamburger"></span> </span>
+                        <ul>
+                          <li><a class="BotãoLinksMenu" href="/">Residômetro</a></li>
+                          <li><a class="BotãoLinksMenu" href="/Grafico">Dados Dos Resumos</a></li>
+                          <li><a class="BotãoLinksMenu" href="/Coletores">Grandes Coletores</a></li>
+                        </ul>
+                        </label>
                         <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
-
-                        <label>
-                            <input type="checkbox">
-                            <span id="Btn-Mobile" class="menu"> <span class="hamburger"></span> </span>
-                            <ul>
-                              <li><a class="BotãoLinks" href="/">Residômetro</a></li>
-                              <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
-                              <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
-                            </ul>
-                            </label>
 
                 </div>   
             </div>
         </section>
+        <ul class="DontShow">
+            <li><a class="BotãoLinks" href="/">Residômetro</a></li>
+            <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
+            <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
+          </ul>
     {{--Fim Menu--}}
-        
+
         @yield('content')
 
 

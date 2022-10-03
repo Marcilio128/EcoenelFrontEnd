@@ -1,3 +1,6 @@
+label {
+  visibility: hidden;
+}
 label .menu {
     position: absolute;
     right: 40vw;
@@ -131,6 +134,22 @@ label .hamburger {
     left: 4vw;
   }
 }
+
+
+@media only screen and (max-width: 1300px){
+a.BotãoLinks{
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  a.BotãoLinks{
+      display: none;
+    }
+    label {
+      visibility: visible;
+    }
+  }
 
 @media only screen and (max-width: 950px){
     label .menu {

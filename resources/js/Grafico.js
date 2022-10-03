@@ -1,4 +1,3 @@
-
 Highcharts.chart("containerGrafico", {
     chart: {
         type: "column",
@@ -334,5 +333,4 @@ Highcharts.chart("containerAnoCorrente", {
         }
     ]
 });
-
 
