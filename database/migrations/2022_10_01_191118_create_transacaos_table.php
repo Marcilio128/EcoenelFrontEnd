@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('uc_cliente', 25);
             $table->char('tipo', 1);
             $table->decimal('quantidade', $precision = 10, $scale = 2);
-            $table->decimal('quantidade_massa', $precision = 10,$scale = 2)
+            $table->decimal('quantidade_massa', $precision = 10,$scale = 2);
             $table->decimal('valor_co2', $precision = 10, $scale = 2);
             $table->decimal('valor_energetico', $precision = 10, $scale = 2);
             $table->string('agrupamento', 32);

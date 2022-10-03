@@ -2,7 +2,7 @@
 body{
     overflow-x: hidden;
 }
-.NavBar .container .logos{
+.MenuNavbar .MenuContainer   .logos{
     background-color: var(--color-primary);
     display: flex;
     justify-content: space-between;
@@ -23,14 +23,6 @@ body{
 
 /*Botões para navegação*/
 
-
-.wave{
-  display: block;
-  left: 0;
-  top: 0;
-  width: 35vw;
-}
-
 .Residometro h1{
   font-weight: 300;
   font-size: 5rem;
@@ -43,7 +35,7 @@ body{
 }
 
 /*Residometro && Atualização*/
-.section1 .container{
+.section1 .MenuContainer{
     display: flex;
     padding: 15rem 0 0 0;
     justify-content: center;
@@ -53,12 +45,24 @@ body{
 }
 
 .Residometro{
-    margin: -10vh 0;
+    text-align: center;
+    margin: 20vh 0;
     font-size: 2rem;
     
 }
  
-.tabela-Rank .container{
+
+.GraficoColetores .container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.GraficoColetores .container h1{
+    color: var(--color-primary);
+}
+
+.tabela-Rank .MenuContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,6 +119,14 @@ td{
     border-left: 2px solid var(--color-primary);
     height: 60vh;
     overflow-y: hidden;
+
+}
+
+div.MenuContainerTopic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
 
 }
 

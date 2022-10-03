@@ -8,6 +8,7 @@
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        
 
 
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
@@ -26,16 +27,21 @@
          'resources/scss/static.scss',
          'resources/scss/DiaAtual.scss',
          'resources/js/app.js',
+         'resources/css/app.js',
          'resources/js/Grafico.js',
         'resources/js/animate.js',
         'resources/scss/flipnumber.scss',
-        'resources/scss/menu.scss'])
+        'resources/scss/menu.scss',
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
+
          
     </head>
     <body>
+        
     {{--Menu--}}
-        <section class="NavBar">
-            <div class="container">
+        <section class="MenuNavbar">
+            <div class="MenuContainer">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
 
@@ -45,9 +51,9 @@
                             <input type="checkbox">
                             <span class="menu"> <span class="hamburger"></span> </span>
                             <ul>
-                              <li><a class="btn" href="/">Residômetro</a></li>
-                              <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
-                              <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                              <li><a class="BotãoLinks" href="/">Residômetro</a></li>
+                              <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
+                              <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
                             </ul>
                             </label>
 

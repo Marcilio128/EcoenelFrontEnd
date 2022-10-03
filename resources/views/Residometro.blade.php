@@ -11,7 +11,7 @@
 data-aos-easing="linear"
 data-aos-duration="1500">
 <section class="section1">
-<div class="container">
+<div class="containerResidometro">
     <div class="Residometro">
         <h1>Residometro KG</h1>
         <div class="tick" data-did-init="handleTickInit">
