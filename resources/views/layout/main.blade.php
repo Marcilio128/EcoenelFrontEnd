@@ -41,7 +41,7 @@
         
     {{--Menu--}}
         <section class="MenuNavbar">
-            <div class="MenuContainer">
+            <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
 
@@ -49,7 +49,7 @@
 
                         <label>
                             <input type="checkbox">
-                            <span class="menu"> <span class="hamburger"></span> </span>
+                            <span id="Btn-Mobile" class="menu"> <span class="hamburger"></span> </span>
                             <ul>
                               <li><a class="BotãoLinks" href="/">Residômetro</a></li>
                               <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
