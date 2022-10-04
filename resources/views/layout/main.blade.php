@@ -7,7 +7,7 @@
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
+        <script type="text/javascript" src="public/js/DataScript.js"></script>
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,10 @@
         <link href="/flip/flip.min.css" rel="stylesheet">
         <title>@yield('title')</title>
 
-        @vite(['resources/css/app.css',
+        @vite([
+        'resources/js/JQuery.js',
+        'resources/js/DataScript.js',
+        'resources/css/app.css',
          'resources/scss/reset.scss', 
          'resources/scss/static.scss',
          'resources/scss/DiaAtual.scss',
@@ -66,6 +69,8 @@
 
 
     </body>
+    <script src="/js/JQuery.js"></script>
+    <script src="/js/DataScript.js"></script>
     <script src="/js/Grafico.js"></script>
     <script src="/js/StaticScript.js"></script>
     <script src="/js/animate.js"></script>
