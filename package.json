@@ -10,6 +10,7 @@
         "bootstrap": "^5.2.2",
         "cross-env": "^7.0.3",
         "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-sass": "^5.1.0",
         "gulp-uglify": "^3.0.0",
@@ -31,6 +32,7 @@
     "dependencies": {
         "aos": "^3.0.0-beta.6",
         "asynckit": "^0.4.0",
+        "babel-preset-env": "^1.7.0",
         "combined-stream": "^1.0.8",
         "delayed-stream": "^1.0.0",
         "esbuild": "^0.15.7",
