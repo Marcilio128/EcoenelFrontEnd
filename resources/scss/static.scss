@@ -10,6 +10,9 @@ body{
     padding: 0.5rem;
 
 }
+
+
+
 .Logo3e{
     width: 8vw;
     margin: 0 20vw;
@@ -20,6 +23,8 @@ width: 4rem;
 }
 
 button.carousel-control-next{
+    margin: 8rem 0 0 0;
+    height: 100%;
     width: 4rem;
     }
 
@@ -54,9 +59,8 @@ button.carousel-control-next{
 
 .Residometro{
     text-align: center;
-    margin: 10vh 0;
+    margin: 20vh 0;
     font-size: 2rem;
-    
 }
  
 
@@ -93,7 +97,7 @@ table{
     border-spacing: 0px;
     border: 0;
     font-size: 0.9rem;
-    width: 60%;
+    width: 100%;
     table-layout:fixed;
 }
 td{
@@ -151,4 +155,14 @@ div.MenuContainerTopic{
         width: 100%;
     }
 
+}
+
+@media only screen and (max-width: 390px){
+    table{
+        background-color: aqua ;
+        width: 120%;
+    }
+    tr{
+        font-size: 10px;
+    }
 }

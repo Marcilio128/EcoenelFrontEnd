@@ -44,25 +44,25 @@
             <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
-                    <label>
-                        <input type="checkbox">
-                        <span id="Btn-Mobile" class="menu"> <span class="hamburger"></span> </span>
-                        <ul>
-                          <li><a class="BotãoLinksMenu" href="/">Residômetro</a></li>
-                          <li><a class="BotãoLinksMenu" href="/Grafico">Dados Dos Resumos</a></li>
-                          <li><a class="BotãoLinksMenu" href="/Coletores">Grandes Coletores</a></li>
-                        </ul>
-                        </label>
+                    <nav class="menuNav">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                        <label class="menu-open-button" for="menu-open">
+                         <span class="lines line-1"></span>
+                         <span class="lines line-2"></span>
+                         <span class="lines line-3"></span>
+                       </label>
+                     
+                       <a href="/" class="menu-item red"> <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></a>
+                        <a href="/Grafico" class="menu-item blue"> <i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+                        <a href="/Coletores" class="menu-item green"> <i class="fa fa-table" aria-hidden="true"></i></a>
+                     </nav>
+                    
+                    
                         <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
 
                 </div>   
             </div>
         </section>
-        <ul class="DontShow">
-            <li><a class="BotãoLinks" href="/">Residômetro</a></li>
-            <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
-            <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
-          </ul>
     {{--Fim Menu--}}
 
         @yield('content')
@@ -81,6 +81,6 @@
         AOS.init();
 
     </script>
-
+<script src="https://use.fontawesome.com/c296b8836a.js"></script>
 
 </html>
