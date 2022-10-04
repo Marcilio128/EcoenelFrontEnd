@@ -196,13 +196,13 @@ a {
 }
 
 .red {
-  background-color: var(--color-red);
+  background-color: var(--color-pink);
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .red:hover {
-  color: var(--color-red);
+  color: var(--color-pink);
   text-shadow: none;
 }
 
