@@ -34,8 +34,20 @@ data-aos-duration="1500">
 </div>
 
 
+<section class="Sec-Att">
+    <div class="lastAtt">
+        <div class="AttText">
+        <h1>Última Atualização</h1>
+        <div class="AttDados">
 
+        <span id="update_date"></span> 
+        <span>||</span>
+        <span id="update_hour"></span>
+    </div>
 
+    </div>
+    </div>
+</section>
 
 <script>
             function handleTickInit(tick) {
