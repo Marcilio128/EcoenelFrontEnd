@@ -13,8 +13,8 @@ function SCSS(){
 		.pipe(concat('main-style.css'))
 		.pipe(gulp.dest('resources/css/layout'))
 }
-function JS(cb){
-	gulp.src('resources/js/*.js')
+function JS(){
+	gulp.src('resources/js/**/*.js')
 		.pipe(babel({
 			comments: false
 		}))
@@ -22,7 +22,5 @@ function JS(cb){
 		.on('error', err => console.log(err))
 		.pipe(concat('main-script.js'))
 		.pipe(gulp.dest('resources/js/layout'))
-
-		return(cb)
 }
-exports.default = series (SCSS, JS)
+module.exports.default = series (SCSS, JS)
