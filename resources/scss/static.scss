@@ -4,13 +4,9 @@ body{
 }
 .MenuNavbar .MenuContainer   .logos{
     background-color: var(--color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: row-reverse;
 
 }
-
 
 .menu-items .btn{
     width: 500px;
@@ -39,12 +35,8 @@ body{
     color: rgb(255, 255, 255);
   }
 
-.Logo3e{
-    width: 7vw;
-    margin: 0 10rem;
-}
 button.carousel-control-prev{
-width: 4rem;
+    width: 4rem;
 }
 
 button.carousel-control-next{
@@ -53,18 +45,20 @@ button.carousel-control-next{
     width: 4rem;
     }
 
-.EcoenelLogo{
-    width: 17vw;
-    position: absolute;
-    margin: 0 15rem;
-
+.Ecoenel3eLogo{
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Botões para navegação*/
 
 .Residometro h1{
-  font-weight: 500;
-  font-size: 5rem;
+    color: #685c5c;
+    margin-top: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 #linha-horizontal {
@@ -83,9 +77,10 @@ button.carousel-control-next{
 
 }
 
+
 .Residometro{
     text-align: center;
-    margin: 10vh 0;
+    margin: 200px 0 0 0;
     font-size: 2rem;
 }
  

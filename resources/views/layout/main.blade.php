@@ -44,32 +44,30 @@
     <body>
         
     {{--Menu--}}
-        <section class="MenuNavbar">
+    <section class="MenuNavbar">
             <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
+                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
                     <nav>
                         <div class="navbar">
-                          <div class="container nav-container">
-                              <input class="checkbox" type="checkbox" name="" id="" />
-                              <div class="hamburger-lines">
-                                <span class="line line1"></span>
-                                <span class="line line2"></span>
-                                <span class="line line3"></span>
-                              </div>  
-                    
-                            <div class="menu-items">
-                                <li><a class="btn" href="/">Residômetro</a></li>
-                                <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
-                                <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                            <div class="container nav-container">
+                                <input class="checkbox" type="checkbox" name="" id="" />
+                                <div class="hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                </div>  
+                                
+                                <div class="menu-items">
+                                    <li><a class="btn" href="/">Residômetro</a></li>
+                                    <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
+                                    <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </nav>
-                    <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
+                    </nav>
                     
                     
-                        <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
-
                 </div>   
             </div>
         </section>

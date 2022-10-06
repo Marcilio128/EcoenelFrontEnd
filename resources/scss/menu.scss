@@ -11,7 +11,7 @@
 }
 
 .navbar .menu-items {
-  background-color: #ffffff77;
+  background-color: #bb52778c;
   display: flex;
 }
 
@@ -24,12 +24,12 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0.7rem;
+  padding: 0.5rem;
 }
 
 .navbar .nav-container a:hover{
     font-weight: bolder;
-    color: #1c1a1a;
+    color: #ffffff;
     background-color: var(--color-secondary);
 
 }
@@ -91,7 +91,7 @@
 .navbar .menu-items {
   padding-top: 120px;
   height: 105vh;
-  width: 50rem;
+  width: 45vw;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
