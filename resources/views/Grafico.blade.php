@@ -13,6 +13,7 @@
             <div class="ResumoContainer">
                 <div id="containerGrafico"></div>
             
+                <script src="js/layout/highchart/charts-script.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -57,6 +58,7 @@
             <div class="ResumoContainer">
                 <div id="containerGraficoMes"></div>
             
+                <script src="js/layout/highchart/charts-script.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -98,6 +100,7 @@
             <div class="ResumoContainer">
                 <div id="containerGraficoMesAnterior"></div>
             
+                <script src="js/layout/highchart/charts-script.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -138,6 +141,7 @@
                 <div class="ResumoContainer">
                     <div id="containerAnoCorrente"></div>
                 
+                    <script src="js/layout/highchart/charts-script.js"></script>
                     <script src="https://code.highcharts.com/highcharts.js"></script>
                     <script src="https://code.highcharts.com/modules/exporting.js"></script>
                     <script src="https://code.highcharts.com/modules/accessibility.js"></script>

@@ -34,9 +34,20 @@ function BTJS(callback){
 	.pipe(gulp.dest('public/js/layout/boot'))
 	return callback()
 }
+function HCJS(cb){
+	gulp.src('node_modules/highcharts/**/*.js')
+	.pipe(uglify())
+	.pipe(babel({
+		comments: false
+	}))
+	.pipe(concat('charts-script.js'))
+	.pipe(gulp.dest('public/js/layout/highchart'))
+	return cb()
+}
 
 module.exports.default = series 
 (
-	SCSS, JS, //local
-	BTSCSS, BTJS //bootstrap
+/* 	SCSS, JS, //local
+	BTSCSS, BTJS //bootstrap */
+	HCJS //highcharts
 )
