@@ -11,16 +11,32 @@ function SCSS(){
 		.pipe(sass().on('error: ', sass.logError))
 		.pipe(uglifycss({"uglycomments": false}))
 		.pipe(concat('main-style.css'))
-		.pipe(gulp.dest('resources/css/layout'))
+		.pipe(gulp.dest('public/css/layout'))
 }
-function JS(){
+function JS(cb){
 	gulp.src('resources/js/**/*.js')
-		.pipe(babel({
-			comments: false
-		}))
 		.pipe(uglify())
-		.on('error', err => console.log(err))
 		.pipe(concat('main-script.js'))
-		.pipe(gulp.dest('resources/js/layout'))
+		.pipe(gulp.dest('public/js/layout'))
+		return cb()
 }
-module.exports.default = series (SCSS, JS)
+function BTSCSS(){
+	return gulp.src('node_modules/bootstrap/scss/**/*.scss')
+	.pipe(sass().on('error: ', sass.logError))
+	.pipe(uglifycss({"uglycomments": false}))
+	.pipe(concat('boot-style.css'))
+	.pipe(gulp.dest('public/css/layout/boot'))
+}
+function BTJS(callback){
+	gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.js')
+	.pipe(uglify())
+	.pipe(concat('boot-script.js'))
+	.pipe(gulp.dest('public/js/layout/boot'))
+	return callback()
+}
+
+module.exports.default = series 
+(
+	SCSS, JS, //local
+	BTSCSS, BTJS //bootstrap
+)

@@ -8,8 +8,9 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="css/layout/main-style.css">
+        <link rel="stylesheet" href="css/layout/boot/boot-style.css">
 
-        <script type="text/javascript" src="public/js/DataScript.js"></script>
+        <script type="text/javascript" src="js/DataScript.js"></script>
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,6 +80,7 @@
 
     </body>
     <script type="text/javascript" src="js/layout/main-script.js"></script>
+    <script src="js/layout/boot/boot-script.js"></script>
 
 
     <script src="/js/JQuery.js"></script>
