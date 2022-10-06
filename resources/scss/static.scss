@@ -41,7 +41,7 @@ body{
 
 .Logo3e{
     width: 7vw;
-
+    margin: 0 10rem;
 }
 button.carousel-control-prev{
 width: 4rem;
@@ -56,13 +56,14 @@ button.carousel-control-next{
 .EcoenelLogo{
     width: 17vw;
     position: absolute;
+    margin: 0 15rem;
 
 }
 
 /*Botões para navegação*/
 
 .Residometro h1{
-  font-weight: 300;
+  font-weight: 500;
   font-size: 5rem;
 }
 
@@ -96,7 +97,7 @@ button.carousel-control-next{
 }
 
 .GraficoColetores .container h1{
-    color: var(--color-primary);
+    color:  rgb(67, 60, 60);
 }
 
 .tabela-Rank .MenuContainer{
@@ -135,7 +136,7 @@ td{
 
     border: 0;
     background-color: var(--color-primary);
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     margin: 0 -3rem;
     
@@ -148,7 +149,6 @@ td{
     gap: 8rem;
     width:20rem;
 
-    background-color: var(--color-primary);
     color: white;
 }
 

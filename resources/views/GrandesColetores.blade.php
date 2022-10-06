@@ -13,7 +13,7 @@
                     <section class="sec-tabela">
                         <div class="container">
                                 <div class="start">
-                                    <h1>Rank Dos Postos Que Mais Coletaram (Dia Atual)</h1>
+                                    <h1>Rank dos postos que mais coletam (Dia atual)</h1>
                 
                                 </div>
                 
@@ -40,7 +40,7 @@
                                             </tr>
                                      </tbody>
                                     </table>
-                                    <h1>Grandes Geradores Que Mais Coletam (Dia Atual)</h1>
+                                    <h1>Grandes geradores que mais coletam (Dia atual)</h1>
                                     <table border="1">
                                         <thead>
                                             <tr>
@@ -77,7 +77,7 @@
                     <section class="sec-tabela">
                         <div class="container">
                                 <div class="start">
-                                    <h1>Rank Dos Postos Que Mais Coletaram (Mês Atual)</h1>
+                                    <h1>Rank dos postos que mais coletam (Mês atual)</h1>
                 
                                 </div>
                 
@@ -104,7 +104,7 @@
                                             </tr>
                                      </tbody>
                                     </table>
-                                    <h1>Grandes Geradores Que Mais Coletam (Mês Atual)</h1>
+                                    <h1>Grandes geradores que mais coletam (Mês atual)</h1>
                                     <table border="1">
                                         <thead>
                                             <tr>
@@ -138,7 +138,7 @@
                     <section class="sec-tabela">
                         <div class="container">
                                 <div class="start">
-                                    <h1>Rank Dos Postos Que Mais Coletaram (Mês Anterior)</h1>
+                                    <h1>Rank dos postos que mais coletam (Mês anterior)</h1>
                 
                                 </div>
                 
@@ -166,7 +166,7 @@
                                             
                                         </tbody>
                                     </table>
-                                    <h1>Grandes Geradores Que Mais Coletam (Mês Anterior)</h1>
+                                    <h1>Grandes geradores que mais coletam (Mês anterior)</h1>
 
                                     <table border="1">
                                         <thead>
@@ -202,7 +202,7 @@
                             <section class="sec-tabela">
                                 <div class="container">
                                         <div class="start">
-                                            <h1>Rank Dos Postos Que Mais Coletaram (Ano Corrente)</h1>
+                                            <h1>Rank dos postos que mais coletam (Ano corrente)</h1>
                         
                                         </div>
                         
@@ -230,7 +230,7 @@
                                                     
                                                 </tbody>
                                             </table>
-                                            <h1>Grandes Coletores Que Mais Coletam(Ano Corrente)</h1>
+                                            <h1>Grandes geradores que mais coletam (Ano corrente)</h1>
                                             <table border="1">
                                                 <thead>
                                                     <tr>

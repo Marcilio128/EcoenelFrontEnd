@@ -13,7 +13,7 @@ data-aos-duration="1500">
 <section class="section1">
 <div class="containerResidometro">
     <div class="Residometro">
-        <h1>Residometro</h1>
+        <h1>Residômetro</h1>
         <div class="tick" data-did-init="handleTickInit">
 
             <span data-layout="horizontal fit">
@@ -23,7 +23,7 @@ data-aos-duration="1500">
                     <span data-view="flip"></span>
         
                 </span>
-                <h3> KG</h3>
+                <h3 class="medida">KG</h3>
             </span>
         
         </div>
