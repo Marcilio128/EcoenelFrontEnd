@@ -34,6 +34,7 @@
         'resources/js/animate.js',
         'resources/scss/flipnumber.scss',
         'resources/scss/menu.scss',
+        'resources/scss/waves.scss',
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
 
@@ -45,19 +46,25 @@
         <section class="MenuNavbar">
             <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
+                    <nav>
+                        <div class="navbar">
+                          <div class="container nav-container">
+                              <input class="checkbox" type="checkbox" name="" id="" />
+                              <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                              </div>  
+                    
+                            <div class="menu-items">
+                                <li><a class="btn" href="/">Residômetro</a></li>
+                                <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
+                                <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
                     <img src="/assets/Ecoenel-Logo.png" class="EcoenelLogo" alt="" srcset="">
-                    <nav class="menuNav">
-                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-                        <label class="menu-open-button" for="menu-open">
-                         <span class="lines line-1"></span>
-                         <span class="lines line-2"></span>
-                         <span class="lines line-3"></span>
-                       </label>
-                     
-                       <a href="/" class="menu-item red"> <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></a>
-                        <a href="/Grafico" class="menu-item blue"> <i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                        <a href="/Coletores" class="menu-item green"> <i class="fa fa-table" aria-hidden="true"></i></a>
-                     </nav>
                     
                     
                         <img src="/assets/logo (1).png" class="Logo3e" alt="" srcset="">
