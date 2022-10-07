@@ -1,4 +1,4 @@
-  .tick {
+.tick {
   width: 100vh;
   font-size:1rem; 
   white-space:nowrap; 
@@ -61,115 +61,8 @@
    border-radius:0.52em !important; 
 }
 
-
-@media only screen and (max-width: 1500px){
+@media (max-width: 720px) and (orientation: portrait) {
   .tick {
-    width: 100vh;
-  
-  }
-}
-
-
-@media only screen and (max-width: 1200px){
-  .tick {
-    width: 80vh;
-  
-  }
-}
-
-@media only screen and (max-width: 1000px){
-
-  .tick {
-    width: 100vh;
-  
-  }
-}
-
-@media only screen and (max-width: 770px){
-  .tick {
-    width: 90vh;
-  
-  }
-
-}
-
-@media only screen and (max-width: 700px){
-  .tick {
-    width: 80vh;
-  
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .tick {
-    width: 70vh;
-  
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-
-@media only screen and (max-width: 500px){
-  .tick {
-    width: 70vh;
-  
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 550px){
-  .tick {
-    width: 60vh;
-  
-  }
-  .medida{
-    padding: 0.8rem;
-    font-size: 1rem;
-
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 450px){
-  .tick {
-    width: 50vh;
-  
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 450px){
-  .tick {
-    width: 40vh;
-  
-  }
-  .medida{
-    padding: 0.4rem;
-    font-size: 0.5rem;
-
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 350px){
-  .tick {
-    width: 50vh;
-  
-  }
-  .Residometro h1{
-    font-size: 2rem;
-  }
+      width: 10vh;
+    }
 }

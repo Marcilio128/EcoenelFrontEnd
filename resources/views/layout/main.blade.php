@@ -33,6 +33,7 @@
          'resources/css/app.js',
          'resources/js/Grafico.js',
         'resources/js/animate.js',
+        'resources/scss/Responsividade.scss',
         'resources/scss/flipnumber.scss',
         'resources/scss/menu.scss',
         'resources/scss/waves.scss',

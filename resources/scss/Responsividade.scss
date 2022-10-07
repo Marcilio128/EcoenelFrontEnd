@@ -1,0 +1,318 @@
+//Scroll Mobile
+@media only screen and (max-width: 800px){
+    body::-webkit-scrollbar{
+        width: 1px;
+    
+        background: transparent ;
+    
+        border-radius: 20px;
+        border: 30px  transparent;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
+//NavBar 720 Portait
+@media (max-width: 720px) and (orientation: portrait) {
+    .Ecoenel3eLogo{
+      top: -1vh;
+      height: 25vw;
+    }
+}
+  /* 
+@media only screen and (max-width: 1080px){
+    .Ecoenel3eLogo{
+        top: 5vh;
+        } 
+
+}
+
+@media only screen and (max-width: 890px){
+.Ecoenel3eLogo{
+    top: 2.5vh;
+    } 
+    
+}
+@media only screen and (max-width: 750px){
+    a.BotãoLinksMenu{
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    table{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px){
+.Sec-Att .lastAtt{
+    border-radius: 0 3rem 3rem 0;
+    width: 15rem;
+}
+.Sec-Att .lastAtt h1{
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.AttDados{
+    text-align: left;
+    display: block;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.Sec-Att .lastAtt span{
+    font-size: 1rem;
+    font-weight: 300;
+}
+}
+
+@media only screen and (max-width: 390px){
+    table{
+        width: 120%;
+    }
+    tr{
+        font-size: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 350px){
+    .EcoenelLogo{
+        margin: 0;
+    }
+    .Logo3e{
+        margin: 0;
+    }
+}
+
+
+
+
+
+@media (max-width: 1600px) and (orientation: portrait) {
+    .tick{
+      width: 40vw;
+    }
+   }
+  
+  
+  
+  
+  @media only screen and (max-width: 1500px){
+    .tick {
+      width: 100vh;
+    
+    }
+  }
+  
+  
+  @media only screen and (max-width: 1200px){
+    .tick {
+      width: 80vh;
+    
+    }
+  }
+  
+  
+  @media only screen and (max-width: 980px){
+    .tick {
+      width: 50vh;
+    
+    }
+  }
+  
+  @media only screen and (max-width: 770px){
+    .tick {
+      width: 90vh;
+    
+    }
+  
+  }
+  
+  @media only screen and (max-width: 700px){
+    .tick {
+      width: 80vh;
+    
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px){
+    .tick {
+      width: 50vh;
+    
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 500px){
+    .tick {
+      width: 70vh;
+    
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 550px){
+    .tick {
+      width: 60vh;
+    
+    }
+    .medida{
+      padding: 0.8rem;
+      font-size: 1rem;
+  
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 450px){
+    .tick {
+      width: 50vh;
+    
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 450px){
+    .tick {
+      width: 40vh;
+    
+    }
+    .medida{
+      padding: 0.4rem;
+      font-size: 0.5rem;
+  
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 350px){
+    .tick {
+      width: 50vh;
+    
+    }
+    .Residometro h1{
+      font-size: 2rem;
+    }
+  }
+
+
+
+
+@media only screen and (max-width: 1270px){
+
+    .bloco{
+        text-align: center;
+    }
+    .bloco h2{
+    
+        font-size: 1.5rem;
+    
+    }
+    
+    .bloco p{
+        margin-top: -1.8px;
+        font-size: 1.3rem;
+    }
+    }
+    
+    @media only screen and (max-width: 1200px){
+    
+        .bloco h1{
+            letter-spacing: -0.05em;
+            font-size: 1.7rem;
+            text-align: justify;
+        }
+        .bloco h2{
+        
+            font-size: 1.3rem;
+        
+        }
+        
+        .bloco p{
+            margin-top: -1.8px;
+            font-size: 1rem;
+        }
+        }
+    
+    @media only screen and (max-width: 980px){
+        .Resumo .ResumoContainer {
+            display: flex;
+            flex-direction: column;
+          
+            width: 100%;
+    
+        }
+        .linhaHorizontal {
+            margin: -.1rem auto;
+        }
+    
+        .bloco{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .bloco h2{
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+        .bloco p{
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+        .Resumo .ResumoContainer .content{
+        width: 100vw;      
+    }}
+    
+    .medida{
+        text-align: center;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 1rem;
+        background-color: var(--color-secondary);
+        color: white;
+        
+    }
+
+
+    @media only screen and (max-width: 1200px){
+        #svg{
+            bottom: -40vh;
+        }
+    }
+    
+    @media only screen and (max-width: 1100px){
+        #svg{
+            bottom: -50vh;
+        }
+    }
+    
+    @media only screen and (max-width: 500px){
+        #svg{
+        position: absolute;
+        bottom: -43vh;
+    }
+    } */

@@ -1,4 +1,4 @@
-const {series} = require('gulp')
+const {series, parallel} = require('gulp')
 const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const uglifycss = require('gulp-uglifycss')
@@ -47,7 +47,7 @@ function HCJS(cb){
 
 module.exports.default = series 
 (
-	SCSS, JS, //local
-	BTSCSS, BTJS //bootstrap
+	parallel(SCSS, JS),  //local
+	parallel(BTSCSS, BTJS) //bootstrap
 	/* HCJS //highcharts */
 )
