@@ -1,14 +1,11 @@
 /*Estilização Das Logos*/
 .logos{
     height: 13vh;
-
 }
 
 .MenuNavbar .MenuContainer   .logos{
     background-color: var(--color-primary);
-
 }
-
 
 button.carousel-control-prev{
     width: 4rem;
@@ -21,7 +18,7 @@ button.carousel-control-next{
 }
 
 .menu-items .btn{
-    width: 500px;
+    width: 40vw;
     padding: 8px 5px;
     margin: 0.5rem;
     
@@ -92,10 +89,14 @@ button.carousel-control-next{
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 }
 
 .GraficoColetores .container h1{
     color:  rgb(67, 60, 60);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .tabela-Rank .MenuContainer{
@@ -191,16 +192,19 @@ div.MenuContainerTopic{
     font-weight: 300;
 }
 
+@media only screen and (max-width: 890px){
+.Ecoenel3eLogo{
+    top: -2.5vh;
+    } 
+}
 @media only screen and (max-width: 750px){
     a.BotãoLinksMenu{
         width: 50vw;
     }
-    
 }
 
 @media only screen and (max-width: 700px){
     table{
-
         width: 100%;
     }
 

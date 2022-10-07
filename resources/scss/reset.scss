@@ -14,25 +14,6 @@
     --color-yellow: #FFCC00;
     --color-orange: #cb5616;
 }
-
-#linha-vertical {
-    display: flex;
-    height: 400px;
-    border-right:  2px solid var(--color-primary);
-   /*  position: absolute;
-    margin: 20vh 63vw; */
-
-}
-.DontShow{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.BotãoLinks{
-    width: 400px;
-  
-  }
   
 a{
     text-decoration: none;
