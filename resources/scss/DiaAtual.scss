@@ -30,10 +30,11 @@
 }
 
 .bloco h1{
-    text-align: center;
     font-family: 'Martel', serif;
     font-weight: 600;
     color: #067006;
+    margin: .9rem auto;
+
 }
 h2{
     font-family: 'Martel', serif;
@@ -46,14 +47,15 @@ h2{
 
 p{
     font-family: 'Martel', serif;
-    font-weight: 300;
+    font-weight: 100;
+    font-weight: bold;
 
-    color: #04A01C;
+    color: #00d11f;
     font-size: 1.5rem;
 }
 
 .linhaHorizontal {
-    margin: .1rem auto;
+    margin: .5rem auto;
     width: 30vw;
     border: 1px solid var(--color-primary);
 }
@@ -81,32 +83,78 @@ p{
     margin: 0 auto; 
 }
 
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 1270px){
+
+.bloco{
+    text-align: center;
+}
+.bloco h2{
+
+    font-size: 1.5rem;
+
+}
+
+.bloco p{
+    margin-top: -1.8px;
+    font-size: 1.3rem;
+}
+}
+
+@media only screen and (max-width: 1200px){
+
+    .bloco h1{
+        letter-spacing: -0.05em;
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+    .bloco h2{
+    
+        font-size: 1.3rem;
+    
+    }
+    
+    .bloco p{
+        margin-top: -1.8px;
+        font-size: 1rem;
+    }
+    }
+
+@media only screen and (max-width: 980px){
     .Resumo .ResumoContainer {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+      
         width: 100%;
 
     }
-    .Resumo .ResumoContainer .content h1{
-        font-size: 2.5rem;
-    }    
+    .linhaHorizontal {
+        margin: -.1rem auto;
+    }
+
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .bloco h2{
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    .bloco p{
+        margin: 1rem 0;
         font-size: 1rem;
     }
     .Resumo .ResumoContainer .content{
-    width: 100vw;
-        
-    
-}
+    width: 100vw;      
+}}
 
-}
 .medida{
+    text-align: center;
+    align-items: center;
     border-radius: 2rem;
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: var(--color-secondary);
     color: white;
     

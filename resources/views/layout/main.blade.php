@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="120">
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -47,7 +48,6 @@
     <section class="MenuNavbar">
             <div id="MenuMobile" class="MenuContainer">
                 <div class="logos">
-                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
                     <nav>
                         <div class="navbar">
                             <div class="container nav-container">
@@ -59,13 +59,14 @@
                                 </div>  
                                 
                                 <div class="menu-items">
-                                    <li><a class="btn" href="/">Residômetro</a></li>
-                                    <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
-                                    <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
+                                    <li><a class="BotãoLinks" href="/">Residômetro</a></li>
+                                    <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
+                                    <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
                                 </div>
                             </div>
                         </div>
                     </nav>
+                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
                     
                     
                 </div>   

@@ -78,10 +78,19 @@
 }
 
 @media only screen and (max-width: 1000px){
+
   .tick {
     width: 100vh;
   
   }
+}
+
+@media only screen and (max-width: 770px){
+  .tick {
+    width: 90vh;
+  
+  }
+
 }
 
 @media only screen and (max-width: 700px){
@@ -90,9 +99,20 @@
   
   }
   .Residometro h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
+
+@media only screen and (max-width: 600px){
+  .tick {
+    width: 70vh;
+  
+  }
+  .Residometro h1{
+    font-size: 2rem;
+  }
+}
+
 
 @media only screen and (max-width: 500px){
   .tick {
@@ -100,21 +120,24 @@
   
   }
   .Residometro h1{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
-
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 550px){
   .tick {
     width: 60vh;
   
   }
+  .medida{
+    padding: 0.8rem;
+    font-size: 1rem;
+
+  }
   .Residometro h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
-
 
 @media only screen and (max-width: 450px){
   .tick {
@@ -122,10 +145,24 @@
   
   }
   .Residometro h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
+@media only screen and (max-width: 450px){
+  .tick {
+    width: 40vh;
+  
+  }
+  .medida{
+    padding: 0.4rem;
+    font-size: 0.5rem;
+
+  }
+  .Residometro h1{
+    font-size: 2rem;
+  }
+}
 
 @media only screen and (max-width: 350px){
   .tick {
@@ -133,6 +170,6 @@
   
   }
   .Residometro h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

@@ -4,7 +4,7 @@
 
 @section('content')
 <div data-aos="zoom-in" data-aos-duration="2000">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
                {{--Slide1--}}  
