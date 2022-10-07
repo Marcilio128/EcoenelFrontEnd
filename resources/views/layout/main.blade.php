@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/layout/main-style.css">
         <link rel="stylesheet" href="css/layout/boot/boot-style.css">
 
-        <script type="text/javascript" src="js/DataScript.js"></script>
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +82,6 @@
 
 
     <script src="/js/JQuery.js"></script>
-    <script src="/js/DataScript.js"></script>
     <script src="/js/Grafico.js"></script>
     <script src="/js/StaticScript.js"></script>
     <script src="/js/animate.js"></script>

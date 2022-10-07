@@ -1,13 +1,48 @@
-function api(){
+function Dia(){
 	$.ajax({
 	method: 'GET',
 	url: 'http://localhost:8000/api/dados'
-})
-.then(function(response){
-      console.log(response[0][0]['Coletado'])
+}).then(function(response){
+    //atribuição de dado individual
+    const dado = response[0][0]
+    const oleo = dado['Óleo']
+    const eletronico = dado['Eletrônicos']
+    const vidro = dado['Vidros']
+    const plastico = dado['Plástico']
+    const metal = dado['Metal']
+    const papel = dado['Papel']
+    const longavida = dado['Longa_Vida']
 
+    //cálculo de porcentagem
+    const total =  oleo + eletronico + vidro + plastico + metal + papel + longavida 
 
+    //longa vida
+    const Lv = (100 * longavida) / total
+    const Plongavida = parseFloat(Lv.toFixed(2))
 
+    //papel
+    const Pp = (100 * papel) / total
+    const Ppapel = parseFloat(Pp.toFixed(2))
+
+    //metal
+    const mt = (100 * metal) / total
+    const Pmetal = parseFloat(mt.toFixed(2))
+
+    //plástico
+    const pl = (100 * plastico) / total
+    const Pplastico = parseFloat(pl.toFixed(2))
+
+    //vidro
+    const vd = (100 * vidro) / total
+    const Pvidro = parseFloat(vd.toFixed(2))
+
+    //eletrônico
+    const el = (100 * eletronico) / total
+    const Peletronico = parseFloat(el.toFixed(2))
+
+    //óleo
+    const ol = (100 * oleo) / total
+    const Poleo = parseFloat(ol.toFixed(2))
 
 Highcharts.chart("containerGrafico", {
     chart: {
@@ -81,8 +116,7 @@ Highcharts.chart("containerGrafico", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
-            lv: response[0][0]['Longa_Vida'],
-            data: [response[0][0]['Longa_Vida'], 9.45, 5.4, 6, 2.51, 5.45, 1.6],
+            data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
                 select: {
@@ -95,12 +129,53 @@ Highcharts.chart("containerGrafico", {
 })
 })
 };
-api()
-~
+Dia()
 
+function Mes(){
+	$.ajax({
+	method: 'GET',
+	url: 'http://localhost:8000/api/dados'
+}).then(function(response){
+    //atribuição de dado individual
+    const dado = response[0][0]
+    const oleo = dado['Óleo']
+    const eletronico = dado['Eletrônicos']
+    const vidro = dado['Vidros']
+    const plastico = dado['Plástico']
+    const metal = dado['Metal']
+    const papel = dado['Papel']
+    const longavida = dado['Longa_Vida']
 
+    //cálculo de porcentagem
+    const total =  oleo + eletronico + vidro + plastico + metal + papel + longavida 
 
+    //longa vida
+    const Lv = (100 * longavida) / total
+    const Plongavida = parseFloat(Lv.toFixed(2))
 
+    //papel
+    const Pp = (100 * papel) / total
+    const Ppapel = parseFloat(Pp.toFixed(2))
+
+    //metal
+    const mt = (100 * metal) / total
+    const Pmetal = parseFloat(mt.toFixed(2))
+
+    //plástico
+    const pl = (100 * plastico) / total
+    const Pplastico = parseFloat(pl.toFixed(2))
+
+    //vidro
+    const vd = (100 * vidro) / total
+    const Pvidro = parseFloat(vd.toFixed(2))
+
+    //eletrônico
+    const el = (100 * eletronico) / total
+    const Peletronico = parseFloat(el.toFixed(2))
+
+    //óleo
+    const ol = (100 * oleo) / total
+    const Poleo = parseFloat(ol.toFixed(2))
 
 Highcharts.chart("containerGraficoMes", {
     chart: {
@@ -174,7 +249,7 @@ Highcharts.chart("containerGraficoMes", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
-            data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
+            data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
                 select: {
@@ -184,7 +259,56 @@ Highcharts.chart("containerGraficoMes", {
             allowPointSelect: true
         }
     ]
-});
+})
+})
+};
+Mes()
+
+function MesA(){
+	$.ajax({
+	method: 'GET',
+	url: 'http://localhost:8000/api/dados'
+}).then(function(response){
+    //atribuição de dado individual
+    const dado = response[0][0]
+    const oleo = dado['Óleo']
+    const eletronico = dado['Eletrônicos']
+    const vidro = dado['Vidros']
+    const plastico = dado['Plástico']
+    const metal = dado['Metal']
+    const papel = dado['Papel']
+    const longavida = dado['Longa_Vida']
+
+    //cálculo de porcentagem
+    const total =  oleo + eletronico + vidro + plastico + metal + papel + longavida 
+
+    //longa vida
+    const Lv = (100 * longavida) / total
+    const Plongavida = parseFloat(Lv.toFixed(2))
+
+    //papel
+    const Pp = (100 * papel) / total
+    const Ppapel = parseFloat(Pp.toFixed(2))
+
+    //metal
+    const mt = (100 * metal) / total
+    const Pmetal = parseFloat(mt.toFixed(2))
+
+    //plástico
+    const pl = (100 * plastico) / total
+    const Pplastico = parseFloat(pl.toFixed(2))
+
+    //vidro
+    const vd = (100 * vidro) / total
+    const Pvidro = parseFloat(vd.toFixed(2))
+
+    //eletrônico
+    const el = (100 * eletronico) / total
+    const Peletronico = parseFloat(el.toFixed(2))
+
+    //óleo
+    const ol = (100 * oleo) / total
+    const Poleo = parseFloat(ol.toFixed(2))
 
 Highcharts.chart("containerGraficoMesAnterior", {
     chart: {
@@ -258,7 +382,7 @@ Highcharts.chart("containerGraficoMesAnterior", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
-            data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
+            data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
                 select: {
@@ -268,7 +392,57 @@ Highcharts.chart("containerGraficoMesAnterior", {
             allowPointSelect: true
         }
     ]
-});
+})
+})
+};
+MesA()
+
+
+function Ano(){
+	$.ajax({
+	method: 'GET',
+	url: 'http://localhost:8000/api/dados'
+}).then(function(response){
+    //atribuição de dado individual
+    const dado = response[0][0]
+    const oleo = dado['Óleo']
+    const eletronico = dado['Eletrônicos']
+    const vidro = dado['Vidros']
+    const plastico = dado['Plástico']
+    const metal = dado['Metal']
+    const papel = dado['Papel']
+    const longavida = dado['Longa_Vida']
+
+    //cálculo de porcentagem
+    const total =  oleo + eletronico + vidro + plastico + metal + papel + longavida 
+
+    //longa vida
+    const Lv = (100 * longavida) / total
+    const Plongavida = parseFloat(Lv.toFixed(2))
+
+    //papel
+    const Pp = (100 * papel) / total
+    const Ppapel = parseFloat(Pp.toFixed(2))
+
+    //metal
+    const mt = (100 * metal) / total
+    const Pmetal = parseFloat(mt.toFixed(2))
+
+    //plástico
+    const pl = (100 * plastico) / total
+    const Pplastico = parseFloat(pl.toFixed(2))
+
+    //vidro
+    const vd = (100 * vidro) / total
+    const Pvidro = parseFloat(vd.toFixed(2))
+
+    //eletrônico
+    const el = (100 * eletronico) / total
+    const Peletronico = parseFloat(el.toFixed(2))
+
+    //óleo
+    const ol = (100 * oleo) / total
+    const Poleo = parseFloat(ol.toFixed(2))
 
 Highcharts.chart("containerAnoCorrente", {
     chart: {
@@ -342,7 +516,7 @@ Highcharts.chart("containerAnoCorrente", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
-            data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
+            data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
                 select: {
@@ -352,6 +526,9 @@ Highcharts.chart("containerAnoCorrente", {
             allowPointSelect: true
         }
     ]
-});
+})
+})
+};
+Ano()
 
 	
