@@ -47,7 +47,7 @@ function HCJS(cb){
 
 module.exports.default = series 
 (
-/* 	SCSS, JS, //local
-	BTSCSS, BTJS //bootstrap */
-	HCJS //highcharts
+	SCSS, JS, //local
+	BTSCSS, BTJS //bootstrap
+	/* HCJS //highcharts */
 )

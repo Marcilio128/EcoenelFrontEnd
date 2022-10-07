@@ -59,9 +59,9 @@
                                 </div>  
                                 
                                 <div class="menu-items">
-                                    <li><a class="BotãoLinks" href="/">Residômetro</a></li>
-                                    <li><a class="BotãoLinks" href="/Grafico">Dados Dos Resumos</a></li>
-                                    <li><a class="BotãoLinks" href="/Coletores">Grandes Coletores</a></li>
+                                    <li><a class="btn" href="/">Residômetro</a></li>
+                                    <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
+                                    <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
                                 </div>
                             </div>
                         </div>
