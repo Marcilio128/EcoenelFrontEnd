@@ -13,7 +13,7 @@ class EcoController extends Controller
         $dados = Eco::all();
         return response()->json(
             [
-                "todos os dados" => $dados
+            $dados
             ],200);
     }
     

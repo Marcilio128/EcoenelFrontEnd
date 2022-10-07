@@ -1,3 +1,14 @@
+function api(){
+	$.ajax({
+	method: 'GET',
+	url: 'http://localhost:8000/api/dados'
+})
+.then(function(response){
+      console.log(response[0][0]['Coletado'])
+
+
+
+
 Highcharts.chart("containerGrafico", {
     chart: {
         type: "column",
@@ -70,7 +81,8 @@ Highcharts.chart("containerGrafico", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
-            data: [10, 9.45, 5.4, 6, 2.51, 5.45, 1.6],
+            lv: response[0][0]['Longa_Vida'],
+            data: [response[0][0]['Longa_Vida'], 9.45, 5.4, 6, 2.51, 5.45, 1.6],
             cursor: 'pointer',
             states: {
                 select: {
@@ -80,7 +92,15 @@ Highcharts.chart("containerGrafico", {
             allowPointSelect: true
         }
     ]
-});
+})
+})
+};
+api()
+~
+
+
+
+
 
 Highcharts.chart("containerGraficoMes", {
     chart: {
