@@ -77,6 +77,16 @@
   }
 }
 
+@media only screen and (max-width: 900px){
+  .tick {
+    width: 65vh;
+  }
+  .medida{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+}
+
 @media only screen and (max-width: 460px){
   .tick {
     width: 45vh;
