@@ -130,6 +130,24 @@ p{
         }
     
     @media only screen and (max-width: 980px){
+        #containerGrafico {
+            width: 100%;
+
+        }
+        #containerGraficoMes{
+            width: 100%;
+ 
+        }
+        
+        #containerGraficoMesAnterior{
+            width: 100%;
+ 
+        }
+        
+        #containerAnoCorrente{
+            width: 100%;
+ 
+        }
         .Resumo .ResumoContainer {
             display: flex;
             flex-direction: column;

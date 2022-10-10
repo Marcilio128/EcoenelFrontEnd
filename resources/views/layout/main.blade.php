@@ -46,8 +46,9 @@
         
     {{--Menu--}}
     <section class="MenuNavbar">
-            <div id="MenuMobile" class="MenuContainer">
-                <div class="logos">
+        <div id="MenuMobile" class="MenuContainer">
+            <div class="logos">
+                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
                     <nav>
                         <div class="navbar">
                             <div class="container nav-container">
@@ -66,7 +67,6 @@
                             </div>
                         </div>
                     </nav>
-                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
                     
                     
                 </div>   
