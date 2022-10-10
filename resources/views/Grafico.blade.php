@@ -48,7 +48,7 @@
                             <div class="dados">
 
                         <h2>Economizados: </h2>
-                        <p> 70.865,33 KWH</p>
+                        <p> 708.76 KWH</p>
                         </div>
 
                                       
@@ -79,7 +79,7 @@
                 <div class="content">
                     
                     <div class="bloco">
-                        <h1>Resumo Do Mês</h1>
+                        <h1 class="titleMesAtual">Resumo Do Mês</h1>
 
                         <div class="dados">
                         <h2>Beneficiados: </h2>
@@ -105,7 +105,7 @@
                                                 <div class="dados">
 
                         <h2>Economizados: </h2>
-                        <p>70.865,33 KWH</p>
+                        <p>708.76 KWH</p>
                         </div>                            
                                       
                     </div>                    
@@ -132,7 +132,7 @@
                 <div class="content">
                     
                     <div class="bloco">
-                        <h1>Resumo Do Mês Anterior</h1>
+                        <h1 class="titleMesAnterior">Resumo Do Mês Anterior</h1>
         
                         <div class="dados">
                         <h2>Beneficiados: </h2>
@@ -160,7 +160,7 @@
                             <div class="dados">
 
                         <h2>Economizados: </h2>
-                            <p>70.865,33 KWH</p>
+                            <p>708.76 KWH</p>
                         </div>
        
                     </div>                    
@@ -186,7 +186,7 @@
                     <div class="content">
                         
                         <div class="bloco">
-                            <h1>Resumo Do Ano Corrente</h1>
+                            <h1 class="titleAnoCorrente">Resumo Do Ano Corrente</h1>
             
                             <div class="dados">
 
@@ -215,7 +215,7 @@
                                 <div class="dados">
 
                             <h2>Economizados: </h2>
-                            <p>70.865,33 KWH</p>
+                            <p>708.76 KWH</p>
                                 </div>
 
                                           

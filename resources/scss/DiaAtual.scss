@@ -29,6 +29,18 @@
     gap: 0.5rem;
 }
 
+.titleMesAtual{
+    letter-spacing: -0.2rem;
+}
+
+.titleMesAnterior{
+    letter-spacing: -0.2rem;
+}
+
+.titleAnoCorrente{
+    letter-spacing: -0.2rem;
+}
+
 .bloco h1{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -54,8 +66,8 @@ p{
 }
 
 .linhaHorizontal {
-    margin: .5rem auto;
-    width: 30vw;
+    margin: .5rem -0rem;
+    width: 20vw;
     border: 1px solid var(--color-primary);
 }
 
@@ -81,3 +93,101 @@ p{
     height: 550px;
     margin: 0 auto; 
 }
+
+@media only screen and (max-width: 1270px){
+    .bloco{
+        text-align: center;
+    }
+    .bloco h2{
+    
+        font-size: 1.5rem;
+    
+    }
+    
+    .bloco p{
+        margin-top: -1.8px;
+        font-size: 1.3rem;
+    }
+    }
+    
+    @media only screen and (max-width: 1200px){
+    
+        .bloco h1{
+            letter-spacing: -0.05em;
+            font-size: 1.7rem;
+            text-align: justify;
+        }
+        .bloco h2{
+        
+            font-size: 1.3rem;
+        
+        }
+        
+        .bloco p{
+            margin-top: -1.8px;
+            font-size: 1rem;
+        }
+        }
+    
+    @media only screen and (max-width: 980px){
+        .Resumo .ResumoContainer {
+            display: flex;
+            flex-direction: column;
+          
+            width: 100%;
+    
+        }
+        .linhaHorizontal {
+            margin: -.1rem auto;
+        }
+    
+        .bloco{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .bloco h2{
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+        .bloco p{
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+        .Resumo .ResumoContainer .content{
+        width: 100vw;      
+    }
+
+}
+    
+    .medida{
+        text-align: center;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 1rem;
+        background-color: var(--color-secondary);
+        color: white;
+        
+    }
+
+    @media only screen and (max-width: 500px){
+        .linhaHorizontal {
+            width: 10rem;
+            margin: -.1rem auto;
+        }
+        .bloco h1{
+            letter-spacing: -0.10em;
+            font-size: 1.7rem;
+            text-align: justify;
+        }
+        .bloco h2{
+
+            text-align: center;
+        
+        }
+        
+        .bloco p{
+            text-align: center;
+        }
+        }

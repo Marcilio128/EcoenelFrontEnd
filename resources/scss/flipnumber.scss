@@ -61,8 +61,38 @@
    border-radius:0.52em !important; 
 }
 
-@media (max-width: 720px) and (orientation: portrait) {
+@media only screen and (max-width: 1000px){
   .tick {
-      width: 10vh;
-    }
+    width: 60vh;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .tick {
+    width: 65vh;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .tick {
+    width: 45vh;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .tick {
+    width: 40vh;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .tick {
+    width: 60vh;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  .tick {
+    width: 50vh;
+  }
 }
