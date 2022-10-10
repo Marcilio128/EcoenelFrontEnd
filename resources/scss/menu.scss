@@ -412,3 +412,20 @@ body{
     margin-left: -18vw;
   }
 }
+
+@media (min-width: 720px) and (orientation: portrait) { 
+  .nav-container .hamburger-lines {
+    left: -30%;
+    top: 70%;
+
+  }
+
+    .navbar .menu-items {
+    margin-left: -18vw;
+  }
+  .Ecoenel3eLogo{
+    height: 10vh;
+    margin: 5rem 20%;
+    width: 20vh;
+  }
+}
