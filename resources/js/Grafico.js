@@ -116,6 +116,9 @@ Highcharts.chart("containerGrafico", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
+                        dataSorting: {
+        enabled: true
+    },
             data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
@@ -249,6 +252,9 @@ Highcharts.chart("containerGraficoMes", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
+                        dataSorting: {
+        enabled: true
+    },
             data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
@@ -382,6 +388,9 @@ Highcharts.chart("containerGraficoMesAnterior", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
+                        dataSorting: {
+        enabled: true
+    },
             data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
@@ -516,6 +525,9 @@ Highcharts.chart("containerAnoCorrente", {
                 '#7FBCD2'
             ],
             name: "O que foi coletado",
+                        dataSorting: {
+        enabled: true
+    },
             data: [Plongavida, Poleo, Peletronico, Pvidro, Pplastico, Pmetal, Ppapel],
             cursor: 'pointer',
             states: {
