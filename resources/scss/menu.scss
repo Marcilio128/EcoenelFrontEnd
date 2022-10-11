@@ -40,7 +40,7 @@ body{
 
 .Ecoenel3eLogo{
   z-index: 5000;
-  top: -4%;
+  top: -3%;
   height: 20%;
   position: absolute;
   display: flex;
@@ -54,7 +54,7 @@ body{
   display: block;
   height: 32px;
   width: 32px;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   margin-left: 5rem;
   top: -10%;
   z-index: 5;
@@ -68,7 +68,7 @@ body{
   width: 32px;
   position: absolute;
   top: -10%;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   margin-left: 5rem;
   z-index: 2;
   display: flex;
@@ -152,331 +152,255 @@ body{
   .nav-container .hamburger-lines {
   left: 8vw;
   top: 5vh;
-  
+ 
   }
+@media (min-width: 2000px) and (orientation: landscape){
+.navbar .menu-items {
+  margin-top: 5vw;
+  margin-left: -25vw;
+}
 
-@media only screen and (min-width: 1600px){
-  .nav-container .checkbox {
-    top: 4vh;
-    }
-    .nav-container .hamburger-lines {
-    top: 4vh;
-    
-    }
+.navbar .nav-container li {
+  list-style: none; 
 
-    .navbar .menu-items {
-      padding-top: 20vh;
-      margin-left: -15vw;
-    }
-  }
-
-  @media only screen and (max-width: 1600px){
+}
     .Ecoenel3eLogo{
-      top: -3vh;
-      height: 18rem;
-      width: 20vw;
-      right: -35vw;
+      background-color: aqua;
+      top: -3%;
+      height: 20%;
+      right: 3%;
     }
     .nav-container .checkbox {
-      top: 5vh;
-      }
-      .nav-container .hamburger-lines {
-      top: 5vh;
-      
-      }
-  }
+      position: absolute;
+      display: block;
+      height: 40px;
+      width: 50px;
+      margin-top: 1rem;
+      left: 1vw;
+      top: 3vh;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+   
+    .nav-container .hamburger-lines {
+      height: 40px;
+      width: 50px;
+      left: 1vw;
+    }
+}
  
-  @media only screen and (max-width: 1500px){
-  .nav-container .checkbox {
-  left: 10%;
-  }
-  .nav-container .hamburger-lines {
-  left: 0%;
-  
-  }
-  .Ecoenel3eLogo{
-  height: 15vh;
-  margin-top: 2rem;
-  right: 3%;
-  
-  }
-  
-  }
-  
-  @media only screen and (max-width: 1400px){
-  .nav-container .checkbox {
-  left: 0%;
-  }
-  .nav-container .hamburger-lines {
-  left: 0%;
-  
-  }
-  .Ecoenel3eLogo{
-  height: 20vh;
-  margin: 1rem;
-  right: 1%;
-  
-  }
-  .navbar .menu-items {
-  margin-top: 3vw;
-  }
-  }
-  
-  @media only screen and (max-width: 1200px){
-  .nav-container .checkbox {
-  margin-top: 4vh;
-  }
-  .nav-container .hamburger-lines {
-  margin-top: 4vh;
-  
-  }
-  .navbar .menu-items {
-  width: 50%;
-  margin-left: -15vw;
-  }
-  .menu-items .btn{
-  width: 30vw;
-  margin-left: 12vw;
-  
-  }
-  }
-  
-  @media (max-width: 1200px) and (orientation: landscape) {
-  .logos{
-  padding: 1rem;
-  }
-  .Ecoenel3eLogo{
-  margin-top: 0.6rem;
-  
-  }
-  .nav-container .checkbox {
-  top: -1vh;
-  }
-  .nav-container .hamburger-lines {
-  top: -1vh;
-  }
-  }
-  
-  @media only screen and (max-width: 1000px){
-  .nav-container .checkbox {
-  left: 0%;
-  }
-  .nav-container .hamburger-lines {
-  left: 0%;
-  
-  }
-  .Ecoenel3eLogo{
-  height: 20vh;
-  margin: 0.3rem;
-  width: 20vw;
-  }
-  .navbar .menu-items {
-  margin-top: 5vw;
-  margin-left: -15vw;
-  }
-  .menu-items .btn{
-  margin-left: 5vw;
-  }
-  }
-  
-  @media only screen and (max-width: 950px){
-  .nav-container .checkbox {
-  left: 0vw;
-  top: 2rem;
-  }
-  
-  .nav-container .hamburger-lines {
-  left: 0vw;
-  top: 2rem;
-
-  }
-  
-  .navbar .menu-items {
-  margin-left: -13vw;
-  width: 60vw;
-  }
-  .menu-items .btn{
-  margin-left: 18vw;
-  }
-  .Ecoenel3eLogo{
-    top: 0%;
-    width: 40vw;
-    height: 15vh;
-    }
-  }
-  
-  @media only screen and (max-width: 760px){
-  .navbar .menu-items {
-  
-  margin-left: -18vw;
-  }
-  
-  .menu-items .btn{
-  width: 30vw;
-  margin: 0 4rem;
-  }
-  .Ecoenel3eLogo{
-  top: -4vh;
-  
-  }
-  }
-  
-  @media only screen and (max-width: 650px){
-  .navbar .menu-items {
-  margin-top: -5vw;
-  margin-left: -10vw;
-  width: 100vw;
-  }
-  .Ecoenel3eLogo{
-    margin-top: 2vw;
-    width: 35vw;
-    }
-  .menu-items .btn{
-  width: 30vw;
-  margin: 0 auto;
-  }
-  }
-  
-  @media only screen and (max-width: 575px){
-  .Ecoenel3eLogo{
-  height: 20vh;
-  margin: 0.5rem 20%;
-  }
-  .nav-container .checkbox {
-  top: 1vh;
-  }
-  .nav-container .hamburger-lines {
-  top: 1vh;
-  }
-  }
-  
-  @media (max-width: 490px) and (landscape){
-  .logos{
-  padding: 2rem;
-  }
-  .nav-container .checkbox {
-  height: 15vh;
-  left: 5%;
-  top: -2vh;
-  }
-  .nav-container .hamburger-lines {
-  height: 7.5vh;
-  left: 5%;
-  top: -1vh;
-  
-  }
-  .Ecoenel3eLogo{
-  top: -4vh;
-  }
-
-  }
-  @media only screen and (max-width: 450px){
+@media (max-width: 1400px) and (orientation: landscape){
     .Ecoenel3eLogo{
-      width: 40vw;
-      height: 20vh;
-      margin: 0.5rem 10%;
-      }
-      .nav-container .checkbox {
-      top: 1vh;
-      }
-      .nav-container .hamburger-lines {
-      top: 1vh;
-      }
-  }  
-  @media only screen and (max-width: 420px) {
-  .Ecoenel3eLogo{
-  height: 15vh;
-  margin: 1.5rem ;
-  }
-  .nav-container .checkbox {
-  height: 4.5vh;
-  left: -5%;
-  top: -15px;
-  }
-  .nav-container .hamburger-lines {
-  height: 3vh;
-  left: -5%;
-  top: 5px;
-  
-  }
-  
-  .navbar .menu-items {
-  margin-top: 10vw;
-  margin-left: -5vw;
-  width: 100vw;
-  }
-  }
-  
-  @media only screen and (max-width: 380px) {
-  .nav-container .checkbox {
-  height: 3.8vh;
-  left: -10%;
-  top: 8px;
-  }
-  .nav-container .hamburger-lines {
-  height: 3.8vh;
-  left: -10%;
-  top: 8px;
-  
-  }
-  }
-  
-  @media only screen and (max-width: 360px) {
-  .nav-container .checkbox {
-  height: 3.5vh;
-  }
-  .nav-container .hamburger-lines {
-  height: 3.5vh;
-  
-  }
-  
-  .menu-items .btn{
-  width: 50vw;
-  margin: 0 auto;
-  }
-  }
-  
-  @media only screen and (max-width: 300px) {
-  .Ecoenel3eLogo{
-  height: 13vh;
-  margin: 1.8rem 20%;
-  }
-  .nav-container .checkbox {
-  height: 3.9vh;
-  left: -80%;
-  }
-  .nav-container .hamburger-lines {
-  height: 3.9vh;
-  left: -80%;
-  
-  }
-  
-  .navbar .menu-items {
-  margin-left: -18vw;
-  }
-  }
-  
-  @media only screen and (max-width: 280px) {
-  .Ecoenel3eLogo{
-  height: 13vh;
-  margin: 1.8rem 5%;
-  }
-  .nav-container .checkbox {
-  height: 3.9vh;
-  left: -10%;
-  }
-  .nav-container .hamburger-lines {
-  height: 3.9vh;
-  left: -10%;
-  
-  }
-  
-  .navbar .menu-items {
-  margin-left: -18vw;
-  }
-  }
-  
- 
-  
-
+      top: -5%;
+    }
+    .nav-container .checkbox {
+      width: 40px;
+      height: 1.9rem;
+      left: 1vw;
+      top: 2rem;
+    }
+   
+    .nav-container .hamburger-lines {
+      width: 40px;
+      height: 1.9rem;
+      position: absolute;
+      left: 1vw;
+      top: 2rem;
       
+    }
+}
+ 
+@media (max-width: 1340px) and (orientation: landscape){
+  .Ecoenel3eLogo{
+    top: -6%;
+    height: 20%;
+    right: 3%;
+  }
+  .nav-container .checkbox {
+    width: 40px;
+    left: 2vw;
+    top: 1.5em
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: 2vw;
+    top: 1.5em
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+    margin: 0 10em;
+  }
+}
+ 
+ 
+@media (max-width: 1210px) and (orientation: landscape){
+  .Ecoenel3eLogo{
+    top: -5%;
+    height: 20%;
+    right: 3%;
+  }
+  
+  .nav-container .checkbox {
+    width: 40px;
+    left: -4vw;
+    top: 2em;
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -4vw;
+    top: 2em;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+    margin: 0 10em;
+  }
+}
+ 
+ 
+@media (max-width: 1200px) and (orientation: landscape){
+  .Ecoenel3eLogo{
+    top: -4%;
+    height: 20%;
+    right: 3%;
+  }
+  
+  .nav-container .checkbox {
+    width: 40px;
+    left: -4vw;
+    top: 0.7rem;
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -4vw;
+    top: 0.7rem;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+    margin: 0 10em;
+  }
+}
+ 
+@media (max-width: 600px) and (orientation: landscape){
+  .Ecoenel3eLogo{
+    top: -3.3%;
+    height: 20%;
+    right: 3%;
+  }
+  .nav-container .checkbox {
+    width: 40px;
+    left: -3rem;
+    top: 1em;
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -3rem;
+    top: 1em;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+      margin: 0 10em;
+  }
+}
+
+@media (max-width: 585px) and (orientation: portrait){
+  .Ecoenel3eLogo{
+    top: -5%;
+    height: 20%;
+    right: 3%;
+  }
+  .nav-container .checkbox {
+    width: 40px;
+    left: -3rem;
+    top: 1.5rem;
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -3rem;
+    top: 1.5rem;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 565px){
+  .nav-container .checkbox {
+    width: 40px;
+    left: -2em;
+    top: 1em;
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -2em;
+    top: 1em;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+      margin: 0 10em;
+  }
+}
+
+
+@media (max-width: 564px) and (orientation: landscape){
+  .Ecoenel3eLogo{
+    top: -5%;
+    height: 20%;
+    right: 0%;
+  }
+  .nav-container .checkbox {
+    width: 40px;
+    left: -3em;
+    top: 1rem;
+    
+  }
+ 
+  .nav-container .hamburger-lines {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    left: -3em;
+    top: 1rem;
+  }
+  .navbar .menu-items {
+    width: 50vw;
+    margin-top: 10vh;
+  }
+  .menu-items .btn{
+      margin: 0 10em;
+  }
+} 
