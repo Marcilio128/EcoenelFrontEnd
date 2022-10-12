@@ -36,6 +36,7 @@
         'resources/scss/Responsividade.scss',
         'resources/scss/flipnumber.scss',
         'resources/scss/menu.scss',
+        'resources/js/menu.js',
         'resources/scss/waves.scss',
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
@@ -46,32 +47,27 @@
         
     {{--Menu--}}
     <section class="MenuNavbar">
-        <div id="MenuMobile" class="MenuContainer">
-            <div class="logos">
-                    <img src="/assets/EcoEnel3eLogo.png" class="Ecoenel3eLogo" alt="" srcset="">
-                    <nav>
-                        <div class="navbar">
-                            <div class="container nav-container">
-                                <input class="checkbox" type="checkbox" name="" id="" />
-                                <div class="hamburger-lines">
-                                    <span class="line line1"></span>
-                                    <span class="line line2"></span>
-                                    <span class="line line3"></span>
-                                </div>  
-                                
-                                <div class="menu-items">
-                                    <li><a class="btn" href="/">Residômetro</a></li>
-                                    <li><a class="btn" href="/Grafico">Dados Dos Resumos</a></li>
-                                    <li><a class="btn" href="/Coletores">Grandes Coletores</a></li>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    
-                    
-                </div>   
-            </div>
-        </section>
+        <header id="MenuMobile" class="MenuContainer">
+            <nav>
+                <img src="./assets/Eco3eLogo.png" class="Eco3eLogo" alt="" srcset="">
+
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+
+                <ul class="nav-list">
+                    <li><a class="btnMenu" href="ResíduosColetados">Resíduos Coletados</a></li>
+                    <li><a class="btnMenu" href="Grafico">Grafico</a></li>
+                    <li><a class="btnMenu" href="TabelasColetores">Tabelas</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+    </section>
     {{--Fim Menu--}}
 
         @yield('content')

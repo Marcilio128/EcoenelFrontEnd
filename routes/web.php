@@ -14,11 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('Estado');
+});
+Route::get('/ResíduosColetados', function () {
     return view('Residometro');
 });
 Route::get('/Grafico', function () {
     return view('Grafico');
 });
-Route::get('/Coletores', function () {
+Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
 });

@@ -1,4 +1,7 @@
 /*Estilização Das Logos*/
+body{
+    overflow-y: hidden;
+}
 .logos{
     height: 15vh;
 }
@@ -123,7 +126,7 @@ td{
     padding: 0.6rem;
 
     border: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: rgb(255, 255, 255);
     font-weight: 300;
     margin: 0 -3rem;

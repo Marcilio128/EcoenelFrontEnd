@@ -35,8 +35,6 @@
   text-align:center;
 }
 
-
-
 .tick-text-inline {
    color: rgb(54, 56, 53) !important; 
 }
@@ -54,11 +52,28 @@
 }
 
 .tick-flip-panel {
-   background-color: var(--color-secondary) !important; 
+   background-color: var(--color-gray) !important; 
 }
 
 .tick-flip {
    border-radius:0.52em !important; 
+}
+
+.medida{
+  text-align: center;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0rem;
+  background-color: transparent;
+  color: var(--color-gray);
+  
+}
+
+.animateResi{
+  position: absolute;
+  z-index: -1000;
+  margin: 17rem auto;
+  height: 40vw;
 }
 
 @media only screen and (max-width: 1000px){

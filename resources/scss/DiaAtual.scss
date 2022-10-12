@@ -17,6 +17,7 @@
 }
 
 .bloco{
+    z-index: -1000;
     height: 100%;
     margin: 0rem 0rem;
     padding: 1rem;
@@ -179,15 +180,7 @@ p{
 
 }
     
-    .medida{
-        text-align: center;
-        align-items: center;
-        border-radius: 2rem;
-        padding: 1rem;
-        background-color: var(--color-secondary);
-        color: white;
-        
-    }
+
 
     @media only screen and (max-width: 500px){
         .linhaHorizontal {
