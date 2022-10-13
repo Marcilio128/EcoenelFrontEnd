@@ -31,6 +31,8 @@ data-aos-duration="1500">
     </div>
 </div>
 </section>
+
+
 </div>
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -65,4 +67,5 @@ data-aos-duration="1500">
         }, 1000);
     }
 </script>
+
 @endsection()

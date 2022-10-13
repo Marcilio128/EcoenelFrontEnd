@@ -57,7 +57,7 @@ Highcharts.chart("containerGrafico", {
     },
 
     subtitle: {
-        text: 'Site de autoria da empresa: <a target="_blank" href="https://site.3esolucoes.com.br/">3e Soluções</a>'
+        text: '<a href="https://www.enel.com.br/pt-ceara.html">Enel</a>'
     },
     xAxis: {
         categories: [
@@ -193,7 +193,7 @@ Highcharts.chart("containerGraficoMes", {
     },
 
     subtitle: {
-        text: 'Site de autoria da empresa: <a target="_blank" href="https://site.3esolucoes.com.br/">3e Soluções</a>'
+        text: '<a href="https://www.enel.com.br/pt-ceara.html">Enel</a>'
     },
     xAxis: {
         categories: [
@@ -329,7 +329,7 @@ Highcharts.chart("containerGraficoMesAnterior", {
     },
 
     subtitle: {
-        text: 'Site de autoria da empresa: <a target="_blank" href="https://site.3esolucoes.com.br/">3e Soluções</a>'
+        text: '<a href="https://www.enel.com.br/pt-ceara.html">Enel</a>'
     },
     xAxis: {
         categories: [
@@ -466,7 +466,7 @@ Highcharts.chart("containerAnoCorrente", {
     },
 
     subtitle: {
-        text: 'Site de autoria da empresa: <a target="_blank" href="https://site.3esolucoes.com.br/">3e Soluções</a>'
+        text: '<a href="https://www.enel.com.br/pt-ceara.html">Enel</a>'
     },
     xAxis: {
         categories: [
@@ -544,3 +544,15 @@ Highcharts.chart("containerAnoCorrente", {
 Ano()
 
 	
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }
+  });

@@ -4,11 +4,11 @@
 }
 
 .Resumo .ResumoContainer .content{
-    width: 35vw;
+    width: 40vw;
     align-items: center;
     text-align: center;
     color: rgb(49, 47, 47);
-    margin: 2rem 0rem;
+    margin: 2rem -3rem;
 
 }
 
@@ -17,17 +17,16 @@
 }
 
 .bloco{
+    
     z-index: -1000;
     height: 100%;
     margin: 0rem 0rem;
-    padding: 1rem;
-    margin: 0 2rem;
+    margin: 0 3rem;
     text-align: justify;
     
 }
 .dados{
     display: flex;
-    gap: 0.5rem;
 }
 
 .titleMesAtual{
@@ -43,17 +42,18 @@
 }
 
 .bloco h1{
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    color: #333633;
-    margin: .9rem auto;
+    color: var(--color-gray);
+    margin: .5rem auto;
 
 }
 h2{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 
-    color: #004E0C;
+    color: var(--color-green-light);
     font-size: 2rem;
 
 }
@@ -62,37 +62,38 @@ p{
     font-family: 'Inter', sans-serif;
     font-weight: 100;
     font-weight: bold;
-    color: #1a741a;
+    color: var(--color-green);
     font-size: 1.5rem;
 }
 
 .linhaHorizontal {
-    margin: .5rem -0rem;
-    width: 20vw;
+    margin: 1rem -0rem;
+    width: 30vw;
     border: 1px solid var(--color-primary);
 }
 
 #containerGrafico {
-    width: 70%;
+    width: 90%;
     height: 550px;
-    margin: 0 auto;
+    margin: 0 0rem;
+
 }
 #containerGraficoMes{
-    width: 70%;
+    width: 90%;
     height: 550px;
-    margin: 0 auto; 
+    margin: 0 -3rem;
 }
 
 #containerGraficoMesAnterior{
-    width: 70%;
+    width: 90%;
     height: 550px;
-    margin: 0 auto; 
+    margin: 0 -5rem;
 }
 
 #containerAnoCorrente{
-    width: 70%;
+    width: 90%;
     height: 550px;
-    margin: 0 auto; 
+    margin: 0 -6rem;
 }
 
 @media only screen and (max-width: 1270px){

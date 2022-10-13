@@ -4,25 +4,94 @@
 
 @section('content')
 
-  <div id="carouselExampleControls" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-           {{--Slide1--}}  
+ 
+
+
+
+<style>
+    .swiper {
+    cursor: grab;
+    width: 100%;
+    height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">        
+        
+        <section class="Resumo">
+    
+        <div class="ResumoContainer">
+            <div id="containerGrafico"></div>
+        
+            <script src="js/layout/highchart/charts-script.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <div data-aos="fade-up-right" data-aos-duration="2000"> 
+             
+            <div class="content">   
+                <div class="bloco">
+                    <h1>Dia Atual</h1>
+                    
+                    <div class="dados">
+                        <h2>Beneficiados:</h2>
+                        <p> 92 Clientes</p>
+                    </div>
+                    
+                    <div class="linhaHorizontal"></div>
+                    
+                    <div class="dados">
+                    <h2>Bônus: </h2>
+                    <p> R$ 3.000</p>
+                    </div>
+                    
+                        <div class="linhaHorizontal"></div>
+                    
+                    <div class="dados">
+                    <h2>Coletados: </h2>
+                    <p> 16.888,98 kg</p>
+                    </div>
+
+                        <div class="linhaHorizontal"></div>
+
+                        <div class="dados">
+
+                    <h2>Economizados: </h2>
+                    <p> 708.76 KWH</p>
+                    </div>
+
+                                  
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div> 
+</section>
+      <div class="swiper-slide">
         <section class="Resumo">
     
             <div class="ResumoContainer">
-                <div id="containerGrafico"></div>
+                <div id="containerGraficoMes"></div>
             
                 <script src="js/layout/highchart/charts-script.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-                <div data-aos="fade-up-right" data-aos-duration="2000">
-        
-                <div class="content">
-                    
+                <div data-aos="fade-up-right" data-aos-duration="2000"> 
+                 
+                <div class="content">   
                     <div class="bloco">
-                        <h1>Resumo Do Dia</h1>
+                        <h1>Mês Atual</h1>
                         
                         <div class="dados">
                             <h2>Beneficiados:</h2>
@@ -42,82 +111,23 @@
                         <h2>Coletados: </h2>
                         <p> 16.888,98 kg</p>
                         </div>
-
+    
                             <div class="linhaHorizontal"></div>
-
+    
                             <div class="dados">
-
+    
                         <h2>Economizados: </h2>
                         <p> 708.76 KWH</p>
                         </div>
-
+    
                                       
                     </div>                    
                 </div>
             </div>
-            </div>
-            
-        </section>    
-      </div>
-    
-    {{--Slide1--}}
-    
-    
-    </div>
-      <div class="carousel-item">
-        <section class="Resumo">
-    
-            <div class="ResumoContainer">
-                <div id="containerGraficoMes"></div>
-            
-                <script src="js/layout/highchart/charts-script.js"></script>
-                <script src="https://code.highcharts.com/highcharts.js"></script>
-                <script src="https://code.highcharts.com/modules/exporting.js"></script>
-                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-                <div data-aos="fade-up-right" data-aos-duration="2000">
-        
-                <div class="content">
-                    
-                    <div class="bloco">
-                        <h1 class="titleMesAtual">Resumo Do Mês</h1>
-
-                        <div class="dados">
-                        <h2>Beneficiados: </h2>
-                        <p>92 Clientes</p>
-                    </div>
-
-                        <div class="linhaHorizontal"></div>
-                        
-                        <div class="dados">
-                        <h2>Bônus: </h2>
-                        <p>R$ 3.000</p>
-
-                        </div>
-
-                            <div class="linhaHorizontal"></div>
-                        
-                            <div class="dados">
-                        <h2>Coletados: </h2>
-                        <p>16.888,98 kg</p>
-                            </div>
-
-                            <div class="linhaHorizontal"></div>
-                                                <div class="dados">
-
-                        <h2>Economizados: </h2>
-                        <p>708.76 KWH</p>
-                        </div>                            
-                                      
-                    </div>                    
-                </div>
-            </div>
-            </div>
-            
-        </section>   
-    
-    </div>
-
-      <div class="carousel-item">
+        </div>
+    </div> 
+    </section>
+      <div class="swiper-slide">
         <section class="Resumo">
     
             <div class="ResumoContainer">
@@ -127,113 +137,100 @@
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-                <div data-aos="fade-up-right" data-aos-duration="2000">
-        
-                <div class="content">
-                    
+                <div data-aos="fade-up-right" data-aos-duration="2000"> 
+                 
+                <div class="content">   
                     <div class="bloco">
-                        <h1 class="titleMesAnterior">Resumo Do Mês Anterior</h1>
-        
+                        <h1>Mês Anterior</h1>
+                        
                         <div class="dados">
-                        <h2>Beneficiados: </h2>
-                        <p>92 Clientes</p>
+                            <h2>Beneficiados:</h2>
+                            <p> 92 Clientes</p>
                         </div>
-
+                        
                         <div class="linhaHorizontal"></div>
                         
-                    <div class="dados">
-
+                        <div class="dados">
                         <h2>Bônus: </h2>
-                            <p>R$ 3.000</p>
+                        <p> R$ 3.000</p>
                         </div>
-
+                        
                             <div class="linhaHorizontal"></div>
                         
-                            <div class="dados">
-
+                        <div class="dados">
                         <h2>Coletados: </h2>
-                            <p>16.888,98 kg</p>
+                        <p> 16.888,98 kg</p>
                         </div>
-
+    
                             <div class="linhaHorizontal"></div>
-                        
+    
                             <div class="dados">
-
+    
                         <h2>Economizados: </h2>
-                            <p>708.76 KWH</p>
+                        <p> 708.76 KWH</p>
                         </div>
-       
+    
+                                      
                     </div>                    
                 </div>
             </div>
-            </div>
+        </div>
+    </div> 
+
+    <div class="swiper-slide">
+        <section class="Resumo">
+    
+            <div class="ResumoContainer">
+                <div id="containerAnoCorrente"></div>
             
-        </section>   
+                <script src="js/layout/highchart/charts-script.js"></script>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                <div data-aos="fade-up-right" data-aos-duration="2000"> 
+                 
+                <div class="content">   
+                    <div class="bloco">
+                        <h1>Ano Corrente</h1>
+                        
+                        <div class="dados">
+                            <h2>Beneficiados:</h2>
+                            <p> 92 Clientes</p>
+                        </div>
+                        
+                        <div class="linhaHorizontal"></div>
+                        
+                        <div class="dados">
+                        <h2>Bônus: </h2>
+                        <p> R$ 3.000</p>
+                        </div>
+                        
+                            <div class="linhaHorizontal"></div>
+                        
+                        <div class="dados">
+                        <h2>Coletados: </h2>
+                        <p> 16.888,98 kg</p>
+                        </div>
+    
+                            <div class="linhaHorizontal"></div>
+    
+                            <div class="dados">
+    
+                        <h2>Economizados: </h2>
+                        <p> 708.76 KWH</p>
+                        </div>
+    
+                                      
+                    </div>                    
+                </div>
+            </div>
         </div>
 
-        <div class="carousel-item">
-            <section class="Resumo">
-        
-                <div class="ResumoContainer">
-                    <div id="containerAnoCorrente"></div>
-                
-                    <script src="js/layout/highchart/charts-script.js"></script>
-                    <script src="https://code.highcharts.com/highcharts.js"></script>
-                    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-                    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-                    <div data-aos="fade-up-right" data-aos-duration="2000">
-            
-                    <div class="content">
-                        
-                        <div class="bloco">
-                            <h1 class="titleAnoCorrente">Resumo Do Ano Corrente</h1>
-            
-                            <div class="dados">
+    </section>
+</div>
 
-                            <h2>Beneficiados: </h2>
-                            <p>92 Clientes</p>
-                            </div>
 
-                            <div class="linhaHorizontal"></div>
-                            
-                                                    <div class="dados">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-                            <h2>Bônus: </h2>
-                            <p>R$ 3.000</p>
-                                                    </div>
-
-                                <div class="linhaHorizontal"></div>
-                            
-                                <div class="dados">
-
-                            <h2>Coletados: </h2>
-                            <p>16.888,98 kg</p>
-                                </div>
-
-                                <div class="linhaHorizontal"></div>
-                            
-                                <div class="dados">
-
-                            <h2>Economizados: </h2>
-                            <p>708.76 KWH</p>
-                                </div>
-
-                                          
-                        </div>                    
-                    </div>
-                </div>
-                </div>
-                
-            </section>   
-            </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev" aria-hidden="true"></span>
-      <span class="visually-hidden" >Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 @endsection()
