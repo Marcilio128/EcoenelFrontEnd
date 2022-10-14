@@ -12,9 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('Estado');
+    return view('Cadastro');
+});
+
+Route::get('/Escolha', function () {
+    return view('Escolha');
+});
+
+Route::get('/EcoEnelEstado', function () {
+    return view('EstadoEco');
+});
+Route::get('/E+Estado', function () {
+    return view('EstadoE+');
 });
 Route::get('/ResíduosColetados', function () {
     return view('Residometro');

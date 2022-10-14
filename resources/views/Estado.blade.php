@@ -24,7 +24,7 @@
             <a class="btn" href="/ResíduosColetados">Ceará</a>
             <a class="btn" href="/ResíduosColetados">São Paulo</a>
             <a class="btn" href="/ResíduosColetados">Rio De Janeiro</a>
-            <a class="btn" href="/ResíduosColetados">Goiais</a>
+            <a class="btn" href="/ResíduosColetados">Goiás </a>
 
 
         </div>
