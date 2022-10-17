@@ -19,7 +19,7 @@
     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
     <section class="Login">  
         <div class="container">
-            <img src="./assets/logo3e.png" class="Logo3e" alt="" srcset="">
+            <img src="./assets/Eco3e.svg" class="Eco3e" alt="" srcset="">
             <h1>Seja Bem-vindo</h1>
         <form>
             <div class="input-container">

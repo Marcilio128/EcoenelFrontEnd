@@ -36,8 +36,7 @@ data-aos-duration="1500">
 </div>
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_EyJRUV.json" class="animateResi" mode="bounce" background="transparent"  speed="0.5"  loop  autoplay></lottie-player>
-
+<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_OFvr8Nvcmq.json" class="animateResi" mode="bounce" background="transparent"  speed="0.5"  loop  autoplay></lottie-player>
 <script>
             function handleTickInit(tick) {
         

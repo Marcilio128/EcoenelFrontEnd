@@ -3,7 +3,7 @@
   font-size:1rem; 
   white-space:nowrap; 
   font-family:arial,sans-serif;
-  margin: 0 auto;
+  margin: -8rem auto;
   z-index: -2000;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .tick-label {
-  margin-top:1em;
+  margin-top: 1em;
   font-size:1em;
 }
 
@@ -72,9 +72,9 @@
 
 .animateResi{
   position: absolute;
-  z-index: -1000;
-  margin: 17rem auto;
-  height: 40vw;
+  z-index: -3000;
+  margin: 15.5rem auto;
+  height: 30vw;
 }
 
 @media only screen and (max-width: 1000px){

@@ -11,30 +11,33 @@
   }
 
 .Login .container{
-  
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 5% auto;
 }
-.Logo3e{
-  width: 10vw;
-  margin: 2rem;
+.Eco3e{
+  width: 30vw;
+  margin: -5rem;
 
 }
 .Login .container h1{
   font-family: 'Gotham Rounded', sans-serif;
   
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
-  margin: 0 0 3rem;
+  margin: 3rem 0 1rem;
 
 }
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
+  font-family: 'Gotham Rounded', sans-serif;
+  font-weight: 300;
+
 	top:-12px;
 	font-size:12px;
 	
@@ -48,6 +51,9 @@
 	align-items: center;
 }
 .input-container label{
+  font-family: 'Gotham Rounded', sans-serif;
+  font-weight: 300;
+
   flex-direction: column;
 	position:absolute;
 	top:0px;
@@ -57,6 +63,8 @@
 	
 }
 .input-container input{ 
+  font-family: 'Gotham Rounded', sans-serif;
+
 	text-align: center;
 	border:0;
 	border-bottom:1px solid white;  
@@ -79,17 +87,18 @@
 
 
 .btn{
+  font-family: 'Gotham Rounded', sans-serif;
 	width: 400px;
 	padding: 8px 5px;
-    margin: 1rem auto;
+  margin: 1rem auto;
 
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
 	text-align: center;
 	
-    border: 2px solid rgb(255, 255, 255);
-
+  border: 2px solid  var(--color-white);
+  background-color:  var(--color-white);
 	border-radius: 2px;
 	
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -99,9 +108,10 @@
   }
   
   .btn:hover {
+    border: 2px solid rgb(0, 0, 0);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-	background: var(--color-white);
-	color: var(--color-black);
+	background: var(--color-black);
+	color: var(--color-white);
   }
   @keyframes Gradient {
     0% {

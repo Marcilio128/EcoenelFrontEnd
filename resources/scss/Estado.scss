@@ -1,4 +1,4 @@
-body {
+.EcoEstado {
     background: linear-gradient(132deg, var(--color-primary), var(--color-secondary));
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
@@ -24,6 +24,10 @@ body {
 }
 
 h1{
+    margin: .5em 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
     color: var(--color-white);
 }
 .Estado-container a{
@@ -36,7 +40,7 @@ h1{
 .btn{
 	width: 400px;
 	padding: 8px 5px;
-    margin: 1rem auto;
+    margin: 1.7rem auto;
 
 	display: flex;
 	justify-content: center;

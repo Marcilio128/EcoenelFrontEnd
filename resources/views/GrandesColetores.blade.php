@@ -3,11 +3,48 @@
 @section('title', 'Ecoenel')
 
 @section('content')
-<div data-aos="zoom-in" data-aos-duration="2000">
-    <div id="carouselExampleControls" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-               {{--Slide1--}}  
+ <style>
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
             <section class="GraficoColetores">
                 <div class="container">
                     <section class="sec-tabela">
@@ -65,19 +102,16 @@
                 
                         </div>
                     </section>
-                </div>
-            </section>
-        {{--Slide1--}}
-        
-        
+
+
         </div>
-          <div class="carousel-item">
+        <div class="swiper-slide">
             <section class="GraficoColetores">
                 <div class="container">
                     <section class="sec-tabela">
                         <div class="container">
                                 <div class="start">
-                                    <h1>Rank dos postos que mais coletam (Mês atual)</h1>
+                                    <h1>Rank dos postos que mais coletam (Dia atual)</h1>
                 
                                 </div>
                 
@@ -104,7 +138,7 @@
                                             </tr>
                                      </tbody>
                                     </table>
-                                    <h1>Grandes geradores que mais coletam (Mês atual)</h1>
+                                    <h1>Grandes geradores que mais coletam (Dia atual)</h1>
                                     <table border="1">
                                         <thead>
                                             <tr>
@@ -119,7 +153,7 @@
                                                 <td>Ecoenel Empresas</td>
                                                 <td>8.060,00</td>
                                                 <td>0</td>
-                                               
+                                            
                                             </tr>
                                      </tbody>
                                     </table>
@@ -129,16 +163,16 @@
                 
                         </div>
                     </section>
-                </div>
-       
-    
-          <div class="carousel-item">
+
+
+        </div>
+        <div class="swiper-slide">
             <section class="GraficoColetores">
                 <div class="container">
                     <section class="sec-tabela">
                         <div class="container">
                                 <div class="start">
-                                    <h1>Rank dos postos que mais coletam (Mês anterior)</h1>
+                                    <h1>Rank dos postos que mais coletam (Mês Atual)</h1>
                 
                                 </div>
                 
@@ -163,18 +197,15 @@
                                                 <td>0.00</td>
                                                 <td>2.173,65</td>
                                             </tr>
-                                            
-                                        </tbody>
+                                     </tbody>
                                     </table>
-                                    <h1>Grandes geradores que mais coletam (Mês anterior)</h1>
-
+                                    <h1>Grandes geradores que mais coletam (Mês Atual)</h1>
                                     <table border="1">
                                         <thead>
                                             <tr>
                                                 <th>Postos De Coleta</th>
                                                 <th>Massa(kg)</th>
                                                 <th>Bônus</th>
-
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -183,9 +214,9 @@
                                                 <td>Ecoenel Empresas</td>
                                                 <td>8.060,00</td>
                                                 <td>0</td>
-                                            </tr>
                                             
-                                        </tbody>
+                                            </tr>
+                                     </tbody>
                                     </table>
                                 </div>
                 
@@ -193,83 +224,101 @@
                 
                         </div>
                     </section>
-                </div>
-      
-    
-                <div class="carousel-item">
-                    <section class="GraficoColetores">
-                        <div class="container">
-                            <section class="sec-tabela">
-                                <div class="container">
-                                        <div class="start">
-                                            <h1>Rank dos postos que mais coletam (Ano corrente)</h1>
-                        
-                                        </div>
-                        
-                        
-                                        <div class="container">
-                                            <table border="1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Postos De Coleta</th>
-                                                        <th>Quilos</th>
-                                                        <th>Unidades</th>
-                                                        <th>Litros</th>
-                                                        <th>Bônus</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                   
-                                                    <tr>
-                                                        <td>Ecoenel Empresas</td>
-                                                        <td>8.060,00</td>
-                                                        <td>0</td>
-                                                        <td>0.00</td>
-                                                        <td>2.173,65</td>
-                                                    </tr>
-                                                    
-                                                </tbody>
-                                            </table>
-                                            <h1>Grandes geradores que mais coletam (Ano corrente)</h1>
-                                            <table border="1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Postos De Coleta</th>
-                                                        <th>Massa(kg)</th>
-                                                        <th>Bônus</th>
 
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                   
-                                                    <tr>
-                                                        <td>Ecoenel Empresas</td>
-                                                        <td>8.060,00</td>
-                                                        <td>0</td>
 
-                                                    </tr>
-                                                    
-                                                </tbody>
-                                            </table>
-                                        </div>
-                        
-                                    </div>
-                        
-                                </div>
-                            </section>
         </div>
-    </div>
-</section>
-</div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev" aria-hidden="true"></span>
-          <span class="visually-hidden" >Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="swiper-slide">
+            <section class="GraficoColetores">
+                <div class="container">
+                    <section class="sec-tabela">
+                        <div class="container">
+                                <div class="start">
+                                    <h1>Rank dos postos que mais coletam (Mês Anterior)</h1>
+                
+                                </div>
+                
+                
+                                <div class="container">
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>Postos De Coleta</th>
+                                                <th>Quilos</th>
+                                                <th>Unidades</th>
+                                                <th>Litros</th>
+                                                <th>Bônus</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                            <tr>
+                                                <td>Ecoenel Empresas</td>
+                                                <td>8.060,00</td>
+                                                <td>0</td>
+                                                <td>0.00</td>
+                                                <td>2.173,65</td>
+                                            </tr>
+                                     </tbody>
+                                    </table>
+                                    <h1>Grandes geradores que mais coletam (Mês Anterior)</h1>
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>Postos De Coleta</th>
+                                                <th>Massa(kg)</th>
+                                                <th>Bônus</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                            <tr>
+                                                <td>Ecoenel Empresas</td>
+                                                <td>8.060,00</td>
+                                                <td>0</td>
+                                            
+                                            </tr>
+                                     </tbody>
+                                    </table>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </section>
+
+
+        </div>     
       </div>
+    </div>
+</div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
 
+
+
+
+
+
+  
 @endsection()
