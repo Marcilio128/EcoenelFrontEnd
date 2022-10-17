@@ -12,9 +12,8 @@ class EcoController extends Controller
     {
         $dados = Eco::all();
         return response()->json(
-            [
             $dados
-            ],200);
+        );
     }
     
 }

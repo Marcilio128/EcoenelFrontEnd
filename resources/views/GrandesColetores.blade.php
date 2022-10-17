@@ -78,11 +78,11 @@
                                         <tbody>
                                            
                                             <tr>
-                                                <td>Ecoenel Empresas</td>
-                                                <td>8.060,00</td>
-                                                <td>0</td>
-                                                <td>0.00</td>
-                                                <td>2.173,65</td>
+                                                <td class="empresa">Ecoenel Empresas</td>
+                                                <td class="quilo">8.060,00</td>
+                                                <td class="unidade">0</td>
+                                                <td class="litro">0.00</td>
+                                                <td class="bonus">2.173,65</td>
                                             </tr>
                                      </tbody>
                                     </table>
