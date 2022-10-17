@@ -3,7 +3,7 @@
   font-size:1rem; 
   white-space:nowrap; 
   font-family:arial,sans-serif;
-  margin: -8rem auto;
+  margin: -2rem auto;
   z-index: -2000;
 }
 
@@ -29,7 +29,10 @@
 .tick-text-inline+.tick-text-inline {
   margin-left:-.325em;
 }
+.tick h1{
+  color: var(--color-secondary);
 
+}
 .tick-group {
   margin:0 .5em;
   text-align:center;
@@ -52,7 +55,7 @@
 }
 
 .tick-flip-panel {
-   background-color: var(--color-gray) !important; 
+   background-color: var(--color-secondary) !important; 
 }
 
 .tick-flip {
@@ -65,7 +68,7 @@
   border-radius: 2rem;
   padding: 0rem;
   background-color: transparent;
-  color: var(--color-gray);
+  color: var(--color-secondary);
   
 }
 
@@ -73,7 +76,7 @@
 .animateResi{
   position: absolute;
   z-index: -3000;
-  margin: 15.5rem auto;
+  margin: 17.5rem auto;
   height: 30vw;
 }
 
@@ -107,6 +110,10 @@
   .tick {
     width: 45vh;
   }
+  .tick h1{
+    font-size: 1.5rem;
+  }
+
 }
 
 @media only screen and (max-width: 390px){
@@ -121,13 +128,19 @@
 
 @media only screen and (max-width: 350px){
   .tick {
-    width: 60vh;
+    width: 55vh;
+  }
+  .tick h1{
+    font-size: 1.2rem;
+  }
+  .medida{
+    padding: 0rem;
   }
 }
 
 @media only screen and (max-width: 300px){
   .tick {
-    width: 50vh;
+    width: 40vh;
   }
 }
 

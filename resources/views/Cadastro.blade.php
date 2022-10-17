@@ -23,7 +23,7 @@
             <h1>Seja Bem-vindo</h1>
         <form>
             <div class="input-container">
-                <input pattern="[a-zA-Z0-9 ]+" autocomplete="off" type="text" id="name" name="nome" required="" />
+                <input autocomplete="off" type="text" id="name" name="nome" required="" />
                 <label>Digite seu e-mail</label>
             </div>
             <div class="input-container">

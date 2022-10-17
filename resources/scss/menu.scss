@@ -108,3 +108,89 @@ nav .Eco3eLogo{
     transform: translateX(0px);
   }
 }
+
+@media only screen and (max-width: 1150px){
+  .nav-list{
+    width: 50vw;
+  }
+
+}
+
+@media only screen and (max-width: 950px){
+  .nav-list{
+    width: 60vw;
+
+  }
+  .Eco3eLogo{
+   width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 810px){
+  .nav-list{
+    width: 70vw;
+
+  }
+  .Eco3eLogo{
+    width: 40vw;
+   }
+}
+
+@media only screen and (max-width: 690px){
+  .Eco3eLogo{
+    width: 45vw;
+   }
+   .nav-list{
+    width: 100vw;
+
+  }
+  .btnMenu{
+    width: 80vw;
+    margin: 3rem  -0.5rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .Eco3eLogo{
+    width: 50vw;
+   }
+
+}
+
+
+@media only screen and (max-width: 550px){
+  .Eco3eLogo{
+    width: 60vw;
+   }
+
+}
+
+@media only screen and (max-width: 500px){
+  .Eco3eLogo{
+    width: 65vw;
+   }
+}
+
+@media only screen and (max-width: 540px){
+  .Eco3eLogo{
+    width: 70vw;
+   }
+}
+
+@media only screen and (max-width: 400px){
+  .Eco3eLogo{
+    width: 70vw;
+   }
+   
+   .btnMenu{
+    width: 80vw;
+    margin: 3rem  -1.5rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .Eco3eLogo{
+    width: 80vw;
+   }
+   
+}
