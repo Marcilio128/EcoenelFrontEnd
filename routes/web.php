@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', function () {
     return view('Cadastro');
-});
+})->name('cadastro');
 
 Route::get('/Escolha', function () {
     return view('Escolha');
-});
+})->name('Escolha');
 
 Route::get('/EcoEnelEstado', function () {
     return view('EstadoEco');

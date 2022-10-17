@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('transacaos', function (Blueprint $table) {
             $table->id();
 
-            $table->integer('id_empresa', 11);
-            $table->integer('id_posto_coleta', 11);
-            $table->integer('id_residuo', 11);
+            $table->string('empresa', 11);
+            $table->string('posto_coleta', 11);
+            $table->string('residuo', 11);
             $table->string('uc_cliente', 25);
             $table->char('tipo', 1);
             $table->decimal('quantidade', $precision = 10, $scale = 2);
@@ -27,16 +27,17 @@ return new class extends Migration
             $table->decimal('valor_energetico', $precision = 10, $scale = 2);
             $table->string('agrupamento', 32);
             $table->string('maquina', 8);
-            $table->integer('id_faturamento_c', 11);
-            $table->integer('id_faturamento_d', 11);
-            $table->tinyInteger('associado', 1);
+            $table->string('faturamento_c', 11);
+            $table->string('faturamento_d', 11);
+            $table->string('associado', 1);
             $table->datetime('datetime_processamento');
             $table->timestamp('registro');
-            $table->integer('status_faturamento', 1)->nullable();
-            $table->integer('flag_offline', 1)->nullable();
+            $table->string('status_faturamento', 1)->nullable();
+            $table->string('flag_offline', 1)->nullable();
             $table->datetime('data_associado');
             $table->datetime('update_at');
-            $table->integer('id_usuario', 11)->nullable();
+            $table->bigInteger('id_usuario')->unsigned()->constraint();
+            $table->foreign('id_usuario')->references('id')->on('users');
 
             $table->timestamps();
         });
