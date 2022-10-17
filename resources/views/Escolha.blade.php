@@ -19,12 +19,13 @@
     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
     <section class="Escolha">  
         <div class="container">
+            <img src="./assets/logo3e.png" class="logo3e" alt="" srcset="">
+            <h1>Escolha sua concessionária</h1>
             <a class="btn" href="/3eDados">3E Dados</a>
             <a class="btn" href="/EcoEnelEstado">Enel Dados</a>
             <a class="btn" href="/EcoEquatorialEstado">Equatorial Dados</a>
     </section>
     </div>
-    <h1>Eco</h1>
 
     </body>
 

@@ -3,6 +3,11 @@
 @section('title', 'Ecoenel')
 
 @section('content')
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
  <style>
 
       .swiper {
@@ -11,6 +16,7 @@
       }
 
       .swiper-slide {
+        cursor: grab;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -40,11 +46,14 @@
   </head>
 
   <body>
-    <!-- Swiper -->
+      
+      <!-- Swiper -->
+      <div data-aos="zoom-in">
 
-    <div class="swiper mySwiper">
+      <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
+            
             <section class="GraficoColetores">
                 <div class="container">
                     <section class="sec-tabela">
@@ -100,69 +109,9 @@
                 
                             </div>
                 
-                        </div>
+                        
                     </section>
-
-
-        </div>
-        <div class="swiper-slide">
-            <section class="GraficoColetores">
-                <div class="container">
-                    <section class="sec-tabela">
-                        <div class="container">
-                                <div class="start">
-                                    <h1>Rank dos postos que mais coletam (Dia atual)</h1>
-                
-                                </div>
-                
-                
-                                <div class="container">
-                                    <table border="1">
-                                        <thead>
-                                            <tr>
-                                                <th>Postos De Coleta</th>
-                                                <th>Quilos</th>
-                                                <th>Unidades</th>
-                                                <th>Litros</th>
-                                                <th>Bônus</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                           
-                                            <tr>
-                                                <td>Ecoenel Empresas</td>
-                                                <td>8.060,00</td>
-                                                <td>0</td>
-                                                <td>0.00</td>
-                                                <td>2.173,65</td>
-                                            </tr>
-                                     </tbody>
-                                    </table>
-                                    <h1>Grandes geradores que mais coletam (Dia atual)</h1>
-                                    <table border="1">
-                                        <thead>
-                                            <tr>
-                                                <th>Postos De Coleta</th>
-                                                <th>Massa(kg)</th>
-                                                <th>Bônus</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                           
-                                            <tr>
-                                                <td>Ecoenel Empresas</td>
-                                                <td>8.060,00</td>
-                                                <td>0</td>
-                                            
-                                            </tr>
-                                     </tbody>
-                                    </table>
-                                </div>
-                
-                            </div>
-                
-                        </div>
-                    </section>
+                </div>
 
 
         </div>
@@ -287,9 +236,73 @@
                     </section>
 
 
+        </div>
+        <div class="swiper-slide">
+            <section class="GraficoColetores">
+                <div class="container">
+                    <section class="sec-tabela">
+                        <div class="container">
+                                <div class="start">
+                                    <h1>Rank dos postos que mais coletam (Ano Corrente)</h1>
+                
+                                </div>
+                
+                
+                                <div class="container">
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>Postos De Coleta</th>
+                                                <th>Quilos</th>
+                                                <th>Unidades</th>
+                                                <th>Litros</th>
+                                                <th>Bônus</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                            <tr>
+                                                <td>Ecoenel Empresas</td>
+                                                <td>8.060,00</td>
+                                                <td>0</td>
+                                                <td>0.00</td>
+                                                <td>2.173,65</td>
+                                            </tr>
+                                     </tbody>
+                                    </table>
+                                    <h1>Grandes geradores que mais coletam (Ano Corrente)</h1>
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>Postos De Coleta</th>
+                                                <th>Massa(kg)</th>
+                                                <th>Bônus</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                            <tr>
+                                                <td>Ecoenel Empresas</td>
+                                                <td>8.060,00</td>
+                                                <td>0</td>
+                                            
+                                            </tr>
+                                     </tbody>
+                                    </table>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </section>
+
+
         </div>     
+        
       </div>
     </div>
+</div>
+
 </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -300,7 +313,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 10500,
           disableOnInteraction: false,
         },
         pagination: {

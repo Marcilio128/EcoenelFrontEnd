@@ -124,39 +124,49 @@
         background-position: 0% 50%;
     }
 }
-
-@media only screen and (max-width: 900px){
-  .Logo3e{
-    width: 15vw;
-    margin: 2rem;
+@media only screen and (max-width: 950px){
+  .Eco3e{
+    width: 30vw;
+    margin: 1rem 0 0 0;
   }
   .Login .container h1{
     font-size: 3rem;
     font-weight: 300;
-    margin: 0 0 2rem;
+    margin: -2rem 0 2rem;
+  
+  }
+}
+@media only screen and (max-width: 900px){
+  .Eco3e{
+    width: 35vw;
+  }
+  .Login .container h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: -2rem 0 2rem;
   
   }
 }
 
 @media only screen and (max-width: 700px){
-  .Logo3e{
-    width: 20vw;
-    margin:1.5rem;
+  .Eco3e{
+    width: 40vw;
+    margin: 1rem;
   }
 
 }
 
 @media only screen and (max-width: 500px){
-  .Logo3e{
-    width: 25vw;
-    margin:1.5rem;
+  .Eco3e{
+    width: 60vw;
+    margin: 1rem;
   }
 
 }
 
 @media only screen and (max-width: 450px){
-  .Logo3e{
-    width: 30vw;
+  .Eco3e{
+    width: 70vw;
     margin:1.5rem;
   }
   .btn{
@@ -166,6 +176,9 @@
 }
 
 @media only screen and (max-width: 400px){
+  .Eco3e{
+    margin: -1rem;
+  }
   .Login .container h1{
     color: white;
     font-size: 2.5rem;

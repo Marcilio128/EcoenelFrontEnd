@@ -16,12 +16,16 @@
     justify-content: center;
     flex-direction: column;
 }
-  .Logo3e{
-    width: 50vw;
+  .logo3e{
+    width: 12.5vw;
     margin: 2rem;
   }
-
+h1{
+  font-family: 'Gotham Rounded', sans-serif;
+  color: var(--color-white);
+}
 .btn{
+  font-family: 'Gotham Rounded', sans-serif;
 
 	width: 400px;
 	padding: 10px 5px;
@@ -47,4 +51,47 @@
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 	background: var(--color-black);
 	color: var(--color-white);
+  }
+
+  @media only screen and (max-width: 1000px){
+    .logo3e{
+      width: 20vw;
+      margin: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .logo3e{
+      width: 30vw;
+      margin: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .btn{
+
+      width: 90vw;
+
+  
+      }
+  }
+
+  
+  @media only screen and (max-width: 350px){
+    .btn{
+      width: 90vw;
+      }
+ 
+  }
+
+  @media only screen and (max-width: 330px){
+    h1{
+      font-size: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 290px){
+    h1{
+      font-size: 1rem;
+    }
   }

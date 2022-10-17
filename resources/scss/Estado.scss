@@ -16,15 +16,16 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5vh; 
+    margin-top: 0vh; 
 
 }
 .EcoenelLogo{
-    width: 30vw;
+    margin: -5vh 0 ;
+    width: 36rem;
 }
 
 h1{
-    margin: .5em 0;
+    margin: -3rem 0 1rem;
     font-size: 2.8rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -34,8 +35,6 @@ h1{
     color: var(--color-white);
 
 }
-
-
 
 .btn{
 	width: 400px;
@@ -74,3 +73,61 @@ h1{
     }
 }
 
+@media only screen and (max-width: 540px){
+    .EcoenelLogo{
+        margin: -5vh 0 ;
+        width: 70vh;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .EcoEstado{
+        margin: 1rem 1rem;
+    }
+    .btn{
+        width: 90vw;
+       
+      }
+      
+}
+
+@media only screen and (max-width: 480px){
+    .EcoenelLogo{
+        width: 90vw;
+        margin: 0.5rem 0;
+    }
+    .EcoEstado{
+        margin: 1rem 0rem;
+    }
+    .btn{
+        width: 90vw;
+       
+      }
+      h1{
+        margin: -3rem 0rem 1rem;
+        font-size: 2rem;
+    }
+      
+}
+
+@media only screen and (max-width: 400px){
+    .EcoenelLogo{
+        width: 90vw;
+        margin: 0.5rem 0;
+    }
+    .EcoEstado{
+        margin: 1rem 0rem;
+    }
+    h1{
+        margin: -3rem 0rem 1rem;
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    .EcoEstado{
+        margin: 1rem 0rem;
+    }
+      
+}
