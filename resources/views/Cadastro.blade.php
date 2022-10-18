@@ -28,7 +28,7 @@
                 <label>Digite seu e-mail</label>
             </div>
             <div class="input-container">
-                <input pattern="[a-zA-Z0-9 ]+" autocomplete="off" type="password" id="password" name="password" required="" />
+                <input autocomplete="off" type="password" id="password" name="password" required="" />
                 <label>Digite sua senha</label>
             </div>
             <input value="Acessar" type="submit" class="btn" id="btnSubmit">

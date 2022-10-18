@@ -21,14 +21,16 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/Escolha', function () {
     return view('Escolha');
-})->name('Escolha')->middleware('auth');
+})->name('Escolha')->middleware('auth',);
 
 Route::get('/EcoEnelEstado', function () {
     return view('EstadoEco');
-})->middleware('auth');
-Route::get('/E+Estado', function () {
-    return view('EstadoE+');
-})->middleware('auth');
+})->name('eco')->middleware('auth',);
+
+Route::get('/EquatorialEstado', function () {
+    return view('EquatorialEstado');
+})->name('equatorial')->middleware('auth',);
+
 Route::get('/ResíduosColetados', function () {
     return view('Residometro');
 })->middleware('auth');
@@ -39,7 +41,5 @@ Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
 })->middleware('auth');
 
-Route::get('/EquatorialEstado', function () {
-    return view('EquatorialEstado');
-});
+
 

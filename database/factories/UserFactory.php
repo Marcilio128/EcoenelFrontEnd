@@ -20,7 +20,7 @@ class UserFactory extends Factory
      */
     public function definition()
     {
-        $tokens = ['3etoken', 'Ecotoken', 'Equatorialtoken' ];
+        $tokens = ['3etoken', 'Ecotoken', 'Equatorialtoken'];
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
