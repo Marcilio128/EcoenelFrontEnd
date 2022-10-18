@@ -529,3 +529,15 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+
+$(function(){
+    $('a').click(function(e) {
+        $('link').attr('./public/teste.css', $(this).attr('rel'));
+        e.preventDefault();
+    });
+
+});   
+
+function click(){
+    console.log("oi")
+}

@@ -13,16 +13,32 @@ data-aos-duration="1500">
 <section class="section1">
 <div class="containerResidometro">
     <div class="Residometro">
-        <div class="tick" data-did-init="handleTickInit">
 
-            <span data-layout="horizontal fit">
+
+
+        <div class="tick" data-value="312851851" data-did-init="handleTickInit">
+
+            <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.2) -> round -> split -> delay(rtl, 100, 150)">
         
-                <span data-repeat="true" data-transform="arrive(5, .01) -> round -> split -> delay(rtl, 100, 150)">
         
-                    <span data-view="flip"></span>
+                <span data-view="flip">3</span>
+                <span data-view="flip">1</span>
+                <span data-view="flip">2</span>
+                <span class="tick-text-inline">.</span>
+                <span data-view="flip">8</span>
+                <span data-view="flip">5</span>
+                <span data-view="flip">1</span>
+                <span class="tick-text-inline">.</span>
+                <span data-view="flip">8</span>
+                <span data-view="flip">5</span>
+                <span data-view="flip">1</span>
+                <span class="medida">kg</span>
         
-                </span>
-                <h3 class="medida">KG</h3>
+            </div>
+        
+        </div>
+
+
             </span>
             <h1>Resíduos Coletados</h1>
 
@@ -83,34 +99,47 @@ data-aos-duration="1500">
     d: path("M 0,400 C 0,400 0,266 0,266 C 94.5263157894737,281.1578947368421 189.0526315789474,296.3157894736842 287,288 C 384.9473684210526,279.6842105263158 486.31578947368416,247.89473684210526 582,238 C 677.6842105263158,228.10526315789474 767.6842105263157,240.10526315789474 870,259 C 972.3157894736843,277.89473684210526 1086.9473684210527,303.6842105263158 1184,306 C 1281.0526315789473,308.3157894736842 1360.5263157894738,287.1578947368421 1440,266 C 1440,266 1440,400 1440,400 Z");
     }
     }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#bbcd09"></stop><stop offset="95%" stop-color="#bbcd09"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 94.5263157894737,281.1578947368421 189.0526315789474,296.3157894736842 287,288 C 384.9473684210526,279.6842105263158 486.31578947368416,247.89473684210526 582,238 C 677.6842105263158,228.10526315789474 767.6842105263157,240.10526315789474 870,259 C 972.3157894736843,277.89473684210526 1086.9473684210527,303.6842105263158 1184,306 C 1281.0526315789473,308.3157894736842 1360.5263157894738,287.1578947368421 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
-<script>
-            function handleTickInit(tick) {
-        
-        // update the value every 5 seconds
-        var interval = Tick.helper.duration(5, 'seconds');
-        // value to add each interval
-        var valuePerInterval = 5;
-        // offset is a fixed date in the past
-        var dateOffset = Tick.helper.date('2019-01-01');
-        // value to start with, the value of the counter at the offset date
-        var valueOffset = 0;
-        // uncomment lines below (and comment line above) if you want offset be set to the first time the user visited the page
-        // var offset = parseInt(localStorage.getItem('tick-value-counter-offset') || Date.now(), 10);
-        // localStorage.setItem('tick-value-counter-offset', offset);
-        // start updating the counter each second
-        Tick.helper.interval(function () {
-            // current time in milliseconds
-            var now = Date.now();
-            // difference with offset time in milliseconds
-            var diff = now - dateOffset;
-            // total time since offset divide by interval gives us the amount of loops since offset
-            var loops = diff / interval;
-            // this will make sure we only count completed loops.
-            loops = Math.floor(loops);
-            // multiply that by the value per interval and you have your final value
-            tick.value = valueOffset + (loops * valuePerInterval);
-        }, 1000);
-    }
-</script>
+   
+
+        <script>
+          function handleTickInit(tick) {
+
+// update the value every 5 seconds
+var interval = Tick.helper.duration(5, 'seconds');
+
+// value to add each interval
+var valuePerInterval = 5;
+
+// offset is a fixed date in the past
+var dateOffset = Tick.helper.date('2019-01-01');
+
+// value to start with, the value of the counter at the offset date
+var valueOffset = 0;
+
+// uncomment lines below (and comment line above) if you want offset be set to the first time the user visited the page
+// var offset = parseInt(localStorage.getItem('tick-value-counter-offset') || Date.now(), 10);
+// localStorage.setItem('tick-value-counter-offset', offset);
+
+// start updating the counter each second
+Tick.helper.interval(function () {
+
+    // current time in milliseconds
+    var now = Date.now();
+
+    // difference with offset time in milliseconds
+    var diff = now - dateOffset;
+
+    // total time since offset divide by interval gives us the amount of loops since offset
+    var loops = diff / interval;
+
+    // this will make sure we only count completed loops.
+    loops = Math.floor(loops);
+
+    // multiply that by the value per interval and you have your final value
+    tick.value = valueOffset + (loops * valuePerInterval);
+
+}, 1000);
+}
+        </script>
 
 @endsection()
