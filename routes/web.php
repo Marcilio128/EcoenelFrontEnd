@@ -35,3 +35,8 @@ Route::get('/Grafico', function () {
 Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
 });
+
+Route::get('/EquatorialEstado', function () {
+    return view('EquatorialEstado');
+});
+

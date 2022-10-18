@@ -30,7 +30,7 @@ nav .Eco3eLogo{
 
 .mobile-menu{
   cursor: pointer;
-  z-index: 3000;
+  z-index: 1000;
 
 }
 
@@ -46,9 +46,9 @@ nav .Eco3eLogo{
 .nav-list{
   position: absolute;
   z-index: 3000;
-  top: 15vh;
+  top: 12vh;
   left: 0;
-  width: 40vw;
+  width: 45vw;
   height: 92vh;
   background-color: var(--color-primary);
   justify-content: space-around;
@@ -61,9 +61,9 @@ nav .Eco3eLogo{
 }
 
 .btnMenu{
-	width: 400px;
+	width: 35vw;
 	padding: 8px 5px;
-  margin: 5rem -1rem;
+  margin: 5rem 4rem;
 
 	display: flex;
 	justify-content: center;
@@ -109,6 +109,12 @@ nav .Eco3eLogo{
   }
 }
 
+@media only screen and (max-width: 1900px){
+  .btnMenu{
+    margin: 5rem 1rem;
+    }
+  
+}
 @media only screen and (max-width: 1150px){
   .nav-list{
     width: 50vw;

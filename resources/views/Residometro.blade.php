@@ -16,22 +16,23 @@ data-aos-duration="1500">
 
 
 
-        <div class="tick" data-value="312851851" data-did-init="handleTickInit">
+        <div class="tick" data-value="3111111111" data-did-init="handleTickInit">
 
             <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.2) -> round -> split -> delay(rtl, 100, 150)">
-        
-        
-                <span data-view="flip">3</span>
-                <span data-view="flip">1</span>
-                <span data-view="flip">2</span>
-                <span class="tick-text-inline">.</span>
-                <span data-view="flip">8</span>
-                <span data-view="flip">5</span>
-                <span data-view="flip">1</span>
-                <span class="tick-text-inline">.</span>
-                <span data-view="flip">8</span>
-                <span data-view="flip">5</span>
-                <span data-view="flip">1</span>
+                
+                <span data-view="flip"></span>
+                <h1 class="ponto">.</h1>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <h1 class="ponto">.</h1>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <h1 class="ponto">.</h1>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
                 <span class="medida">kg</span>
         
             </div>
@@ -40,7 +41,7 @@ data-aos-duration="1500">
 
 
             </span>
-            <h1>Resíduos Coletados</h1>
+            <p>Total de resíduos coletados</p>
 
         </div>
     </div>
@@ -50,11 +51,17 @@ data-aos-duration="1500">
 
 
 </div>
+<div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
 <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
     #svg{
         position: absolute;
-        margin: 14rem 0;
+        margin: 20rem 0;
     }
+
     .path-0{
     animation:pathAnim-0 8s;
     animation-timing-function: linear;
@@ -98,7 +105,15 @@ data-aos-duration="1500">
     100%{
     d: path("M 0,400 C 0,400 0,266 0,266 C 94.5263157894737,281.1578947368421 189.0526315789474,296.3157894736842 287,288 C 384.9473684210526,279.6842105263158 486.31578947368416,247.89473684210526 582,238 C 677.6842105263158,228.10526315789474 767.6842105263157,240.10526315789474 870,259 C 972.3157894736843,277.89473684210526 1086.9473684210527,303.6842105263158 1184,306 C 1281.0526315789473,308.3157894736842 1360.5263157894738,287.1578947368421 1440,266 C 1440,266 1440,400 1440,400 Z");
     }
-    }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#bbcd09"></stop><stop offset="95%" stop-color="#bbcd09"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 94.5263157894737,281.1578947368421 189.0526315789474,296.3157894736842 287,288 C 384.9473684210526,279.6842105263158 486.31578947368416,247.89473684210526 582,238 C 677.6842105263158,228.10526315789474 767.6842105263157,240.10526315789474 870,259 C 972.3157894736843,277.89473684210526 1086.9473684210527,303.6842105263158 1184,306 C 1281.0526315789473,308.3157894736842 1360.5263157894738,287.1578947368421 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+    }
+
+
+    @media only screen and (max-width: 1900px){
+        #svg{
+          margin: 13rem 0;
+      }
+      }
+    </style><defs><linearGradient id="gradient" x1="0%" y1="100%" x2="100%" y2="100%"><stop offset="5%" stop-color="#bbcd09"></stop><stop offset="95%" stop-color="#bbcd09"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 94.5263157894737,281.1578947368421 189.0526315789474,296.3157894736842 287,288 C 384.9473684210526,279.6842105263158 486.31578947368416,247.89473684210526 582,238 C 677.6842105263158,228.10526315789474 767.6842105263157,240.10526315789474 870,259 C 972.3157894736843,277.89473684210526 1086.9473684210527,303.6842105263158 1184,306 C 1281.0526315789473,308.3157894736842 1360.5263157894738,287.1578947368421 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
    
 
         <script>
@@ -114,7 +129,7 @@ var valuePerInterval = 5;
 var dateOffset = Tick.helper.date('2019-01-01');
 
 // value to start with, the value of the counter at the offset date
-var valueOffset = 0;
+var valueOffset = 1;
 
 // uncomment lines below (and comment line above) if you want offset be set to the first time the user visited the page
 // var offset = parseInt(localStorage.getItem('tick-value-counter-offset') || Date.now(), 10);
@@ -138,7 +153,7 @@ Tick.helper.interval(function () {
     // multiply that by the value per interval and you have your final value
     tick.value = valueOffset + (loops * valuePerInterval);
 
-}, 1000);
+}, 9000);
 }
         </script>
 
