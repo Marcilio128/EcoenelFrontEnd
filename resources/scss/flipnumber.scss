@@ -3,7 +3,7 @@
   font-size:1rem; 
   white-space:nowrap; 
   font-family:arial,sans-serif;
-  margin: -2rem auto;
+  margin: -5rem auto;
   z-index: -2000;
 }
 .tick-text-inline{
@@ -17,20 +17,29 @@
   margin-top: 1em;
   font-size:1em;
 }
-
 .tick-char {
   width:1.5em;
 }
-.Residometro h1{
-  margin: 3rem;
+.Residometro p{
+  margin: 6.5rem;
+  font-weight: 100;
   color: var(--color-secondary);
 
 }
+
 .tick-text-inline {
   display:inline-block;
   text-align:center;
   min-width:1em;
+  margin: 1.5rem -1.3rem;
 }
+
+.ponto{
+  color: var(--color-secondary);
+  font-size: 60px;
+  margin: 1rem 0;
+}
+
 .medida{
   color: var(--color-secondary);
 
@@ -85,15 +94,31 @@
   height: 30vw;
 }
 
+@media (max-width: 1350px) and (orientation: landscape) {
+  .tick {
+    width: 150vh;
+  }
+  
+}
+
 @media only screen and (max-width: 1000px){
   .tick {
-    width: 60vh;
+    width: 140vh;
   }
 }
 
 @media only screen and (max-width: 900px){
   .tick {
-    width: 65vh;
+    width: 130vh;
+  }
+  .medida{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 750px){
+  .tick {
+    width: 110vh;
   }
   .medida{
     padding: 0.5rem;
@@ -101,45 +126,76 @@
   }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 650px){
   .tick {
-    width: 65vh;
+    width: 100vh;
   }
-  .medida{
-    padding: 0.5rem;
-    font-size: 0.6rem;
+  .ponto{
+    font-size: 2rem;
+    margin: .4rem 0;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .tick {
+    width: 90vh;
+  }
+  .ponto{
+    font-size: 2rem;
+    margin: -.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .tick {
+    width: 80vh;
+  }
+  .ponto{
+    font-size: 2rem;
+    margin: -.5rem 0;
+  }
+  .Residometro p {
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 460px){
   .tick {
-    width: 45vh;
+    width: 70vh;
   }
   .tick h1{
     font-size: 1.5rem;
   }
-
+  .ponto{
+    margin: -.5rem 0;
+  }
 }
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 400px){
   .tick {
-    width: 40vh;
+    width: 60vh;
   }
   .medida{
     padding: 0.5rem;
     font-size: 0.6rem;
   }
+  .ponto{
+    margin: -0.5rem 0;
+  }
 }
 
 @media only screen and (max-width: 350px){
   .tick {
-    width: 55vh;
+    width: 50vh;
   }
   .tick h1{
     font-size: 1.2rem;
   }
   .medida{
     padding: 0rem;
+  }
+  .ponto{
+    margin: -10rem 0;
   }
 }
 

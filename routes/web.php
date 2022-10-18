@@ -38,3 +38,8 @@ Route::get('/Grafico', function () {
 Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
 })->middleware('auth');
+
+Route::get('/EquatorialEstado', function () {
+    return view('EquatorialEstado');
+});
+

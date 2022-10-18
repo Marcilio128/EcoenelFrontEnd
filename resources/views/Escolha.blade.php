@@ -23,7 +23,7 @@
             <h1>Escolha sua concessionária</h1>
             <a class="btn" href="/3eDados">3E Dados</a>
             <a class="btn" href="/EcoEnelEstado">Enel Dados</a>
-            <a class="btn" href="/EcoEquatorialEstado">Equatorial Dados</a>
+            <a class="btn" href="/EquatorialEstado">Equatorial Dados</a>
     </section>
     </div>
 
