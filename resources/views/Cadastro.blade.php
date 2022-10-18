@@ -20,6 +20,15 @@
     <section class="Login">
         <div class="container">
             <img src="./assets/Eco3e.svg" class="Eco3e" alt="" srcset="">
+            @if ($errors->any())
+            <div>
+                <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+                </ul>
+                </div>
+                @endif
             <h1>Seja Bem-vindo</h1>
         <form action="/login" method="POST">
             @csrf
