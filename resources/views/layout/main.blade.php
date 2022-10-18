@@ -64,6 +64,8 @@
                     <li><a class="btnMenu" href="ResíduosColetados">Resíduos Coletados</a></li>
                     <li><a class="btnMenu" href="Grafico">Grafico</a></li>
                     <li><a class="btnMenu" href="TabelasColetores">Tabelas</a></li>
+                    <li><a class="btnMenu" href="EcoEnelEstado">Estados</a></li>
+
                 </ul>
 
             </nav>

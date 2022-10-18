@@ -18,18 +18,18 @@ data-aos-duration="1500">
 
         <div class="tick" data-value="3111111111" data-did-init="handleTickInit">
 
-            <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.2) -> round -> split -> delay(rtl, 100, 150)">
+            <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.1) -> round -> split -> delay(rtl, 100, 150)">
                 
                 <span data-view="flip"></span>
-                <h1 class="ponto">.</h1>
+                <span class="ponto">.</span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
-                <h1 class="ponto">.</h1>
+                <span class="ponto">.</span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
-                <h1 class="ponto">.</h1>
+                <span class="ponto">.</span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>

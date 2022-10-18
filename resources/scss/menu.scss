@@ -6,8 +6,8 @@
   
 }
 .Eco3eLogo{
-  width: 26vw;
-  height: 30vh;
+  width: 30vw;
+  height: 40vh;
 
 }
 nav{
@@ -118,6 +118,12 @@ nav .Eco3eLogo{
 @media only screen and (max-width: 1150px){
   .nav-list{
     width: 50vw;
+
+  }
+  .Eco3eLogo{
+    width: 30vw;
+    height: 32vh;
+
   }
 
 }
@@ -166,9 +172,9 @@ nav .Eco3eLogo{
 
 @media only screen and (max-width: 550px){
   .Eco3eLogo{
-    width: 60vw;
-   }
-
+    height: 35vh;
+    margin: 0 -2rem;
+  }
 }
 
 @media only screen and (max-width: 500px){
