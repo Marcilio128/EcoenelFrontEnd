@@ -193,22 +193,30 @@
     }
   }
    
+
   @media only screen and (max-width: 500px){
     .Eco3eLogo{
-      width: 15vw;
+      width: 32vw;
      }
+     .sair{
+      margin: 1rem -1rem 1rem;
+      width: 35px;
+      height: 35px;
+
+     }
+     #nameuser{
+      display: none;
+     } 
   }
    
   @media only screen and (max-width: 540px){
     .Eco3eLogo{
-      width: 70vw;
+      width: 20vw;
+      height: 10vh;
      }
   }
    
   @media only screen and (max-width: 400px){
-    .Eco3eLogo{
-      width: 70vw;
-     }
    
      .btnMenu{
       width: 80vw;
@@ -216,11 +224,3 @@
     }
   }
    
-  @media only screen and (max-width: 360px){
-    .Eco3eLogo{
-      width: 80vw;
-     }
-   
-  }
-   
-  

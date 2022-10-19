@@ -197,12 +197,15 @@
     .Eco3eLogo{
       width: 15vw;
      }
-  /*    .sair{
-      width: 3px;
+     .sair{
+      margin: 1rem -1rem 1rem;
+      width: 35px;
+      height: 35px;
+
      }
-     span .logout{
-      font-size: 1px;
-     } */
+     #nameuser{
+      display: none;
+     } 
   }
    
   @media only screen and (max-width: 540px){

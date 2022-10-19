@@ -60,7 +60,7 @@
                 </li>
                 <li>
                         <span
-                            class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
+                          id="nameuser"  class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
             </ul>
  
  
