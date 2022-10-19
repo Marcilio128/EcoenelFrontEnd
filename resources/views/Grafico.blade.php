@@ -110,7 +110,7 @@ url: 'http://localhost:8000/api/resumo/data'
                              
             <div class="content">   
                 <div class="bloco">
-                    <h1>Dia Atual</h1>
+                    <h1>Mês Anterior</h1>
                     
                     <div class="dados">
                         <h2>Beneficiados:</h2>
@@ -178,7 +178,7 @@ url: 'http://localhost:8000/api/resumo/data'
                              
             <div class="content">   
                 <div class="bloco">
-                    <h1>Dia Atual</h1>
+                    <h1>Mês Anterior</h1>
                     
                     <div class="dados">
                         <h2>Beneficiados:</h2>
@@ -246,7 +246,7 @@ url: 'http://localhost:8000/api/resumo/data'
                              
             <div class="content">   
                 <div class="bloco">
-                    <h1>Dia Atual</h1>
+                    <h1>Ano Corrente</h1>
                     
                     <div class="dados">
                         <h2>Beneficiados:</h2>
