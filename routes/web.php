@@ -27,7 +27,7 @@ Route::get('/Escolha', function () {
 
 Route::get('/EcoEnelEstado', function () {
     return view('EstadoEco');
-})->name('eco')->middleware('auth','eco');
+})->name('eco')->middleware('auth','eco'); 
 
 Route::get('/EquatorialEstado', function () {
     return view('EquatorialEstado');
