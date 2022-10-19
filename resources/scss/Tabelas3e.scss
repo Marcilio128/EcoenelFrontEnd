@@ -1,0 +1,135 @@
+/*Estilização Das Logos*/
+
+.logos{
+    height: 15vh;
+}
+
+.MenuNavbar .MenuContainer  .logos{
+    background-color: var(--color-orange);
+}
+
+button.carousel-control-prev{
+    width: 4rem;
+}
+
+button.carousel-control-next{
+    margin: 8rem 0 0 0;
+    height: 100%;
+    width: 4rem;
+}
+
+
+
+
+
+.GraficoColetores .container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.GraficoColetores .container h1{
+    font-family: 'Gotham Rounded', sans-serif;
+
+    color:  rgb(67, 60, 60);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.tabela-Rank .MenuContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.start{
+    display: flex;
+    margin-top: 10vh;
+    color: var(--color-orange);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 2rem ;
+    
+}
+table{
+    font-family: 'Gotham Rounded', sans-serif;
+    margin: 0 0 4rem;  
+    text-align: center;
+    border-spacing: 0px;
+    border: 0;
+    font-size: 0.9rem;
+    width: 100%;
+    table-layout:fixed;
+    font-family: 'Gotham Rounded', sans-serif;
+
+}
+td{
+    padding: 0.6rem;
+    word-wrap:break-word;
+
+}
+  th{
+    padding: 0.6rem;
+    font-family: 'Gotham Rounded', sans-serif;
+
+    border: 0;
+    background-color: var(--color-orange);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin: 0 -3rem;
+    
+  }
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    gap: 8rem;
+    width:20rem;
+
+    color: white;
+}
+
+.vertical {
+    border-left: 2px solid var(--color-primary);
+    height: 60vh;
+    overflow-y: hidden;
+
+}
+
+div.MenuContainerTopic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+
+.Sec-Att .lastAtt{
+    text-align: center;
+    border-radius: 0 3rem 3rem 0;
+    color: white;
+    background-color: var(--color-primary);
+    width: 25rem;
+}
+.Sec-Att .lastAtt h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.AttDados{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.Sec-Att .lastAtt span{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
