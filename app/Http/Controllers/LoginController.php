@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Crypt;
@@ -11,12 +12,20 @@ class LoginController extends Controller
 {
     public function login(Request $request)
     {
-        if(Auth::attempt(['email' => $request->email, 'password' => $request->passsword])){
-            $user = Auth::user();
-            $token = $user->createToken('3etoken');
 
-            return response()->json($token,200);
+        $credenciais = $request->except('_token');
+        if(!Auth::attempt($credenciais)){
+            return back()->withErrors('Email e/ou senha errado');
         }
-        return response()->json('Usuario invalido',401);
+        $user = auth()->user();
+        $tokenuser = $user['token'];
+        $token = Crypt::decryptString($tokenuser);
+        if($token == 0){
+            return redirect()->route('Escolha');
+        }elseif($token == 1){
+            return redirect()->route('eco');
+        }else{
+            return redirect()->route('equatorial');
+        }
     }
 }

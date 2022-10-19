@@ -30,7 +30,8 @@
                 </div>
                 @endif
             <h1>Seja Bem-vindo</h1>
-        <form action="/api/login" method="post">
+        <form action="/login" method="post">
+            @csrf
             <div class="input-container">
                 <input autocomplete="off" type="email" id="email" name="email" required="" />
                 <label>Digite seu e-mail</label>

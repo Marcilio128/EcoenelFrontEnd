@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,22 +17,26 @@ Route::get('/', function () {
     return view('Cadastro');
 })->name('cadastro');
 
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+
 Route::get('/Escolha', function () {
     return view('Escolha');
-})->name('Escolha');
+})->name('Escolha')->middleware('auth',);
 
 Route::get('/EcoEnelEstado', function () {
     return view('EstadoEco');
-});
-Route::get('/E+Estado', function () {
-    return view('EstadoE+');
-});
+})->name('eco')->middleware('auth',);
+
+Route::get('/EquatorialEstado', function () {
+    return view('EquatorialEstado');
+})->name('equatorial')->middleware('auth',);
+
 Route::get('/ResíduosColetados', function () {
     return view('Residometro');
-});
+})->middleware('auth');
 Route::get('/Grafico', function () {
     return view('Grafico');
-});
+})->middleware('auth');
 Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
-});
+})->middleware('auth');
