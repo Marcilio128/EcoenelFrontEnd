@@ -18,18 +18,19 @@ Route::get('/', function () {
 })->name('cadastro');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/Escolha', function () {
     return view('Escolha');
-})->name('Escolha')->middleware('auth',);
+})->name('Escolha')->middleware('auth','3e');
 
 Route::get('/EcoEnelEstado', function () {
     return view('EstadoEco');
-})->name('eco')->middleware('auth',);
+})->name('eco')->middleware('auth','eco');
 
 Route::get('/EquatorialEstado', function () {
     return view('EquatorialEstado');
-})->name('equatorial')->middleware('auth',);
+})->name('equatorial')->middleware('auth','e+');
 
 Route::get('/ResíduosColetados', function () {
     return view('Residometro');

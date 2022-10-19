@@ -19,7 +19,8 @@ class AuthEquatorial
     public function handle(Request $request, Closure $next)
     {
         $user = auth()->user();
-        $token = Crypt::decryptString($user['token']);
+        $tokenuser = $user['token'];
+        $token = Crypt::decryptString($tokenuser);
         if(auth()->check() && $token == 2 or 0){
             return $next($request);
         }else{

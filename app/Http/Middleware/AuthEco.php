@@ -3,6 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\Request;
 
 class AuthEco
@@ -17,7 +19,8 @@ class AuthEco
     public function handle(Request $request, Closure $next)
     {
         $user = auth()->user();
-        $token = Crypt::decryptString($user['token']);
+        $tokenuser = $user['token'];
+        $token = Crypt::decryptString($tokenuser);
         if(auth()->check() && $token == 1 or 0){
         return $next($request);
         }else{

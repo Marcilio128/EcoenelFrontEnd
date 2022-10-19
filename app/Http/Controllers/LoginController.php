@@ -28,4 +28,12 @@ class LoginController extends Controller
             return redirect()->route('equatorial');
         }
     }
+
+    public function logout(Request $request){
+        if(auth()->check()){
+            auth()->logout();
+            $request->session()->flush();
+            return redirect()->route('cadastro');
+        }
+    }
 }

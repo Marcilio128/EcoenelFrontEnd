@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/layout/boot/boot-style.css">
 
         <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
         'resources/js/JQuery.js',
         'resources/js/DataScript.js',
         'resources/css/app.css',
-         'resources/scss/reset.scss', 
+         'resources/scss/reset.scss',
          'resources/scss/static.scss',
          'resources/scss/DiaAtual.scss',
          'resources/js/app.js',
@@ -43,15 +43,17 @@
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
 
-         
+
     </head>
     <body>
-        
+
     {{--Menu--}}
     <section class="MenuNavbar">
         <header id="MenuMobile" class="MenuContainer">
             <nav>
                 <img src="./assets/EcoenelLogo.png" class="Eco3eLogo" alt="" srcset="">
+                <p class="Logout">{{auth()->user()->name}}</p>
+                <a href="/logout">Sair</a>
                 {{--<img src="./assets/Equatorial.png" class="Equatorial" alt="" srcset="">--}}
 
                 <div class="mobile-menu">
@@ -88,7 +90,7 @@
     <script src="/js/StaticScript.js"></script>
     <script src="/js/animate.js"></script>
     <script src="/flip/flip.min.js"></script>
-    
+
     <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
