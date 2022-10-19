@@ -37,6 +37,7 @@
             <script src="https://code.highcharts.com/highcharts.js"></script>
             <script src="https://code.highcharts.com/modules/exporting.js"></script>
             <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
             <div data-aos="fade-up-right" data-aos-duration="2000"> 
              
             <div class="content">   
@@ -45,21 +46,21 @@
                     
                     <div class="dados">
                         <h2>Beneficiados:</h2>
-                        <p> 92 Clientes</p>
+                        <p class="beneficiados"> 00 Clientes</p>
                     </div>
                     
                     <div class="linhaHorizontal"></div>
                     
                     <div class="dados">
                     <h2>Bônus: </h2>
-                    <p> R$ 3.000</p>
+                    <p class="bonus"> R$ 0,00</p>
                     </div>
                     
                         <div class="linhaHorizontal"></div>
                     
                     <div class="dados">
                     <h2>Coletados: </h2>
-                    <p> 16.888,98 kg</p>
+                    <p class="coletados"> 0,00 kg</p>
                     </div>
 
                         <div class="linhaHorizontal"></div>
@@ -67,10 +68,27 @@
                         <div class="dados">
 
                     <h2>Economizados: </h2>
-                    <p> 708.76 KWH</p>
+                    <p class="economizados"> 00.0 KWH</p>
                     </div>
 
-                                  
+                  
+                    <script>
+                        $(document).ready(()=>{
+$.ajax({
+method: 'GET',
+url: 'http://localhost:8000/api/resumo/data'
+})
+    .then(function(response){
+        console.log(response[0])
+            const dado = response[0][0]
+                $('.beneficiados').html(dado['clientes'] + " Clientes")
+                $('.bonus').html("R$ "+ dado['bonus'])
+                $('.coletados').html(dado['kg'] + " Kg")
+                $('.economizados').html(dado['economizado'] + " KWH")
+    })
+                        })
+                    </script>
+                    
                 </div>                    
             </div>
         </div>
@@ -87,40 +105,58 @@
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
                 <div data-aos="fade-up-right" data-aos-duration="2000"> 
-                 
-                <div class="content">   
-                    <div class="bloco">
-                        <h1>Mês Atual</h1>
-                        
-                        <div class="dados">
-                            <h2>Beneficiados:</h2>
-                            <p> 92 Clientes</p>
-                        </div>
-                        
+                             
+            <div class="content">   
+                <div class="bloco">
+                    <h1>Dia Atual</h1>
+                    
+                    <div class="dados">
+                        <h2>Beneficiados:</h2>
+                        <p class="beneficiados"> 00 Clientes</p>
+                    </div>
+                    
+                    <div class="linhaHorizontal"></div>
+                    
+                    <div class="dados">
+                    <h2>Bônus: </h2>
+                    <p class="bonus"> R$ 0,00</p>
+                    </div>
+                    
                         <div class="linhaHorizontal"></div>
-                        
+                    
+                    <div class="dados">
+                    <h2>Coletados: </h2>
+                    <p class="coletados"> 0,00 kg</p>
+                    </div>
+
+                        <div class="linhaHorizontal"></div>
+
                         <div class="dados">
-                        <h2>Bônus: </h2>
-                        <p> R$ 3.000</p>
-                        </div>
-                        
-                            <div class="linhaHorizontal"></div>
-                        
-                        <div class="dados">
-                        <h2>Coletados: </h2>
-                        <p> 16.888,98 kg</p>
-                        </div>
-    
-                            <div class="linhaHorizontal"></div>
-    
-                            <div class="dados">
-    
-                        <h2>Economizados: </h2>
-                        <p> 708.76 KWH</p>
-                        </div>
-    
-                                      
+
+                    <h2>Economizados: </h2>
+                    <p class="economizados"> 00.0 KWH</p>
+                    </div>
+
+                  
+                    <script>
+                        $(document).ready(()=>{
+$.ajax({
+method: 'GET',
+url: 'http://localhost:8000/api/resumo/data'
+})
+    .then(function(response){
+        console.log(response[0])
+            const dado = response[0][0]
+                $('.beneficiados').html(dado['clientes'] + " Clientes")
+                $('.bonus').html("R$ "+ dado['bonus'])
+                $('.coletados').html(dado['kg'] + " Kg")
+                $('.economizados').html(dado['economizado'] + " KWH")
+    })
+                        })
+                    </script>
+
                     </div>                    
                 </div>
             </div>
@@ -137,40 +173,58 @@
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
                 <div data-aos="fade-up-right" data-aos-duration="2000"> 
-                 
-                <div class="content">   
-                    <div class="bloco" id="MesAnterior">
-                        <h1>Mês Anterior</h1>
-                        
-                        <div class="dados">
-                            <h2>Beneficiados:</h2>
-                            <p> 92 Clientes</p>
-                        </div>
-                        
+                             
+            <div class="content">   
+                <div class="bloco">
+                    <h1>Dia Atual</h1>
+                    
+                    <div class="dados">
+                        <h2>Beneficiados:</h2>
+                        <p class="beneficiados"> 00 Clientes</p>
+                    </div>
+                    
+                    <div class="linhaHorizontal"></div>
+                    
+                    <div class="dados">
+                    <h2>Bônus: </h2>
+                    <p class="bonus"> R$ 0,00</p>
+                    </div>
+                    
                         <div class="linhaHorizontal"></div>
-                        
+                    
+                    <div class="dados">
+                    <h2>Coletados: </h2>
+                    <p class="coletados"> 0,00 kg</p>
+                    </div>
+
+                        <div class="linhaHorizontal"></div>
+
                         <div class="dados">
-                        <h2>Bônus: </h2>
-                        <p> R$ 3.000</p>
-                        </div>
-                        
-                            <div class="linhaHorizontal"></div>
-                        
-                        <div class="dados">
-                        <h2>Coletados: </h2>
-                        <p> 16.888,98 kg</p>
-                        </div>
-    
-                            <div class="linhaHorizontal"></div>
-    
-                            <div class="dados">
-    
-                        <h2>Economizados: </h2>
-                        <p> 708.76 KWH</p>
-                        </div>
-    
-                                      
+
+                    <h2>Economizados: </h2>
+                    <p class="economizados"> 00.0 KWH</p>
+                    </div>
+
+                  
+                    <script>
+                        $(document).ready(()=>{
+$.ajax({
+method: 'GET',
+url: 'http://localhost:8000/api/resumo/data'
+})
+    .then(function(response){
+        console.log(response[0])
+            const dado = response[0][0]
+                $('.beneficiados').html(dado['clientes'] + " Clientes")
+                $('.bonus').html("R$ "+ dado['bonus'])
+                $('.coletados').html(dado['kg'] + " Kg")
+                $('.economizados').html(dado['economizado'] + " KWH")
+    })
+                        })
+                    </script>
+
                     </div>                    
                 </div>
             </div>
@@ -187,40 +241,58 @@
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
                 <div data-aos="fade-up-right" data-aos-duration="2000"> 
-                 
-                <div class="content">   
-                    <div class="bloco">
-                        <h1>Ano Corrente</h1>
-                        
-                        <div class="dados">
-                            <h2>Beneficiados:</h2>
-                            <p> 92 Clientes</p>
-                        </div>
-                        
+                             
+            <div class="content">   
+                <div class="bloco">
+                    <h1>Dia Atual</h1>
+                    
+                    <div class="dados">
+                        <h2>Beneficiados:</h2>
+                        <p class="beneficiados"> 00 Clientes</p>
+                    </div>
+                    
+                    <div class="linhaHorizontal"></div>
+                    
+                    <div class="dados">
+                    <h2>Bônus: </h2>
+                    <p class="bonus"> R$ 0,00</p>
+                    </div>
+                    
                         <div class="linhaHorizontal"></div>
-                        
+                    
+                    <div class="dados">
+                    <h2>Coletados: </h2>
+                    <p class="coletados"> 0,00 kg</p>
+                    </div>
+
+                        <div class="linhaHorizontal"></div>
+
                         <div class="dados">
-                        <h2>Bônus: </h2>
-                        <p> R$ 3.000</p>
-                        </div>
-                        
-                            <div class="linhaHorizontal"></div>
-                        
-                        <div class="dados">
-                        <h2>Coletados: </h2>
-                        <p> 16.888,98 kg</p>
-                        </div>
-    
-                            <div class="linhaHorizontal"></div>
-    
-                            <div class="dados">
-    
-                        <h2>Economizados: </h2>
-                        <p> 708.76 KWH</p>
-                        </div>
-    
-                                      
+
+                    <h2>Economizados: </h2>
+                    <p class="economizados"> 00.0 KWH</p>
+                    </div>
+
+                  
+                    <script>
+                        $(document).ready(()=>{
+$.ajax({
+method: 'GET',
+url: 'http://localhost:8000/api/resumo/data'
+})
+    .then(function(response){
+        console.log(response[0])
+            const dado = response[0][0]
+                $('.beneficiados').html(dado['clientes'] + " Clientes")
+                $('.bonus').html("R$ "+ dado['bonus'])
+                $('.coletados').html(dado['kg'] + " Kg")
+                $('.economizados').html(dado['economizado'] + " KWH")
+    })
+                        })
+                    </script>
+
                     </div>                    
                 </div>
             </div>

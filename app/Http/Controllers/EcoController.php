@@ -26,6 +26,14 @@ class EcoController extends Controller
         );
     }
     //versões where
+    public function GOresumo()
+    {
+        $data = Date("Y-m-d");
+        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where('data', "$data")->get();
+        return response()->json(
+            [$resumos]
+        );
+    }
     public function GOresiduo(){
         $data = Date("Y-m-d");
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where('data', "$data")->groupBy('nome')->get();
