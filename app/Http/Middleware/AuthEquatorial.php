@@ -21,7 +21,7 @@ class AuthEquatorial
         $user = auth()->user();
         $tokenuser = $user['token'];
         $token = Crypt::decryptString($tokenuser);
-        if(auth()->check() && $token == 2 or 0){
+        if(auth()->check() && $token == 0 or 2){
             return $next($request);
         }else{
             return back()->withErrors('Você não pode acessar essa rota');

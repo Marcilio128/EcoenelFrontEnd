@@ -51,9 +51,16 @@
     <section class="MenuNavbar">
         <header id="MenuMobile" class="MenuContainer">
             <nav>
+                <ul class="navbar-nav logout">
+                    <li class='decima'>
+                        <span class="logout"><a href={{ route('logout') }}>
+                                Sair</a> </span>
+                    </li>
+                    <li>
+                            <span
+                                class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
+                </ul>
                 <img src="./assets/EcoenelLogo.png" class="Eco3eLogo" alt="" srcset="">
-                <p class="Logout">{{auth()->user()->name}}</p>
-                <a href="/logout">Sair</a>
                 {{--<img src="./assets/Equatorial.png" class="Equatorial" alt="" srcset="">--}}
 
                 <div class="mobile-menu">

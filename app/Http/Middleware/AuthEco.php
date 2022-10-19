@@ -21,7 +21,7 @@ class AuthEco
         $user = auth()->user();
         $tokenuser = $user['token'];
         $token = Crypt::decryptString($tokenuser);
-        if(auth()->check() && $token == 1 or 0){
+        if(auth()->check() && $token == 0 or 1){
         return $next($request);
         }else{
             return back()->withErrors('Você não pode acessar essa rota');

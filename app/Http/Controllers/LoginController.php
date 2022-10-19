@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -12,7 +13,6 @@ class LoginController extends Controller
 {
     public function login(Request $request)
     {
-
         $credenciais = $request->except('_token');
         if(!Auth::attempt($credenciais)){
             return back()->withErrors('Email e/ou senha errado');
@@ -30,10 +30,8 @@ class LoginController extends Controller
     }
 
     public function logout(Request $request){
-        if(auth()->check()){
             auth()->logout();
             $request->session()->flush();
             return redirect()->route('cadastro');
-        }
     }
 }
