@@ -1,17 +1,17 @@
 function Dia() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/dados'
+        url: 'http://localhost:8000/api/residuo/data'
     }).then(function (response) {
         //atribuição de dado individual
-        const dado = response[0][0]
-        const oleo = dado['Óleo']
-        const eletronico = dado['Eletrônicos']
-        const vidro = dado['Vidros']
-        const plastico = dado['Plástico']
-        const metal = dado['Metal']
-        const papel = dado['Papel']
-        const longavida = dado['Longa_Vida']
+        const dado = response[0]
+        const oleo = dado[5]['kg']
+        const eletronico = dado[6]['kg']
+        const vidro = dado[1]['kg']
+        const plastico = dado[2]['kg']
+        const metal = dado[3]['kg']
+        const papel = dado[0]['kg']
+        const longavida = dado[4]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -130,17 +130,17 @@ Dia()
 function Mes() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/dados'
+        url: 'http://localhost:8000/api/residuo/data'
     }).then(function (response) {
         //atribuição de dado individual
-        const dado = response[0][0]
-        const oleo = dado['Óleo']
-        const eletronico = dado['Eletrônicos']
-        const vidro = dado['Vidros']
-        const plastico = dado['Plástico']
-        const metal = dado['Metal']
-        const papel = dado['Papel']
-        const longavida = dado['Longa_Vida']
+        const dado = response[0]
+        const oleo = dado[5]['kg']
+        const eletronico = dado[6]['kg']
+        const vidro = dado[1]['kg']
+        const plastico = dado[2]['kg']
+        const metal = dado[3]['kg']
+        const papel = dado[0]['kg']
+        const longavida = dado[4]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -259,17 +259,17 @@ Mes()
 function MesA() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/dados'
+        url: 'http://localhost:8000/api/residuo/data'
     }).then(function (response) {
         //atribuição de dado individual
-        const dado = response[0][0]
-        const oleo = dado['Óleo']
-        const eletronico = dado['Eletrônicos']
-        const vidro = dado['Vidros']
-        const plastico = dado['Plástico']
-        const metal = dado['Metal']
-        const papel = dado['Papel']
-        const longavida = dado['Longa_Vida']
+        const dado = response[0]
+        const oleo = dado[5]['kg']
+        const eletronico = dado[6]['kg']
+        const vidro = dado[1]['kg']
+        const plastico = dado[2]['kg']
+        const metal = dado[3]['kg']
+        const papel = dado[0]['kg']
+        const longavida = dado[4]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -389,17 +389,17 @@ MesA()
 function Ano() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/dados'
+        url: 'http://localhost:8000/api/residuo/data'
     }).then(function (response) {
         //atribuição de dado individual
-        const dado = response[0][0]
-        const oleo = dado['Óleo']
-        const eletronico = dado['Eletrônicos']
-        const vidro = dado['Vidros']
-        const plastico = dado['Plástico']
-        const metal = dado['Metal']
-        const papel = dado['Papel']
-        const longavida = dado['Longa_Vida']
+        const dado = response[0]
+        const oleo = dado[5]['kg']
+        const eletronico = dado[6]['kg']
+        const vidro = dado[1]['kg']
+        const plastico = dado[2]['kg']
+        const metal = dado[3]['kg']
+        const papel = dado[0]['kg']
+        const longavida = dado[4]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
