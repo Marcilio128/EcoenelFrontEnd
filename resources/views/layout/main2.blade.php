@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/layout/main-style.css">
         <link rel="stylesheet" href="css/layout/boot/boot-style.css">
  
-        <link rel="shortcut icon" href="/assets/ecoenel-icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/Equatorial.ico" type="image/x-icon">
  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +30,15 @@
         'resources/js/DataScript.js',
         'resources/css/app.css',
          'resources/scss/reset.scss',
-         'resources/scss/static.scss',
-         'resources/scss/DiaAtual.scss',
+         'resources/scss/EquatorialTabela.scss',
+         'resources/scss/graficoequatorial.scss',
          'resources/js/app.js',
          'resources/css/app.js',
          'resources/js/Grafico.js',
         'resources/js/animate.js',
         'resources/scss/Responsividade.scss',
         'resources/scss/flipnumber.scss',
-        'resources/scss/menu.scss',
+        'resources/scss/menuequatorial.scss',
         'resources/js/menu.js',
         'resources/scss/waves.scss',
         'node_modules/jquery/dist/jquery.js',
@@ -64,7 +64,7 @@
             </ul>
  
  
-                <img src="./assets/EcoenelLogo.png" class="Eco3eLogo" alt="" srcset="">
+                <img src="./assets/Equatorial.png" class="Eco3eLogo" alt="" srcset="">
                 {{--<img src="./assets/Equatorial.png" class="Equatorial" alt="" srcset="">--}}
  
                 <div class="mobile-menu">
@@ -74,10 +74,10 @@
                    
                   </div>
                 <ul class="nav-list">
-                    <li><a class="btnMenu" href="ResíduosColetados">Resíduos Coletados</a></li>
-                    <li><a class="btnMenu" href="graficoequatorial">Grafico</a></li>
-                    <li><a class="btnMenu" href="TabelasColetores">Tabelas</a></li>
-                    <li><a class="btnMenu" href="EcoEnelEstado">Estados</a></li>
+                    <li><a class="btnMenu" href="ResiduosEquatorial">Resíduos Coletados</a></li>
+                    <li><a class="btnMenu" href="GraficoEquatorial">Grafico</a></li>
+                    <li><a class="btnMenu" href="TabelasColetoresEquatorial">Tabelas</a></li>
+                    <li><a class="btnMenu" href="EquatorialEstado">Estados</a></li>
                 </ul>
  
             </nav>

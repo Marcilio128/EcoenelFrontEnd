@@ -36,9 +36,24 @@ Route::get('/EquatorialEstado', function () {
 Route::get('/ResíduosColetados', function () {
     return view('Residometro');
 })->middleware('auth');
+
 Route::get('/Grafico', function () {
     return view('Grafico');
 })->middleware('auth');
 Route::get('/TabelasColetores', function () {
     return view('GrandesColetores');
 })->middleware('auth');
+
+Route::get('/ResiduosEquatorial', function () {
+    return view('ResidometroEquatorial');
+})->middleware('auth');
+
+Route::get('/GraficoEquatorial', function () {
+    return view('graficoequatorial');
+})->middleware('auth');
+
+Route::get('/TabelasColetoresEquatorial', function () {
+    return view('Tabelaequatorial');
+})->middleware('auth');
+
+

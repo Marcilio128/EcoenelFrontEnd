@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <title>Ecoenel</title>
+    <title>Equatorial</title>
 
     @vite([
          'resources/scss/reset.scss',
@@ -23,10 +23,12 @@
             <img src="./assets/Equatorial.png" class="EquatorialLogo" alt="" srcset="">
             <h1>Escolha seu estado</h1>
 
-            <a class="btn" href="/ResíduosColetados">Ceará</a>
-            <a class="btn" href="/ResíduosColetados">São Paulo</a>
-            <a class="btn" href="/ResíduosColetados">Rio De Janeiro</a>
-            <a class="btn" href="/ResíduosColetados">Goiás </a>
+            <a class="btn" href="/ResiduosEquatorial">Piauí</a>
+            <a class="btn" href="/ResiduosEquatorial">Pará</a>
+            <a class="btn" href="/ResiduosEquatorial">Maranhão</a>
+            <a class="btn" href="/ResiduosEquatorial">Alagoas</a>
+            <a class="btn" href="/ResiduosEquatorial">Rondônia</a>
+            <a class="btn" href="/ResiduosEquatorial">Maranhão</a>
 
 
         </div>

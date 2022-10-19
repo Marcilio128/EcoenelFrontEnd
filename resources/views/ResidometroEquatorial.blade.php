@@ -1,5 +1,4 @@
-
-@extends('layout.main')
+@extends('layout.main2')
  
 @section('title', 'Ecoenel')
  
@@ -63,10 +62,10 @@ data-aos-duration="1500">
   <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
   </defs>
   <g class="parallax">
-  <use xlink:href="#gentle-wave" x="48" y="0" fill="#d6e16b" />
-  <use xlink:href="#gentle-wave" x="48" y="3" fill="#c8d73a" />
-  <use xlink:href="#gentle-wave" x="48" y="5" fill="#cfdc52" />
-  <use xlink:href="#gentle-wave" x="48" y="7" fill="#BBCD09" />
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="#3ebbe5a0" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="#1177ba" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="#3ebbe5" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#1176ba7e" />
   </g>
   </svg>
   </div>
