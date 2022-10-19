@@ -1,6 +1,6 @@
 @extends('layout.main3e')
 
-@section('title', 'Ecoenel')
+@section('title', '3eDados')
 
 @section('content')
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

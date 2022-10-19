@@ -9,7 +9,8 @@
   .Eco3eLogo{
     width: 22vw;
     height: 25vh;
-   
+    z-index: 5000;
+
   }
   nav{
     display: flex;
@@ -196,6 +197,12 @@
     .Eco3eLogo{
       width: 15vw;
      }
+  /*    .sair{
+      width: 3px;
+     }
+     span .logout{
+      font-size: 1px;
+     } */
   }
    
   @media only screen and (max-width: 540px){

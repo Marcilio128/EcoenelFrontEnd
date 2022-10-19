@@ -1,6 +1,6 @@
 @extends('layout.main2')
  
-@section('title', 'Ecoenel')
+@section('title', 'Equatorial')
  
  
 @section('content')

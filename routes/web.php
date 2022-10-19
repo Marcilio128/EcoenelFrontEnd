@@ -37,6 +37,8 @@ Route::get('/ResíduosColetados', function () {
     return view('Residometro');
 })->middleware('auth');
 
+
+
 Route::get('/Grafico', function () {
     return view('Grafico');
 })->middleware('auth');
