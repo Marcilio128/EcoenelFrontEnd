@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eco;
+use App\Models\Resumo;
 use Illuminate\Http\Request;
 
 class EcoController extends Controller
@@ -10,11 +11,10 @@ class EcoController extends Controller
 
     public function dados()
     {
-        $dados = Eco::all();
+        $dados = Resumo::all();
         return response()->json(
-            [
-            $dados
-            ],200);
+            [$dados]
+        );
     }
     
 }

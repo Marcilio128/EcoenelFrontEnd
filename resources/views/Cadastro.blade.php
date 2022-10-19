@@ -30,14 +30,14 @@
                 </div>
                 @endif
             <h1>Seja Bem-vindo</h1>
-        <form action="/login" method="post">
+        <form action="/login" method="POST">
             @csrf
             <div class="input-container">
                 <input autocomplete="off" type="email" id="email" name="email" required="" />
                 <label>Digite seu e-mail</label>
             </div>
             <div class="input-container">
-                <input  autocomplete="off" type="password" id="password" name="password" required="" />
+                <input autocomplete="off" type="password" id="password" name="password" required="" />
                 <label>Digite sua senha</label>
             </div>
             <input value="Acessar" type="submit" class="btn" id="btnSubmit">

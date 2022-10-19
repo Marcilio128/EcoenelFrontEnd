@@ -517,7 +517,7 @@ Ano()
 
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 10,
     centeredSlides: true,
     autoplay: {
         delay: 10000,
@@ -528,3 +528,5 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     }
 });
+
+

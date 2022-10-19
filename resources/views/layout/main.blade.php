@@ -51,7 +51,7 @@
     <section class="MenuNavbar">
         <header id="MenuMobile" class="MenuContainer">
             <nav>
-                <img src="./assets/EcoEnelLogo.png" class="Eco3eLogo" alt="" srcset="">
+                <img src="./assets/EcoenelLogo.png" class="Eco3eLogo" alt="" srcset="">
                 {{--<img src="./assets/Equatorial.png" class="Equatorial" alt="" srcset="">--}}
 
                 <div class="mobile-menu">
@@ -64,6 +64,8 @@
                     <li><a class="btnMenu" href="ResíduosColetados">Resíduos Coletados</a></li>
                     <li><a class="btnMenu" href="Grafico">Grafico</a></li>
                     <li><a class="btnMenu" href="TabelasColetores">Tabelas</a></li>
+                    <li><a class="btnMenu" href="EcoEnelEstado">Estados</a></li>
+
                 </ul>
 
             </nav>
