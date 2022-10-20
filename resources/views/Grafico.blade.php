@@ -79,10 +79,10 @@ method: 'GET',
 url: 'http://localhost:8000/api/resumo/data'
 })
     .then(function(response){
-        console.log(response[0])
+
             const dado = response[0][0]
                 $('.beneficiados').html(dado['clientes'] + " Clientes")
-                $('.bonus').html("R$ "+ dado['bonus'])
+                $('.bonus').html("R$ "+ `${dado['bonus'].tofixed(2)}`)
                 $('.coletados').html(dado['kg'] + " Kg")
                 $('.economizados').html(dado['economizado'] + " KWH")
     })
@@ -147,7 +147,7 @@ method: 'GET',
 url: 'http://localhost:8000/api/resumo/data'
 })
     .then(function(response){
-        console.log(response[0])
+
             const dado = response[0][0]
                 $('.beneficiados').html(dado['clientes'] + " Clientes")
                 $('.bonus').html("R$ "+ dado['bonus'])
@@ -215,7 +215,7 @@ method: 'GET',
 url: 'http://localhost:8000/api/resumo/data'
 })
     .then(function(response){
-        console.log(response[0])
+
             const dado = response[0][0]
                 $('.beneficiados').html(dado['clientes'] + " Clientes")
                 $('.bonus').html("R$ "+ dado['bonus'])
@@ -283,7 +283,7 @@ method: 'GET',
 url: 'http://localhost:8000/api/resumo/data'
 })
     .then(function(response){
-        console.log(response[0])
+
             const dado = response[0][0]
                 $('.beneficiados').html(dado['clientes'] + " Clientes")
                 $('.bonus').html("R$ "+ dado['bonus'])

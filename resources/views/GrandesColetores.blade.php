@@ -3,6 +3,7 @@
 @section('title', 'Ecoenel')
 
 @section('content')
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -84,6 +85,18 @@
                                                 <td class="litro">0.00</td>
                                                 <td class="bonus">2.173,65</td>
                                             </tr>
+                        <script>
+                            $(document).ready(()=>{
+$.ajax({
+method: 'GET',
+url: 'http://localhost:8000/api/projeto/data'
+})
+                                            .then(function(response){
+                                                const dado = response[0]
+                                                console.log(dado)
+                                            })
+                        })
+                        </script>
                                      </tbody>
                                     </table>
                                     <h1>Grandes geradores que mais coletam (Dia atual)</h1>

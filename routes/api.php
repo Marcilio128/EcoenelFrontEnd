@@ -30,3 +30,4 @@ Route::get('/resumo', [EcoController::class, 'resumo']);
 
 Route::get('/resumo/data', [EcoController::class, 'GOresumo']);
 Route::get('/residuo/data', [EcoController::class, 'GOresiduo']);
+Route::get('/projeto/data', [EcoController::class, 'GOprojeto']);
