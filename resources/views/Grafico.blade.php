@@ -174,7 +174,7 @@ url: 'http://localhost:8000/api/resumo/data'
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
             <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-                <div data-aos="fade-up-right" data-aos-duration="2000"> 
+                <div class="AOS"  data-aos="fade-up-right" data-aos-duration="2000"> 
                              
             <div class="content">   
                 <div class="bloco">
