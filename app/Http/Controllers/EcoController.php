@@ -51,7 +51,10 @@ class EcoController extends Controller
     public function GOprojeto()
     {
         $data = Date("Y-m-d");
-        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro'))->where('data', "$data")->orderBy('quilos', 'desc')->paginate(5)->get();
+        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro'))
+        ->where('data', "$data")
+        ->orderBy('quilos', 'desc')
+        ->get(Posto::paginate(5));
         return response()->json(
             [$resumos]
         );

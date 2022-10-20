@@ -93,7 +93,12 @@ url: 'http://localhost:8000/api/projeto/data'
 })
                                             .then(function(response){
                                                 const dado = response[0]
-                                                console.log(dado)
+                                                    
+                                                $('.empresa').html(dado[0]['nome'])
+                                                $('.quilo').html(dado[0]['quilo'])
+                                                $('.empresa').append('<td>' + dado[1]['nome'] + '</td>').html()
+                                                const quilo = $('.quilo')
+                                                quilo.insertAdjacentHTML('afterend', `<td>${dado[1]['quilo']}</td>`)
                                             })
                         })
                         </script>
