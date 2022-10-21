@@ -41,13 +41,49 @@ class EcoController extends Controller
             [$resumos]
         );
     }
-    public function GOresiduo(){
+    public function ResiduoDia(){
         $data = Date("Y-m-d");
-        $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where('data', "$data")->groupBy('nome')->get();
+        $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
+            ['id_projeto', 1],
+            ['data', "$data"]
+        ])->groupBy('nome')->get();
         return response()->json([
             $residuos
         ]);
     }
+    public function ResiduoMes(){
+        $data = Date("Y-m");
+        $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
+            ['id_projeto', 1],
+            ['data','like', "$data%"]
+        ])->groupBy('nome')->get();
+        return response()->json([
+            $residuos
+        ]);
+    }
+
+    public function ResiduoMesA(){
+        $data = Date("Y-m", strtotime('-1 months', strtotime(date('Y-m'))));
+        $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
+            ['id_projeto', 1],
+            ['data','like', "$data%"]
+        ])->groupBy('nome')->get();
+        return response()->json([
+            $residuos
+        ]);
+    }
+
+    public function ResiduoAno(){
+        $data = Date("Y");
+        $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
+            ['id_projeto', 1],
+            ['data','like', "$data%"]
+        ])->groupBy('nome')->get();
+        return response()->json([
+            $residuos
+        ]);
+    }
+
     public function GOprojeto()
     {
         $data = Date("Y-m-d");
@@ -60,6 +96,6 @@ class EcoController extends Controller
         );
     }
 
-    
-    
+
+
 }

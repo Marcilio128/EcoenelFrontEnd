@@ -3,7 +3,7 @@
 function Dia() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/residuo/data'
+        url: 'http://localhost:8000/api/residuo/dia'
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
@@ -132,7 +132,7 @@ Dia()
 function Mes() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/residuo/data'
+        url: 'http://localhost:8000/api/residuo/mes'
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
@@ -261,7 +261,7 @@ Mes()
 function MesA() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/residuo/data'
+        url: 'http://localhost:8000/api/residuo/mesa'
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
@@ -391,7 +391,7 @@ MesA()
 function Ano() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost:8000/api/residuo/data'
+        url: 'http://localhost:8000/api/residuo/ano'
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
