@@ -72,7 +72,7 @@ function Dia() {
             },
             yAxis: {
                 min: 0,
-                tickInterval: 0.1,
+                tickInterval: 5,
                 title: {
                     text: "Exponente De Resíduos"
                 },
@@ -103,11 +103,11 @@ function Dia() {
                     colors: [
                         '#3D96AE',
                         '#cb5616',
-                        '#47B5FF',
-                        '#ea0000',
-                        '#937DC2',
-                        '#06ff00',
-                        '#7FBCD2'
+                        '#a3d43e',
+                        '#017032',
+                        '#f70004',
+                        '#f3ca00',
+                        '#003298'
                     ],
                     name: "O que foi coletado",
                     dataSorting: {
@@ -201,7 +201,7 @@ function Mes() {
             },
             yAxis: {
                 min: 0,
-                tickInterval: 0.1,
+                tickInterval: 5,
                 title: {
                     text: "Exponente De Resíduos"
                 },
@@ -232,11 +232,11 @@ function Mes() {
                     colors: [
                         '#3D96AE',
                         '#cb5616',
-                        '#47B5FF',
-                        '#ea0000',
-                        '#937DC2',
-                        '#06ff00',
-                        '#7FBCD2'
+                        '#a3d43e',
+                        '#017032',
+                        '#f70004',
+                        '#f3ca00',
+                        '#003298'
                     ],
                     name: "O que foi coletado",
                     dataSorting: {
@@ -330,7 +330,7 @@ function MesA() {
             },
             yAxis: {
                 min: 0,
-                tickInterval: 0.1,
+                tickInterval: 5,
                 title: {
                     text: "Exponente De Resíduos"
                 },
@@ -361,11 +361,11 @@ function MesA() {
                     colors: [
                         '#3D96AE',
                         '#cb5616',
-                        '#47B5FF',
-                        '#ea0000',
-                        '#937DC2',
-                        '#06ff00',
-                        '#7FBCD2'
+                        '#a3d43e',
+                        '#017032',
+                        '#f70004',
+                        '#f3ca00',
+                        '#003298'
                     ],
                     name: "O que foi coletado",
                     dataSorting: {
@@ -460,7 +460,7 @@ function Ano() {
             },
             yAxis: {
                 min: 0,
-                tickInterval: 0.1,
+                tickInterval: 5,
                 title: {
                     text: "Exponente De Resíduos"
                 },
@@ -491,11 +491,11 @@ function Ano() {
                     colors: [
                         '#3D96AE',
                         '#cb5616',
-                        '#47B5FF',
-                        '#ea0000',
-                        '#937DC2',
-                        '#06ff00',
-                        '#7FBCD2'
+                        '#a3d43e',
+                        '#017032',
+                        '#f70004',
+                        '#f3ca00',
+                        '#003298'
                     ],
                     name: "O que foi coletado",
                     dataSorting: {

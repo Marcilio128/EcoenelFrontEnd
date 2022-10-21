@@ -87,6 +87,7 @@
 
     <script>
         AOS.init();
+<<<<<<< HEAD
 /* const swiper = new Swiper('.swiper', {
   // Optional parameters
 
@@ -107,6 +108,9 @@
     el: '.swiper-scrollbar',
   },
 }); */
+=======
+
+>>>>>>> 99051648 (Ajustes nas cores do grafico e responsividade)
 
 
 

@@ -192,13 +192,13 @@
       }
    
   }
-  @media only screen and (max-width: 1150px){
+  @media only screen and (max-width: 1250px){
     .nav-list{
       width: 50vw;
    
     }
     .Eco3eLogo{
-      width: 40vw;
+      width: 30vw;
       height: 22vh;
    
     }

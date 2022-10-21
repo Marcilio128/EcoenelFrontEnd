@@ -32,18 +32,11 @@ button.carousel-control-next{
  
 }
  
-.Residometro{
-    text-align: center;
-    margin: 200px 0 0 0;
-    font-size: 2rem;
-}
- 
- 
 .GraficoColetores .container{
     align-items: center;
     display: flex;
     flex-direction: column;
-   
+
 }
  
 .GraficoColetores .container h1{
@@ -72,7 +65,7 @@ button.carousel-control-next{
    
 }
 table{
-    margin: 0 0 4rem;  
+    margin: 0 0 0rem;  
     text-align: center;
     border-spacing: 0px;
     border: 0;
@@ -140,3 +133,11 @@ div.MenuContainerTopic{
     font-weight: 300;
 }
  
+@media only screen and (max-width: 500px){
+   .empresa{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   }
+}

@@ -1,4 +1,0 @@
-
-@section('DiaAtual')
-
-@endsection

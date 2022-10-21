@@ -75,9 +75,6 @@ data-aos-duration="1500">
   </div>
 </footer>
  
-  <style>
- 
-  </style>
  
  
       <script>

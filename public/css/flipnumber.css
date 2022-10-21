@@ -62,7 +62,7 @@
 }
 .Residometro .ponto{
   position: relative;
-  margin: 1rem 0.1rem 0;
+  margin: 1.5rem 0.1rem 0;
   color: var(--color-gray);
   font-size: 40px;
  
@@ -150,23 +150,23 @@
   }
   /*Shrinking for mobile*/
 
-  @media only screen and (min-width: 2000px) {
+  @media only screen and (min-width: 1800px) {
     .Residometro{
       padding: 1rem 0;
     }
     .tick {
-      margin: 5rem auto;
+      margin: 2.5rem auto;
       width: 100vh;
     }
     .Residometro .ponto{
       position: relative;
-      margin: 3rem 0.1rem 0;
+      margin: 1.5rem 0.1rem 0;
       color: var(--color-gray);
       font-size: 60px;
    
     }
     .Residometro p {
-      margin: -3rem 0.1rem 0;
+      margin: -2.5rem 0.1rem 0;
       font-size: 2rem;
     }
   }
@@ -199,30 +199,41 @@
   .tick {
     width: 100vh;
   }
+
+  .Residometro .ponto{
+    position: relative;
+    margin: 16px 0.1rem 0;
+    color: var(--color-gray);
+    font-size: 60px;
+ 
+  }
  
 }
  
 @media only screen and (max-width: 1000px){
   .tick {
-    width: 90vh;
+    width: 85vw;
+  }
+ 
+  .Residometro .ponto{
+    position: relative;
+    margin: 0.2rem 0.1rem 0;
+    color: var(--color-gray);
+    font-size: 60px;
+ 
   }
  
 }
  
- 
-@media (max-width: 920px)  {
-  .tick {
-    width: 100vh;
-  }
-}
 
-@media only screen and (max-width: 900px){
-  .tick {
+
+@media only screen and (max-width: 920px){
+  .Residometro .tick {
     width: 80vh;
   }
   .Residometro .ponto{
     position: relative;
-    margin: .5rem 0.1rem 0;
+    margin: 1rem 0.1rem 0;
     color: var(--color-gray);
     font-size: 40px;
  
@@ -232,128 +243,111 @@
     font-size: 0.6rem;
   }
 }
-@media only screen and (max-width: 750px){
-  .tick {
-    width: 70vh;
-  }
-  .medida{
-    padding: 0.5rem;
-    font-size: 0.6rem;
-  }
-  .Residometro .ponto{
-    margin: -.6rem 0.1rem;
-  }
-  .waves {
-    margin: 6rem 0rem;
-  position:relative;
-  width: 100%;
-  height: 25vh;
-  margin-bottom:-90px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
-  }
-  footer {
-    position: absolute;
-    bottom: 8rem;
-    width: 100%;
-    height: 100px;    
-    text-align: center;
-    line-height: 100px;
+
+@media only screen and (max-width: 770px){
+.Residometro .tick{
+  width: 70vh;
+}
+.medida{
+  padding: 0rem;
+  font-size: 1rem;
+}
+.Residometro .ponto{
+  position: relative;
+  margin: .6rem 0.1rem 0;
+  color: var(--color-gray);
+  font-size: 40px;
+
+}
+.wave{
+  margin: 3rem 0;
 }
 }
- 
+
+
 @media only screen and (max-width: 650px){
-  .tick {
-    width: 100vh;
-  }
- 
-}
- 
-@media (max-width: 600px)  and (orientation: landscape){
-  .tick {
-    width: 90vh;
-  }
-  .ponto{
-    font-size: 2rem;
-    margin: -.1rem 0;
-  }
-}
- 
-@media (max-width: 560px) and (orientation: landscape){
-  .tick {
-    width: 80vw;
-  }
-  .Residometro h1{
-    font-size: 3rem;
-    margin: 1rem 0;
-  }
-  .Residometro p {
-    font-size: 1.7rem;
-  }
-}
- 
-@media (max-width: 500px){
-  .tick {
-    width: 80vw;
-  }
-  .Residometro p {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 460px){
-  .tick {
-    width: 70vh;
-  }
-  .tick h1{
-    font-size: 1.5rem;
-  }
-  .ponto{
-    margin: -.5rem 0;
-  }
-  .medida{
-    padding: 0rem;
-    font-size: .7rem;
-  }
-}
- 
-@media only screen and (max-width: 400px){
-  .tick {
+  .Residometro .tick{
     width: 60vh;
   }
-  .medida{
-    padding: 0.5rem;
-    font-size: 0.6rem;
+  .Residometro .ponto{
+    margin: .1rem 0.1rem 0;
+
   }
-  .ponto{
-    margin: -0.5rem 0;
   }
-}
- 
-@media only screen and (max-width: 350px){
-  .tick {
-    width: 50vh;
-  }
-  .tick h1{
-    font-size: 1.2rem;
-  }
-  .medida{
-    padding: 0rem;
-  }
-  .ponto{
-    margin: -10rem 0;
-  }
-}
- 
-@media only screen and (max-width: 300px){
-  .tick {
-    width: 40vh;
-  }
-}
- 
- 
-@media (min-width: 720px) and (orientation: portrait) {
-  .tick {
-    width: 30vh;
+
+  @media only screen and (max-width: 550px){
+    .Residometro .tick{
+      width: 50vh;
+    }
+    .Residometro .ponto{
+      margin: -.3rem 0.1rem 0;
+  
   }
 }
 
+@media only screen and (max-width: 500px){
+      .Residometro .tick{
+        width: 45vh;
+      }
+      .Residometro .ponto{
+        margin: -.5rem 0.1rem 0;
+    
+  }
+}
+
+
+@media only screen and (max-width: 450px){
+  .Residometro .tick{
+    width: 40vh;
+  }
+  .Residometro .ponto{
+    margin: -.9rem 0.1rem 0;
+
+}
+.Residometro p{
+ 
+ font-size: 20px;
+}
+}
+
+
+@media only screen and (max-width: 400px){
+  .Residometro .tick{
+    width: 35vh;
+  }
+  .Residometro .ponto{
+    margin: -.9rem 0.1rem 0;
+
+}
+.Residometro p{
+ 
+ font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 400px){
+  .Residometro .tick{
+    width: 30vh;
+  }
+  .Residometro .ponto{
+    margin: -.6rem 0.1rem 0;
+    font-size: 30px;
+}
+.Residometro p{
+ 
+ font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 380px){
+ .Residometro .tick{
+    margin: 0 auto;
+  } 
+  .Residometro .ponto{
+    margin: -.6rem 0.1rem 0;
+    font-size: 30px;
+}
+.Residometro p{
+  margin: -0rem 0;
+}
+}
