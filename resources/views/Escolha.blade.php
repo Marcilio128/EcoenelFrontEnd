@@ -9,10 +9,8 @@
 
     
     <title>Cadastro</title>
-
-    @vite([
-         'resources/scss/reset.scss',
-         'resources/scss/Escolha.scss'])
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/Escolha.css">
          
         </head>
 <body >
