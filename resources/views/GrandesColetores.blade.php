@@ -78,7 +78,7 @@
                                         </thead>
                                         <tbody>
                                            
-                                            <tr>
+                                            <tr class="caderno">
                                                 <td class="empresa">Ecoenel Empresas</td>
                                                 <td class="quilo">8.060,00</td>
                                                 <td class="unidade">0</td>
@@ -93,12 +93,17 @@ url: 'http://localhost:8000/api/projeto/data'
 })
                                             .then(function(response){
                                                 const dado = response[0]
+                                                if(response.length == 0){
                                                     
+                                                }else if(response.length >= 1){
                                                 $('.empresa').html(dado[0]['nome'])
                                                 $('.quilo').html(dado[0]['quilo'])
-                                                $('.empresa').append('<td>' + dado[1]['nome'] + '</td>').html()
-                                                const quilo = $('.quilo')
-                                                quilo.insertAdjacentHTML('afterend', `<td>${dado[1]['quilo']}</td>`)
+}
+                                                
+                                                
+                                                
+                                                    
+                                                
                                             })
                         })
                         </script>
