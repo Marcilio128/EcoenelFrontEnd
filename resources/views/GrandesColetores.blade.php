@@ -78,12 +78,40 @@
                                         </thead>
                                         <tbody>
                                            
-                                            <tr class="caderno">
-                                                <td class="empresa">Ecoenel Empresas</td>
-                                                <td class="quilo">8.060,00</td>
+                                            <tr class="caderno 1">
+                                                <td class="empresa">-- empresa --</td>
+                                                <td class="quilo">00,00</td>
                                                 <td class="unidade">0</td>
-                                                <td class="litro">0.00</td>
-                                                <td class="bonus">2.173,65</td>
+                                                <td class="litro">0,00</td>
+                                                <td class="bonus">0,00</td>
+                                            </tr>
+                                            <tr class="caderno 2">
+                                                <td class="empresa2">Ecoenel Empresas</td>
+                                                <td class="quilo2">8.060,00</td>
+                                                <td class="unidade2">0</td>
+                                                <td class="litro2">0.00</td>
+                                                <td class="bonus2">2.173,65</td>
+                                            </tr>
+                                            <tr class="caderno 3">
+                                                <td class="empresa3">Ecoenel Empresas</td>
+                                                <td class="quilo3">8.060,00</td>
+                                                <td class="unidade3">0</td>
+                                                <td class="litro3">0.00</td>
+                                                <td class="bonus3">2.173,65</td>
+                                            </tr>
+                                            <tr class="caderno 4">
+                                                <td class="empresa4">Ecoenel Empresas</td>
+                                                <td class="quilo4">8.060,00</td>
+                                                <td class="unidade4">0</td>
+                                                <td class="litro4">0.00</td>
+                                                <td class="bonus4">2.173,65</td>
+                                            </tr>
+                                            <tr class="caderno 5">
+                                                <td class="empresa5">Ecoenel Empresas</td>
+                                                <td class="quilo5">8.060,00</td>
+                                                <td class="unidade5">0</td>
+                                                <td class="litro5">0.00</td>
+                                                <td class="bonus5">2.173,65</td>
                                             </tr>
                         <script>
                             $(document).ready(()=>{
@@ -93,17 +121,63 @@ url: 'http://localhost:8000/api/projeto/data'
 })
                                             .then(function(response){
                                                 const dado = response[0]
-                                                if(response.length == 0){
-                                                    
-                                                }else if(response.length >= 1){
+                                                console.log(dado)
+                                                /**
+                                                 * remoção das tabelas não utilizadas
+                                                 */
+                                                if(dado.length < 2){
+                                                    $('.2').remove()
+                                                    $('.3').remove()
+                                                    $('.4').remove()
+                                                    $('.5').remove()
+                                                } else if(dado.length < 3){
+                                                    $('.3').remove()
+                                                    $('.4').remove()
+                                                    $('.5').remove()
+                                                } else if(dado.length < 4){
+                                                    $('.4').remove()
+                                                    $('.5').remove()
+                                                } else if(dado.length < 5){
+                                                    $('.5').remove()
+                                                }
+                                                /**
+                                                 * adição de dados por tabela
+                                                 */
+                                                if(dado.length >= 1){
                                                 $('.empresa').html(dado[0]['nome'])
                                                 $('.quilo').html(dado[0]['quilo'])
-}
-                                                
-                                                
-                                                
-                                                    
-                                                
+                                                $('.unidade').html(dado[0]['unidade'])
+                                                $('.litro').html(dado[0]['litro'])
+                                                $('.bonus').html(dado[0]['bonus'])
+                                                } 
+                                                if(dado.length >= 2){
+                                                $('.empresa2').html(dado[1]['nome'])
+                                                $('.quilo2').html(dado[1]['quilo'])
+                                                $('.unidade2').html(dado[1]['unidade'])
+                                                $('.litro2').html(dado[1]['litro'])
+                                                $('.bonus2').html(dado[1]['bonus'])
+                                                } 
+                                                if(dado.length >= 3){
+                                                $('.empresa3').html(dado[2]['nome'])
+                                                $('.quilo3').html(dado[2]['quilo'])
+                                                $('.unidade3').html(dado[2]['unidade'])
+                                                $('.litro3').html(dado[2]['litro'])
+                                                $('.bonus3').html(dado[2]['bonus'])
+                                                } 
+                                                if(dado.length >= 4){
+                                                $('.empresa4').html(dado[3]['nome'])
+                                                $('.quilo4').html(dado[3]['quilo'])
+                                                $('.unidade4').html(dado[3]['unidade'])
+                                                $('.litro4').html(dado[3]['litro'])
+                                                $('.bonus4').html(dado[3]['bonus'])
+                                                } 
+                                                if (dado.length >= 5){
+                                                $('.empresa5').html(dado[4]['nome'])
+                                                $('.quilo5').html(dado[4]['quilo'])
+                                                $('.unidade5').html(dado[4]['unidade'])
+                                                $('.litro5').html(dado[4]['litro'])
+                                                $('.bonus5').html(dado[4]['bonus'])
+                                                }
                                             })
                         })
                         </script>

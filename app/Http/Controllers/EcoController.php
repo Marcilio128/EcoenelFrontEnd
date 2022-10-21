@@ -87,7 +87,7 @@ class EcoController extends Controller
     public function GOprojeto()
     {
         $data = Date("Y-m-d");
-        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro'))
+        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro,bonus bonus'))
         ->where('data', "$data")
         ->orderBy('quilos', 'desc')
         ->get(Posto::paginate(5));
