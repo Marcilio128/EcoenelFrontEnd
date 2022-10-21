@@ -11,9 +11,9 @@
     
     <title>Ecoenel</title>
 
-    @vite([
-         'resources/scss/reset.scss',
-         'resources/scss/Estado.scss'])
+            <link rel="stylesheet" href="./css/reset.css">
+            <link rel="stylesheet" href="./css/Estado.css">
+ 
          
         </head>
 <body class="EcoEstado">

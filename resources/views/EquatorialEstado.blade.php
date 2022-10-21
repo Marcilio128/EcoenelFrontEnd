@@ -11,10 +11,9 @@
     
     <title>Equatorial</title>
 
-    @vite([
-         'resources/scss/reset.scss',
-         'resources/scss/EstadoEquatorial.scss'])
-         
+                 <link rel="stylesheet" href="./css/reset.css">
+                 <link rel="stylesheet" href="./css/EstadoEquatorial.css">
+
         </head>
 <body class="EcoEstado">
     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">

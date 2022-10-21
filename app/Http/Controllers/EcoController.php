@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eco;
-use App\Models\Projeto;
+use App\Models\Posto;
 use App\Models\Residuo;
 use App\Models\Resumo;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class EcoController extends Controller
 
     public function projeto()
     {
-        $projetos = Projeto::all();
+        $projetos = Posto::all();
         return response()->json(
             [$projetos]
         );
@@ -23,6 +23,13 @@ class EcoController extends Controller
         $residuos = Residuo::all();
         return response()->json(
             [$residuos]
+        );
+    }
+    public function resumo()
+    {
+        $resumos = Resumo::all();
+        return response()->json(
+            [$resumos]
         );
     }
     //versões where
@@ -41,13 +48,18 @@ class EcoController extends Controller
             $residuos
         ]);
     }
-    public function resumo()
+    public function GOprojeto()
     {
-        $resumos = Resumo::all();
+        $data = Date("Y-m-d");
+        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro'))
+        ->where('data', "$data")
+        ->orderBy('quilos', 'desc')
+        ->get(Posto::paginate(5));
         return response()->json(
             [$resumos]
         );
     }
+
     
     
 }

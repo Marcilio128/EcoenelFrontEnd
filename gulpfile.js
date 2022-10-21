@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify')
 const babel = require('gulp-babel')
 
 function SCSS(){
-	return gulp.src('resources/scss/index.scss')
+	return gulp.src('resources/scss/index.scss', 'resources/sass/index.scss')
 		.pipe(sass().on('error: ', sass.logError))
 		.pipe(uglifycss({"uglycomments": false}))
 		.pipe(concat('main-style.css'))

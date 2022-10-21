@@ -27,7 +27,7 @@
 .Residometro p{
   margin: 5rem;
   font-weight: 100;
-  color: var(--color-secondary);
+  color: rgba(0, 0, 0, 0.756);
  
 }
 .sair{
@@ -149,6 +149,29 @@
   }
   }
   /*Shrinking for mobile*/
+
+  @media only screen and (min-width: 2000px) {
+    .Residometro{
+      padding: 1rem 0;
+    }
+    .tick {
+      margin: 5rem auto;
+      width: 100vh;
+    }
+    .Residometro .ponto{
+      position: relative;
+      margin: 3rem 0.1rem 0;
+      color: var(--color-gray);
+      font-size: 60px;
+   
+    }
+    .Residometro p {
+      margin: -3rem 0.1rem 0;
+      font-size: 2rem;
+    }
+  }
+
+
   @media (max-width: 768px) {
   .waves {
     height:40px;
@@ -186,6 +209,13 @@
  
 }
  
+ 
+@media (max-width: 920px)  {
+  .tick {
+    width: 100vh;
+  }
+}
+
 @media only screen and (max-width: 900px){
   .tick {
     width: 80vh;

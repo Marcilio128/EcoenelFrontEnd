@@ -1,11 +1,10 @@
 .EcoEstado {
-    background: linear-gradient(132deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(132deg, #3ebbe5, #1177ba);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
     padding:0;
     margin:0px;
   }
@@ -19,13 +18,13 @@
     margin-top: 0vh; 
 
 }
-.EcoenelLogo{
-    margin: -5vh 0 ;
-    width: 36rem;
+.EquatorialLogo{
+    margin: 5vh 0 ;
+    width: 15rem;
 }
 
 h1{
-    margin: -3rem 0 1rem;
+    margin: -1rem 0 1rem;
     font-size: 2.8rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -74,7 +73,7 @@ h1{
 }
 
 @media only screen and (max-width: 540px){
-    .EcoenelLogo{
+    .EquatorialLogo{
         margin: -5vh 0 ;
         width: 70vh;
     }
@@ -92,9 +91,9 @@ h1{
 }
 
 @media only screen and (max-width: 480px){
-    .EcoenelLogo{
-        width: 90vw;
-        margin: 0.5rem 0;
+    .EquatorialLogo{
+        width: 50vw;
+        margin: -3rem 0;
     }
     .EcoEstado{
         margin: 1rem 0rem;
@@ -104,22 +103,22 @@ h1{
        
       }
       h1{
-        margin: -3rem 0rem 1rem;
+        margin: 3rem 0rem 1rem;
         font-size: 2rem;
     }
       
 }
 
 @media only screen and (max-width: 400px){
-    .EcoenelLogo{
-        width: 90vw;
-        margin: 0.5rem 0;
+    .EquatorialLogo{
+        width: 45vw;
+        margin: 0.3rem 0;
     }
     .EcoEstado{
         margin: 1rem 0rem;
     }
     h1{
-        margin: -3rem 0rem 1rem;
+        margin: 0.5rem 0rem 1rem;
         font-size: 2rem;
     }
 }

@@ -1,5 +1,5 @@
 /*Estilização Das Logos*/
-
+ 
 .logos{
     height: 15vh;
 }
@@ -7,29 +7,20 @@
 .MenuNavbar .MenuContainer  .logos{
     background-color: var(--color-primary);
 }
-
+ 
 button.carousel-control-prev{
     width: 4rem;
 }
-
+ 
 button.carousel-control-next{
     margin: 8rem 0 0 0;
     height: 100%;
     width: 4rem;
 }
-
-
-
-
-
-/*Botões para navegação*/
-
-.Residometro h1{
-  color: #685c5c;
-  margin-top: 1rem;
-  font-weight: 700;
-  font-size: 2rem;
-}
+ 
+ 
+ 
+ 
 
 /*Residometro && Atualização*/
 .section1 .MenuContainer{
@@ -38,30 +29,30 @@ button.carousel-control-next{
     justify-content: center;
     align-items: center;
     text-align: center;
-
+ 
 }
-
+ 
 .Residometro{
     text-align: center;
     margin: 200px 0 0 0;
     font-size: 2rem;
 }
  
-
+ 
 .GraficoColetores .container{
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+   
 }
-
+ 
 .GraficoColetores .container h1{
     color:  rgb(67, 60, 60);
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
 }
-
+ 
 .tabela-Rank .MenuContainer{
   display: flex;
   flex-direction: column;
@@ -70,7 +61,7 @@ button.carousel-control-next{
   margin: 0 auto;
   text-align: center;
 }
-
+ 
 .start{
     display: flex;
     margin-top: 10vh;
@@ -78,7 +69,7 @@ button.carousel-control-next{
     font-size: 1.5rem;
     text-align: center;
     margin: 1rem 2rem ;
-    
+   
 }
 table{
     margin: 0 0 4rem;  
@@ -92,17 +83,17 @@ table{
 td{
     padding: 0.6rem;
     word-wrap:break-word;
-
+ 
 }
   th{
     padding: 0.6rem;
-
+ 
     border: 0;
     background-color: var(--color-secondary);
     color: rgb(255, 255, 255);
     font-weight: 300;
     margin: 0 -3rem;
-    
+   
   }
 .title{
     display: flex;
@@ -111,25 +102,19 @@ td{
     text-align: center;
     gap: 8rem;
     width:20rem;
-
+ 
     color: white;
 }
-
-.vertical {
-    border-left: 2px solid var(--color-primary);
-    height: 60vh;
-    overflow-y: hidden;
-
-}
-
+ 
+ 
 div.MenuContainerTopic{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-
+ 
 }
-
+ 
 .Sec-Att .lastAtt{
     text-align: center;
     border-radius: 0 3rem 3rem 0;
@@ -149,8 +134,9 @@ div.MenuContainerTopic{
     gap: 1rem;
     flex-direction: row;
 }
-
+ 
 .Sec-Att .lastAtt span{
     font-size: 1.5rem;
     font-weight: 300;
 }
+ 

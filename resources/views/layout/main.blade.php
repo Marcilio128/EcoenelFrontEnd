@@ -25,26 +25,19 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <title>@yield('title')</title>
  
-        @vite([
-        'resources/js/JQuery.js',
-        'resources/js/DataScript.js',
-        'resources/css/app.css',
-         'resources/scss/reset.scss',
-         'resources/scss/static.scss',
-         'resources/scss/DiaAtual.scss',
-         'resources/js/app.js',
-         'resources/css/app.js',
-         'resources/js/Grafico.js',
-        'resources/js/animate.js',
-        'resources/scss/Responsividade.scss',
-        'resources/scss/flipnumber.scss',
-        'resources/scss/menu.scss',
-        'resources/js/menu.js',
-        'resources/scss/waves.scss',
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
- 
- 
+    
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <link rel="stylesheet" href="./public/reset.css">
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/static.css">
+ <link rel="stylesheet" href="./css/DiaAtual.css">
+ <link rel="stylesheet" href="./css/app.css">
+ <link rel="stylesheet" href="./css/flipnumber.css">
+ <link rel="stylesheet" href="./css/menu.css">
+ <link rel="stylesheet" href="./css/waves.css">
+
     </head>
     <body>
  
@@ -54,13 +47,13 @@
             <nav>
               <ul class="navbar-nav logout">
                 <li class='decima'>
- 
-                    <span class="logout"><a href={{ route('logout') }} class="logout" href="/logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /></a>
-                    </span>
-                </li>
-                <li>
-                        <span
-                            class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
+                  <span class="logout"><a href={{ route('logout') }} class="logout" href="/logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /></a>
+                  </span>
+              </li>
+              <li>
+                      <span
+                         id="nameuser" class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
+                 
             </ul>
  
  
@@ -91,19 +84,7 @@
  
  
     </body>
-    <script type="text/javascript" src="js/layout/main-script.js"></script>
-    <script src="js/layout/boot/boot-script.js"></script>
- 
- 
-    <script src="/js/JQuery.js"></script>
-    <script src="/js/Grafico.js"></script>
-    <script src="/js/StaticScript.js"></script>
-    <script src="/js/animate.js"></script>
-    <script src="/flip/flip.min.js"></script>
- 
-    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
- 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
     <script>
         AOS.init();
 const swiper = new Swiper('.swiper', {
@@ -126,7 +107,31 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
     </script>
 <script src="https://use.fontawesome.com/c296b8836a.js"></script>
  
+<script type="text/javascript" src="js/layout/main-script.js"></script>
+<script src="js/layout/boot/boot-script.js"></script>
+
+<script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="./js/JQuery.js"></script>
+<script src="./js/DataScript.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/Grafico.js"></script>
+<script src="./js/animate.js"></script>
+<script src="./js/menu.js"></script>
+
+
+<script src="./public/css/app.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
 </html>

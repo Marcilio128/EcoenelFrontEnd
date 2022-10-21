@@ -7,16 +7,15 @@
    
   }
   .Eco3eLogo{
-    width: 22vw;
-    height: 25vh;
-    z-index: 5000;
-
+    width: 6vw;
+    height: 10vh;
+   z-index: 5000;
   }
   nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-orange);
     height: 15vh;
     flex-direction: row-reverse;
   }
@@ -66,7 +65,7 @@
     left: 0;
     width: 50vw;
     height: 100vh;
-    background-color: var(--color-primary);
+    background-color: var(--color-orange);
     justify-content: space-around;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
@@ -80,7 +79,8 @@
     width: 35vw;
     padding: 8px 5px;
     margin: 5rem 4rem;
-   
+    font-family: 'Gotham Rounded', sans-serif;
+
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -193,28 +193,30 @@
     }
   }
    
+
   @media only screen and (max-width: 500px){
     .Eco3eLogo{
-      width: 15vw;
+      width: 32vw;
      }
-  /*    .sair{
-      width: 3px;
+     .sair{
+      margin: 1rem -1rem 1rem;
+      width: 35px;
+      height: 35px;
+
      }
-     span .logout{
-      font-size: 1px;
-     } */
+     #nameuser{
+      display: none;
+     } 
   }
    
   @media only screen and (max-width: 540px){
     .Eco3eLogo{
-      width: 70vw;
+      width: 20vw;
+      height: 10vh;
      }
   }
    
   @media only screen and (max-width: 400px){
-    .Eco3eLogo{
-      width: 70vw;
-     }
    
      .btnMenu{
       width: 80vw;
@@ -222,11 +224,3 @@
     }
   }
    
-  @media only screen and (max-width: 360px){
-    .Eco3eLogo{
-      width: 80vw;
-     }
-   
-  }
-   
-  
