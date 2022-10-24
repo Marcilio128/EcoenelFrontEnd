@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/projeto', [EcoController::class, 'projeto']);
-Route::get('/residuo', [EcoController::class, 'residuo']);
+Route::get('/residometroce', [EcoController::class, 'residometroCE']);
 Route::get('/resumo', [EcoController::class, 'resumo']);
 
 //RESUMOS

@@ -250,7 +250,7 @@ url: 'http://localhost:8000/api/resumo/mesa'
 
                     <div class="dados">
                         <h2>Beneficiados:</h2>
-                        <p class="beneficiados  A"> 00 Clientes</p>
+                        <p class="beneficiadosA"> 00 Clientes</p>
                     </div>
 
                     <div class="linhaHorizontal"></div>

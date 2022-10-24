@@ -18,9 +18,9 @@ class EcoController extends Controller
             [$projetos]
         );
     }
-    public function residuo()
+    public function residometroCE()
     {
-        $residuos = Residuo::all();
+        $residuos = Resumo::select(Resumo::raw('SUM(kg) kg'))->where('id_projeto', 1)->get();
         return response()->json(
             [$residuos]
         );

@@ -20,7 +20,6 @@
         <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
-        <link href="/flip/flip.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <title>@yield('title')</title>
@@ -47,7 +46,7 @@
             <nav>
               <ul class="navbar-nav logout">
                 <li class='decima'>
-                  <span class="logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /> </a>
+                  <a href="{{route('logout')}}"><span class="logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /> </a>
                   </span>
               </li>
               <li>
