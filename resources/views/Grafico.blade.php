@@ -217,10 +217,10 @@ url: 'http://localhost:8000/api/resumo/mesa'
     .then(function(response){
 
             const dado = response[0][0]
-                $('.beneficiadosMA').html(dado['clientesMA'] + " Clientes")
-                $('.bonusMA').html("R$ "+ dado['bonusMA'].toFixed(2))
-                $('.coletadosMA').html(dado['kgMA'].toFixed(2) + " Kg")
-                $('.economizadosMA').html(dado['economizadoMA'].toFixed(2) + " KWH")
+                $('.beneficiadosMA').html(dado['clientes'] + " Clientes")
+                $('.bonusMA').html("R$ "+ dado['bonus'].toFixed(2))
+                $('.coletadosMA').html(dado['kg'].toFixed(2) + " Kg")
+                $('.economizadosMA').html(dado['economizado'].toFixed(2) + " KWH")
     })
                         })
                     </script>

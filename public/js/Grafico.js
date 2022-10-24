@@ -7,13 +7,13 @@ function Dia() {
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
-        const oleo = dado[5]['kg']
+        const oleo = dado[4]['kg']
         const eletronico = dado[6]['kg']
         const vidro = dado[1]['kg']
         const plastico = dado[2]['kg']
         const metal = dado[3]['kg']
         const papel = dado[0]['kg']
-        const longavida = dado[4]['kg']
+        const longavida = dado[5]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -136,13 +136,13 @@ function Mes() {
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
-        const oleo = dado[5]['kg']
+        const oleo = dado[4]['kg']
         const eletronico = dado[6]['kg']
         const vidro = dado[1]['kg']
         const plastico = dado[2]['kg']
         const metal = dado[3]['kg']
         const papel = dado[0]['kg']
-        const longavida = dado[4]['kg']
+        const longavida = dado[5]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -265,13 +265,13 @@ function MesA() {
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
-        const oleo = dado[5]['kg']
+        const oleo = dado[4]['kg']
         const eletronico = dado[6]['kg']
         const vidro = dado[1]['kg']
         const plastico = dado[2]['kg']
         const metal = dado[3]['kg']
         const papel = dado[0]['kg']
-        const longavida = dado[4]['kg']
+        const longavida = dado[5]['kg']
 
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
@@ -395,14 +395,13 @@ function Ano() {
     }).then(function (response) {
         //atribuição de dado individual
         const dado = response[0]
-        const oleo = dado[5]['kg']
+        const oleo = dado[4]['kg']
         const eletronico = dado[6]['kg']
         const vidro = dado[1]['kg']
         const plastico = dado[2]['kg']
         const metal = dado[3]['kg']
         const papel = dado[0]['kg']
-        const longavida = dado[4]['kg']
-
+        const longavida = dado[5]['kg']
         //cálculo de porcentagem
         const total = oleo + eletronico + vidro + plastico + metal + papel + longavida
 

@@ -79,7 +79,7 @@ class EcoController extends Controller
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data', "$data"]
-        ])->groupBy('nome')->get();
+        ])->orderBy('kg','desc')->groupBy('nome')->get();
         return response()->json([
             $residuos
         ]);
@@ -89,7 +89,7 @@ class EcoController extends Controller
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data','like', "$data%"]
-        ])->groupBy('nome')->get();
+        ])->orderBy('kg','desc')->groupBy('nome')->get();
         return response()->json([
             $residuos
         ]);
@@ -100,7 +100,7 @@ class EcoController extends Controller
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data','like', "$data%"]
-        ])->groupBy('nome')->get();
+        ])->orderBy('kg','desc')->groupBy('nome')->get();
         return response()->json([
             $residuos
         ]);
@@ -111,7 +111,7 @@ class EcoController extends Controller
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data','like', "$data%"]
-        ])->groupBy('nome')->get();
+        ])->orderBy('kg','desc')->groupBy('nome')->get();
         return response()->json([
             $residuos
         ]);
