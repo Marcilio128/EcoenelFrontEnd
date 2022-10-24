@@ -62,7 +62,7 @@ Route::get('/TabelasColetoresEquatorial', function () {
 
 
 Route::get('/3eDados', function () {
-    return view('Residometro3e');
+    return view('Residometro3e');  
 })->middleware('auth');
 
 Route::get('/3eGrafico', function () {

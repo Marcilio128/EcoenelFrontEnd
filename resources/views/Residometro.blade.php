@@ -19,39 +19,189 @@ data-aos-duration="1500">
 
 
         <script>
-            $(document).ready(()=>{
             $.ajax({
             method: 'GET',
             url: 'http://localhost:8000/api/residometroce'
             })
                 .then(function(response){
-                const dado1 = response[0][0]['kg'].toFixed(9)
+                const dado1 = response[0][0]['kg'].toFixed(2)
                 const dado = dado1.toString()
                 const valor = dado.replace(/\./g, "")
                 $('.tick').attr("data-value", valor)
                 $('.tick').attr("data-did-init", "handleTickInit")
 
+                let i = 0
+                ++i
+                ++i
+                ++i
+                ++i
+                ++i
+                
+                if(valor.length == ++i){//6
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//7
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//8
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//9
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//10
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//11
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//12
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//13
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                if(valor.length == ++i){//14
+                    $('[flip]').html(
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>.</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span ponto>,</span>' +
+                        '<span data-view="flip"></span>' +
+                        '<span data-view="flip"></span>'
+                    )
+                }
+                
             })
+
+            $(document).ready(function(){
+                $('span[ponto]').addClass('ponto').css('color', 'gray')
             })
+        
         </script>
         <div class="tick">
 
-            <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.1) -> round -> split -> delay(rtl, 100, 150)">
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span class="ponto">.</span> 
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span class="ponto">.</span> 
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
-                <span class="ponto">,</span>
-                <span data-view="flip"></span>
-                <span data-view="flip"></span> 
-                <span class="medida">kg</span>
+            <div flip data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.1) -> round -> split -> delay(rtl, 100, 150)">
+
 
             </div>
 
@@ -97,11 +247,12 @@ data-aos-duration="1500">
         function handleTickInit(tick) {
 
 // update the value every 5 seconds
-var interval = Tick.helper.duration(5, 'seconds');
 
 // value to add each interval
 var valuePerInterval = 5;
 
+// offset is a fixed date in the past
+var dateOffset = Tick.helper.date('2022-01-01');
 
 // value to start with, the value of the counter at the offset date
 var valueOffset = 1;

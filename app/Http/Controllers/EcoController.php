@@ -79,7 +79,7 @@ class EcoController extends Controller
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data', "$data"]
-        ])->orderBy('kg','desc')->groupBy('nome')->get();
+        ])->orderBy('nome')->get();
         return response()->json([
             $residuos
         ]);

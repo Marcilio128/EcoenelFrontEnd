@@ -114,7 +114,6 @@
                                                 <td class="bonus5">2.173,65</td>
                                             </tr>
                         <script>
-                            $(document).ready(()=>{
 $.ajax({
 method: 'GET',
 url: 'http://localhost:8000/api/projeto/data'
@@ -178,7 +177,6 @@ url: 'http://localhost:8000/api/projeto/data'
                                                 $('.bonus5').html(dado[4]['bonus'])
                                                 }
                                             })
-                        })
                         </script>
                                      </tbody>
                                     </table>

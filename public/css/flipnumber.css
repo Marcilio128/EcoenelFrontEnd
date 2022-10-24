@@ -60,12 +60,11 @@
 .tick-flip-panel-text-wrapper {
    line-height: 1.45 !important;
 }
-.Residometro .ponto{
+.ponto{
   position: relative;
   margin: .8rem 0.1rem 0;
   color: var(--color-gray);
   font-size: 40px;
- 
 }
  
 .tick-flip-panel {
@@ -159,7 +158,7 @@
       margin: 2rem auto;
       width: 100vh;
     }
-    .Residometro .ponto{
+    .ponto{
       position: relative;
       margin: .5rem 0.1rem 0;
       color: var(--color-gray);
@@ -201,7 +200,7 @@
     width: 100vh;
   }
 
-  .Residometro .ponto{
+  .ponto{
     margin: 1.0rem 0.1rem 0;
     color: var(--color-gray);
     font-size: 30px;
@@ -215,7 +214,7 @@
     width: 75vw;
   }
  
-  .Residometro .ponto{
+  .ponto{
     position: relative;
     margin: .7rem 0.1rem 0;
     color: var(--color-gray);
@@ -230,7 +229,7 @@
     width: 85vw;
   }
  
-  .Residometro .ponto{
+  .ponto{
     position: relative;
     margin: 0.2rem 0.1rem 0;
     color: var(--color-gray);
@@ -246,7 +245,7 @@
   .Residometro .tick {
     width: 60vh;
   }
-  .Residometro .ponto{
+  .ponto{
     position: relative;
     margin: -0.2rem 0.1rem 0;
     color: var(--color-gray);
@@ -268,7 +267,7 @@
   padding: 0rem;
   font-size: 1rem;
 }
-.Residometro .ponto{
+.ponto{
   position: relative;
   margin: -.5rem 0.1rem 0;
   color: var(--color-gray);
@@ -286,7 +285,7 @@
     width: 70vh;
 
   }
-  .Residometro .ponto{
+  .ponto{
     margin: .1rem 0.1rem 0;
 
   }
@@ -297,8 +296,8 @@
     .Residometro .tick{
       width: 60vh;
     }
-    .Residometro .ponto{
-      margin: -.1rem 0.1rem 0;
+    .ponto{
+      margin: -.2rem 0.1rem 0;
   
   }
 }
@@ -307,7 +306,7 @@
       .Residometro .tick{
         width: 45vh;
       }
-      .Residometro .ponto{
+      .ponto{
         margin: -.3rem 0.1rem 0;
         font-size: 20px;
   }
@@ -318,7 +317,7 @@
   .Residometro .tick{
     width: 43vh;
   }
-  .Residometro .ponto{
+  .ponto{
     margin: -.2rem 0.1rem 0;
 
 }
@@ -334,7 +333,7 @@
   .Residometro .tick{
     width:45vh;
   }
-  .Residometro .ponto{
+  .ponto{
     margin: -.2rem 0.1rem 0;
     font-size: 20px;
 }
@@ -349,7 +348,7 @@
   width:48vh;
     margin: -4rem auto;
   } 
-  .Residometro .ponto{
+  .ponto{
     margin: .5rem 0.1rem 0;
     font-size: 10px;
 }
@@ -363,7 +362,7 @@
    width: 35vh;
      margin: -3rem auto;
    } 
-   .Residometro .ponto{
+   .ponto{
      margin: .5rem 0.1rem 0;
      font-size: 10px;
  }
@@ -381,7 +380,7 @@
    width: 30vh;
      margin: -10rem 2.5rem;
    } 
-   .Residometro .ponto{
+   .ponto{
      margin: .1rem 0.1rem 0;
      font-size: 10px;
  }
