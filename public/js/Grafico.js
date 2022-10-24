@@ -46,6 +46,10 @@ function Dia() {
         const ol = (100 * oleo) / total
         const Poleo = parseFloat(ol.toFixed(2))
 
+        if(total == 0){
+            console.log("Não tem dados cabo")
+        }
+
         Highcharts.chart("containerGrafico", {
             chart: {
                 type: "column",

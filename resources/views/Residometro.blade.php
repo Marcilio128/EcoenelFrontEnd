@@ -25,7 +25,7 @@ data-aos-duration="1500">
             url: 'http://localhost:8000/api/residometroce'
             })
                 .then(function(response){
-                const dado1 = response[0][0]['kg'].toFixed(2)
+                const dado1 = response[0][0]['kg'].toFixed(9)
                 const dado = dado1.toString()
                 const valor = dado.replace(/\./g, "")
                 $('.tick').attr("data-value", valor)
@@ -38,15 +38,17 @@ data-aos-duration="1500">
 
             <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.1) -> round -> split -> delay(rtl, 100, 150)">
                 <span data-view="flip"></span>
-                <span class="ponto">.</span> 
-                <span data-view="flip"></span>
-                <span data-view="flip"></span>
                 <span data-view="flip"></span>
                 <span class="ponto">.</span> 
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span>
-                <span class="ponto">.</span>
+                <span class="ponto">.</span> 
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span data-view="flip"></span>
+                <span class="ponto">,</span>
                 <span data-view="flip"></span>
                 <span data-view="flip"></span> 
                 <span class="medida">kg</span>
@@ -100,8 +102,6 @@ var interval = Tick.helper.duration(5, 'seconds');
 // value to add each interval
 var valuePerInterval = 5;
 
-// offset is a fixed date in the past
-var dateOffset = Tick.helper.date('2022-01-01');
 
 // value to start with, the value of the counter at the offset date
 var valueOffset = 1;

@@ -62,7 +62,7 @@
 }
 .Residometro .ponto{
   position: relative;
-  margin: 1.5rem 0.1rem 0;
+  margin: .8rem 0.1rem 0;
   color: var(--color-gray);
   font-size: 40px;
  
@@ -283,7 +283,7 @@
 
 @media only screen and (max-width: 650px){
   .Residometro .tick{
-    width: 90vh;
+    width: 70vh;
 
   }
   .Residometro .ponto{
@@ -292,12 +292,13 @@
   }
   }
 
+
   @media only screen and (max-width: 550px){
     .Residometro .tick{
-      width: 70vh;
+      width: 60vh;
     }
     .Residometro .ponto{
-      margin: -.2rem 0.1rem 0;
+      margin: -.1rem 0.1rem 0;
   
   }
 }
