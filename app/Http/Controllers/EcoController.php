@@ -33,14 +33,47 @@ class EcoController extends Controller
         );
     }
     //versões where
-    public function GOresumo()
+
+    //RESUMOS
+
+    public function ResumoDia()
     {
         $data = Date("Y-m-d");
-        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where('data', "$data")->get();
+        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where([['data', "$data"],['id_projeto',1]])->get();
         return response()->json(
             [$resumos]
         );
     }
+
+    public function ResumoMes()
+    {
+        $data = Date("Y-m");
+        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where([['data','like', "$data%"], ['id_projeto', 1]])->get();
+        return response()->json(
+            [$resumos]
+        );
+    }
+
+    public function ResumoMesA()
+    {
+        $data = date('Y-m', strtotime('-1 months', strtotime(date('Y-m'))));
+        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where([['data','like', "$data%"], ['id_projeto', 1]])->get();
+        return response()->json(
+            [$resumos]
+        );
+    }
+
+    public function ResumoAno()
+    {
+        $data = Date("Y");
+        $resumos = Resumo::select(Resumo::raw('SUM(kg) kg, SUM(clientes) clientes, SUM(bonus) bonus, SUM(economizado) economizado'))->where([['data','like', "$data%"], ['id_projeto', 1]])->get();
+        return response()->json(
+            [$resumos]
+        );
+    }
+
+    //RESIDUOS
+
     public function ResiduoDia(){
         $data = Date("Y-m-d");
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
@@ -63,7 +96,7 @@ class EcoController extends Controller
     }
 
     public function ResiduoMesA(){
-        $data = Date("Y-m", strtotime('-1 months', strtotime(date('Y-m'))));
+        $data = date('Y-m', strtotime('-1 months', strtotime(date('Y-m'))));
         $residuos = Residuo::select(Residuo::raw('nome nome, SUM(massa) kg'))->where([
             ['id_projeto', 1],
             ['data','like', "$data%"]
@@ -87,7 +120,7 @@ class EcoController extends Controller
     public function GOprojeto()
     {
         $data = Date("Y-m-d");
-        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro,bonus bonus'))
+        $resumos = Posto::select(Posto::raw('nome nome, quilos quilo, unidades unidade, litros litro'))
         ->where('data', "$data")
         ->orderBy('quilos', 'desc')
         ->get(Posto::paginate(5));

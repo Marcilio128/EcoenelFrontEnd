@@ -28,7 +28,13 @@ Route::get('/projeto', [EcoController::class, 'projeto']);
 Route::get('/residuo', [EcoController::class, 'residuo']);
 Route::get('/resumo', [EcoController::class, 'resumo']);
 
-Route::get('/resumo/data', [EcoController::class, 'GOresumo']);
+//RESUMOS
+Route::get('/resumo/dia', [EcoController::class, 'ResumoDia']);
+Route::get('/resumo/mes', [EcoController::class, 'ResumoMes']);
+Route::get('/resumo/mesa', [EcoController::class, 'ResumoMesA']);
+Route::get('/resumo/ano', [EcoController::class, 'ResumoAno']);
+
+
 //RESIDUOS
 Route::get('/residuo/dia', [EcoController::class, 'ResiduoDia']);
 Route::get('/residuo/mes', [EcoController::class, 'ResiduoMes']);
