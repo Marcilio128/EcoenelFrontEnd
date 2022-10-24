@@ -7,8 +7,8 @@
    
   }
   .Eco3eLogo{
-    width: 22vw;
-    height: 25vh;
+    width: 25vw;
+    height: 30vh;
     z-index: 5000;
  
   }
@@ -130,8 +130,8 @@
 }
 @media only screen and (min-width: 2300px){
   nav .Eco3eLogo {
-    height: 26vh;
-    width: 25vw;
+    height: 28vh;
+    width: 23vw;
   }
  
   .btnMenu{
@@ -158,8 +158,8 @@
 
 @media only screen and (min-width: 3000px){
   .Eco3eLogo{
-    height: 25vh;
-    width: 25vw;
+    height: 35vh;
+    width: 15vw;
   }
  
 
@@ -190,7 +190,9 @@
     .btnMenu{
       margin: 5rem 1rem;
       }
-   
+      .sair{
+        margin: -0.1rem 0.1rem 0rem;
+       }
   }
   @media only screen and (max-width: 1250px){
     .nav-list{
@@ -198,10 +200,13 @@
    
     }
     .Eco3eLogo{
-      width: 30vw;
-      height: 22vh;
+      width: 25vw;
+      height: 30vh;
    
     }
+    .sair{
+      margin: -0.1rem 0.1rem 0rem;
+     }
    
   }
    
@@ -209,22 +214,53 @@
     .nav-list{
       width: 60vw;
     }
+    .sair{
+      margin: -0.1rem 0.1rem 0rem;
+     }
     .Eco3eLogo{
-     width: 50vw;
-     height: 26vh;
+     width: 30vw;
+     height: 30vh;
     }
   }
    
-  @media only screen and (max-width: 810px){
+  @media only screen and (max-width: 850px){
     .nav-list{
       width: 70vw;
    
     }
+    
     .Eco3eLogo{
       width: 40vw;
+      height: 35vh;
+    }
+    .sair{
+      margin: -0.1rem 0.1rem 0rem;
      }
   }
+
+
+  @media only screen and (max-width: 750px){
+    .Eco3eLogo{
+      width: 40vw;
+      height: 30vh;
+      margin: 0 auto;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+     }
+     .nav-list{
+      width: 100vw;
    
+    }
+    .sair{
+      margin: -0.1rem 0.1rem 0rem;
+     }
+    .btnMenu{
+      width: 80vw;
+      margin: 3rem  -0.5rem 0.5rem;
+    }
+  }
+
   @media only screen and (max-width: 690px){
     .Eco3eLogo{
       width: 45vw;
@@ -233,6 +269,12 @@
       width: 100vw;
    
     }
+    .sair{
+      margin: -0.1rem 0.1rem 0rem;
+      width: 40px;
+      height: 40px;
+ 
+     }
     .btnMenu{
       width: 80vw;
       margin: 3rem  -0.5rem 0.5rem;
@@ -243,7 +285,15 @@
     .Eco3eLogo{
       width: 50vw;
      }
-   
+     .sair{
+      margin: -0.1rem 0.1rem 0rem;
+      width: 40px;
+      height: 40px;
+ 
+     }
+     #nameuser{
+      font-size: 15px;
+     }
   }
    
  
@@ -263,21 +313,48 @@
      }
   }
    
+
+   
+  @media only screen and (max-width: 450px){
+    .Eco3eLogo{
+      width: 15vw;
+     }
+     .sair{
+      margin: 1rem -0.5rem 1rem;
+      width: 35px;
+      height: 35px;
+ 
+     }
+     #nameuser{
+      display: none;
+     }
+  }
+   
+
   @media only screen and (max-width: 540px){
     .Eco3eLogo{
-      width: 60vw;
+      width: 50vw;
       height: 25vh;
       margin: 0 0 0 -1rem;
+     }
+     .sair{
+      margin: 0rem -0.5rem 0rem;
+      width: 35px;
+      height: 35px;
+ 
      }
      .btnMenu{
       margin: 3rem -1.5rem 0.5rem;
     }
+    #nameuser{
+      display: none;
+     }
   }
    
   @media only screen and (max-width: 420px){
     .Eco3eLogo{
       width: 70vw;
-      height: 20vh;
+      height: 30vh;
       margin: 0 0 0 -1rem;
      }
    
@@ -289,9 +366,20 @@
    
   @media only screen and (max-width: 360px){
     .Eco3eLogo{
-      width: 80vw;
+      width: 60vw;
+      height: 20vh;
+
      }
    
   }
    
- 
+  @media only screen and (max-width: 250px){
+    .btnMenu{
+      width: 90vw;
+      font-size: 10px;
+      margin: 1rem -3.2rem 0.5rem;
+    }
+    .nav-list{
+      margin: 0.5rem 0rem;
+    }
+   }

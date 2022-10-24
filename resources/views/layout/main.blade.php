@@ -47,12 +47,12 @@
             <nav>
               <ul class="navbar-nav logout">
                 <li class='decima'>
-                  <span class="logout"><a href={{ route('logout') }} class="logout" href="/logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /></a>
+                  <span class="logout"><img src="./assets/logout.png" class="sair" alt="" srcset="" /> </a>
                   </span>
               </li>
               <li>
                       <span
-                         id="nameuser" class="logout">{{ empty(auth()->user()->name) ? '' : auth()->user()->name }}</span>
+                         id="nameuser" class="logout">jasdoasjodasjajod</span>
 
             </ul>
 

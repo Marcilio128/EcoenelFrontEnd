@@ -18,10 +18,11 @@ data-aos-duration="1500">
  
  
  
-        <div class="tick" data-value="3111111111" data-did-init="handleTickInit">
+        <div class="tick" data-value="14321345123" data-did-init="handleTickInit">
  
             <div data-value-mapping="indexes" data-layout="horizontal fit" data-transform="arrive(.1) -> round -> split -> delay(rtl, 100, 150)">
-               
+                <span data-view="flip"></span>
+
                 <span data-view="flip"></span>
                 <span class="ponto">.</span>
                 <span data-view="flip"></span>
@@ -87,7 +88,7 @@ var interval = Tick.helper.duration(5, 'seconds');
 var valuePerInterval = 5;
  
 // offset is a fixed date in the past
-var dateOffset = Tick.helper.date('2019-01-01');
+var dateOffset = Tick.helper.date('2022-01-01');
  
 // value to start with, the value of the counter at the offset date
 var valueOffset = 1;
@@ -106,7 +107,7 @@ Tick.helper.interval(function () {
   var diff = now - dateOffset;
  
   // total time since offset divide by interval gives us the amount of loops since offset
-  var loops = diff / interval;
+  var loops = diff - interval;
  
   // this will make sure we only count completed loops.
   loops = Math.floor(loops);
