@@ -39,7 +39,7 @@ O desenvolvimento deste projeto visa melhorar a maneira como os dados são entre
   <h4 align="center">     :construction:  Projeto em construção  :construction:</h4>
 
 <p align="center">
-   <img align="center" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
+   <img align="center" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 
@@ -61,16 +61,57 @@ https://user-images.githubusercontent.com/72000036/200191952-c86110cb-729b-4b3a-
 :heavy_check_mark: `Funcionalidade 4:` Consulta dos dados do residômetro (Resíduos Coletados)
 
 •ENEL
+   
+   -Contém o residômetro para a contagem de resíduos reciclados pelos estados da ENEL
+    
+![image](https://user-images.githubusercontent.com/72000036/204022395-9c95ad06-7b7d-43ee-9724-ed5185ac6433.png)
+    
+    -Contém um gráfico para melhor análise da quantidade de cada resíduo pelos estados da ENEL. Apresentando a análise do
+    (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+    
+![image](https://user-images.githubusercontent.com/72000036/204019679-73fe7d4f-2bda-4f41-bbea-a3300dba7e58.png)
 
-https://user-images.githubusercontent.com/72000036/200194377-0222baf9-5922-4220-9b54-ce053f40c2d9.webm
+    
+    -Contém uma tabela para a análise de qual empresa está destinando a quantidade de resíduos pelos estados da ENEL. Apresentando a análise do
+    (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+
+![image](https://user-images.githubusercontent.com/72000036/204021492-0bbfc3bc-76e1-4293-94d8-adbfa5de381e.png)
+
 
 •Equatorial
 
-https://user-images.githubusercontent.com/72000036/200194582-48606623-d000-4d60-b714-2d7dc024037f.webm
+    -Contém o residômetro para a contagem de resíduos reciclados pela junção dos estados do Equatorial
+
+![image](https://user-images.githubusercontent.com/72000036/204023697-e48831e6-778a-47a0-9235-faa67537d305.png)
+
+    -Contém um gráfico para melhor análise da quantidade de cada resíduo pelos estados da Equatorial. Apresentando a análise do
+    (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+    
+![image](https://user-images.githubusercontent.com/72000036/204023871-0b57ab41-094d-4e79-9727-3cba026b944d.png)
+    
+    -Contém uma tabela para a análise de qual empresa está destinando a quantidade de resíduos pelos estados da Equatorial. Apresentando a análise do
+    (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+
+![image](https://user-images.githubusercontent.com/72000036/204023955-26bd8929-00be-4510-91ee-e62db2bd9209.png)
 
 •3e
 
-https://user-images.githubusercontent.com/72000036/200194596-7eed3603-c923-4dc3-90fd-dd030e2d8fbf.webm
+   -Contém o residômetro para a contagem de resíduos reciclados pela junção dos estados da ENEL e do Equatorial
+    
+![image](https://user-images.githubusercontent.com/72000036/204022624-a46e65b9-fcdc-4692-a9e6-ad617d99172a.png)
+    
+    -Contém um gráfico para melhor análise da quantidade de cada resíduo pela junção dos estados da ENEL e do Equatorial. 
+    Apresentando a análise do (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+    
+![image](https://user-images.githubusercontent.com/72000036/204023040-c3cc44e9-83c9-4d57-a741-56b7382e77d8.png)
+    
+    -Contém uma tabela para a análise de qual empresa está destinando a quantidade de resíduos pela junção dos estados da ENEL e do Equatorial.   
+    Apresentando a análise do (DIA ATUAL || MÊS ATUAL || MÊS ANTERIOR || ANO CORRENTE)
+
+![image](https://user-images.githubusercontent.com/72000036/204023203-45d16aa3-92ee-4233-a87f-c4b0f16b3c8b.png)
+
+
+
 
 ## Tecnologias utilizadas
 
